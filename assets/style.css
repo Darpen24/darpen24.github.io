@@ -204,6 +204,46 @@ a {
   color: #dce8ff;
   background: rgba(255, 255, 255, 0.02);
 }
+.resume-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.resume-toggle {
+  cursor: pointer;
+}
+
+.resume-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 220px;
+  background: #0c1728;
+  border: 1px solid rgba(130, 170, 255, 0.18);
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  display: none;
+  z-index: 1001;
+}
+
+.resume-menu.show {
+  display: block;
+}
+
+.resume-option {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #dce8ff;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.resume-option:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #22e39d;
+}
 
 .stats {
   display: grid;
