@@ -187,6 +187,12 @@ a {
   border-radius: 12px;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  line-height: 1;
+  font-family: inherit;
 }
 
 .btn:hover {
@@ -204,6 +210,16 @@ a {
   color: #dce8ff;
   background: rgba(255, 255, 255, 0.02);
 }
+
+.resume-toggle {
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.hero-buttons .btn-secondary {
+  min-width: 140px;
+}
+
 .resume-dropdown {
   position: relative;
   display: inline-block;
