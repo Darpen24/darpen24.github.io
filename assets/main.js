@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       nav_value: "Value",
       nav_contact: "Contact",
       nav_all_projects: "All Projects",
+      nav_home: "Home",
 
       hero_tagline: "Data Engineer • Analytics • BI",
       hero_desc:
@@ -77,7 +78,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
       contact_title: "Get in Touch",
       contact_text:
-        "Open to opportunities in Data Engineering, Analytics Engineering, BI and Reporting across Germany and Europe."
+        "Open to opportunities in Data Engineering, Analytics Engineering, BI and Reporting across Germany and Europe.",
+
+      projects_title: "All Projects",
+      projects_intro:
+        "A selected collection of dashboards, analytics workflows and machine learning projects across Power BI, Streamlit, forecasting and end-to-end data solutions.",
+
+      stroke_desc:
+        "Built an interactive healthcare dashboard on a dataset of 5,110 patients to analyze stroke risk indicators through KPI tracking, demographic filtering and risk-focused visual analysis.",
+
+      cv_title: "CV Optimizer",
+      cv_desc:
+        "Built a CV optimization tool that compares a resume against a job description, improves summary wording and identifies missing skills using a local LLM workflow with Streamlit.",
+
+      wine_title: "Wine Quality Analysis",
+      wine_desc:
+        "Performed exploratory data analysis on Portuguese wine datasets using cleaning, wrangling and visualization to study how chemical properties relate to wine quality.",
+
+      electricity_title: "Electricity Insights",
+      electricity_desc:
+        "Developed an end-to-end electricity and renewable energy analytics solution with forecasting, model comparison and database integration for energy usage analysis.",
+
+      lake_title: "Lake Monitoring and Quality Analysis",
+      lake_desc:
+        "Designed a predictive monitoring workflow for lake levels, trophic conditions and water quality indicators using environmental and meteorological data.",
+
+      highlights_title: "Project Highlights",
+      highlight_1:
+        "Stroke Risk Analytics Dashboard: Built an interactive Power BI dashboard with KPI cards, filters and demographic analysis to make healthcare risk patterns easier to interpret and report.",
+      highlight_2:
+        "CV Optimizer: Developed a Streamlit-based application that aligns CVs with job descriptions using local LLM processing and generates stronger summaries and missing skill suggestions.",
+      highlight_3:
+        "Wine Quality Analysis: Conducted exploratory analysis and visualization to identify how wine chemistry influences expert-rated quality across red and white wine datasets.",
+      highlight_4:
+        "Electricity Insights: Built an energy analytics solution with XGBoost and LSTM models, database integration and model comparison to support electricity usage prediction and renewable energy analysis.",
+      highlight_5:
+        "Lake Monitoring and Quality Analysis: Applied data integration, environmental analysis and predictive reporting concepts to build reusable analytical workflows for lake quality monitoring."
     },
 
     de: {
@@ -88,6 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
       nav_value: "Mehrwert",
       nav_contact: "Kontakt",
       nav_all_projects: "Alle Projekte",
+      nav_home: "Startseite",
 
       hero_tagline: "Data Engineer • Analytics • BI",
       hero_desc:
@@ -97,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_resume: "Lebenslauf",
 
       stat_experience: "Jahre Erfahrung",
-      stat_apps: "Enterprise-Datenworkflows Unterstützt",
+      stat_apps: "Unterstützte Enterprise-Datenworkflows",
       stat_reporting: "Weniger manueller Reporting-Aufwand",
 
       about_title: "Wer ich bin",
@@ -157,7 +194,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
       contact_title: "Kontakt",
       contact_text:
-        "Offen für Möglichkeiten in Data Engineering, Analytics Engineering, BI und Reporting in Deutschland und Europa."
+        "Offen für Möglichkeiten in Data Engineering, Analytics Engineering, BI und Reporting in Deutschland und Europa.",
+
+      projects_title: "Alle Projekte",
+      projects_intro:
+        "Eine ausgewählte Sammlung von Dashboards, Analyse-Workflows und Machine-Learning-Projekten aus den Bereichen Power BI, Streamlit, Forecasting und End-to-End-Datenlösungen.",
+
+      stroke_desc:
+        "Entwicklung eines interaktiven Healthcare-Dashboards auf Basis eines Datensatzes mit 5.110 Patientinnen und Patienten zur Analyse von Schlaganfall-Risikofaktoren durch KPI-Tracking, demografische Filter und risikoorientierte Visualisierung.",
+
+      cv_title: "CV Optimizer",
+      cv_desc:
+        "Entwicklung eines Tools zur Optimierung von Lebensläufen, das einen CV mit einer Stellenbeschreibung vergleicht, Zusammenfassungen verbessert und fehlende Kompetenzen mithilfe eines lokalen LLM-Workflows mit Streamlit identifiziert.",
+
+      wine_title: "Wine Quality Analysis",
+      wine_desc:
+        "Durchführung einer explorativen Datenanalyse auf portugiesischen Weindatensätzen mit Bereinigung, Aufbereitung und Visualisierung, um den Zusammenhang zwischen chemischen Eigenschaften und Weinqualität zu untersuchen.",
+
+      electricity_title: "Electricity Insights",
+      electricity_desc:
+        "Entwicklung einer End-to-End-Analyseplattform für Strom- und erneuerbare Energiedaten mit Forecasting, Modellvergleich und Datenbankintegration zur Analyse des Energieverbrauchs.",
+
+      lake_title: "Lake Monitoring and Quality Analysis",
+      lake_desc:
+        "Entwurf eines prädiktiven Monitoring-Workflows für Seepegel, trophische Bedingungen und Wasserqualitätsindikatoren auf Basis von Umwelt- und Wetterdaten.",
+
+      highlights_title: "Projekt-Highlights",
+      highlight_1:
+        "Stroke Risk Analytics Dashboard: Entwicklung eines interaktiven Power-BI-Dashboards mit KPI-Karten, Filtern und demografischer Analyse, um Risikomuster im Gesundheitsbereich verständlicher darzustellen.",
+      highlight_2:
+        "CV Optimizer: Entwicklung einer Streamlit-Anwendung, die Lebensläufe mit Stellenbeschreibungen abgleicht, lokale LLM-Verarbeitung nutzt und stärkere Zusammenfassungen sowie fehlende Skills vorschlägt.",
+      highlight_3:
+        "Wine Quality Analysis: Durchführung explorativer Analysen und Visualisierungen, um zu verstehen, wie die Weinchemie die von Expertinnen und Experten bewertete Qualität beeinflusst.",
+      highlight_4:
+        "Electricity Insights: Entwicklung einer Energieanalyse-Lösung mit XGBoost- und LSTM-Modellen, Datenbankintegration und Modellvergleich zur Vorhersage des Stromverbrauchs und Analyse erneuerbarer Energien.",
+      highlight_5:
+        "Lake Monitoring and Quality Analysis: Anwendung von Datenintegration, Umweltanalyse und prädiktiven Reporting-Konzepten zum Aufbau wiederverwendbarer Analyse-Workflows für die Überwachung der Wasserqualität."
     }
   };
 
@@ -174,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Analytics Engineer",
       "BI Entwickler",
       "Power BI Entwickler",
-      "ETL Pipeline Entwickler"
+      "ETL-Pipeline Entwickler"
     ]
   };
 
@@ -182,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const langDeBtn = document.getElementById("lang-de");
   const typingElement = document.getElementById("typing-text");
 
-  let currentLang = localStorage.getItem("portfolioLanguage") || "en";
+  let currentLang = localStorage.getItem("portfolioLanguage") || "de";
   let typingTimeout;
   let roleIndex = 0;
   let charIndex = 0;
@@ -199,10 +271,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.documentElement.lang = lang;
-    document.title = "Darpen Bhandari | Data Engineer Portfolio";
+
+    const isProjectsPage = window.location.pathname.includes("projects.html");
+    if (isProjectsPage) {
+      document.title =
+        lang === "de" ? "Projekte | Darpen Bhandari" : "Projects | Darpen Bhandari";
+    } else {
+      document.title =
+        lang === "de"
+          ? "Darpen Bhandari | Data Engineer Portfolio"
+          : "Darpen Bhandari | Data Engineer Portfolio";
+    }
   }
 
   function setActiveLanguageButton(lang) {
+    if (!langEnBtn || !langDeBtn) return;
+
     if (lang === "en") {
       langEnBtn.classList.add("active");
       langDeBtn.classList.remove("active");
@@ -217,10 +301,11 @@ document.addEventListener("DOMContentLoaded", () => {
     roleIndex = 0;
     charIndex = 0;
     isDeleting = false;
+
     if (typingElement) {
       typingElement.textContent = "";
+      startTyping();
     }
-    startTyping();
   }
 
   function startTyping() {
@@ -273,5 +358,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyTranslations(currentLang);
   setActiveLanguageButton(currentLang);
-  startTyping();
+
+  if (typingElement) {
+    startTyping();
+  }
 });
