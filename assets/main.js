@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_projects: "View Projects",
       hero_btn_contact: "Contact Me",
       hero_btn_resume: "Resume",
-
+      hero_btn_resume_en: "English CV",
+      hero_btn_resume_de: "German CV",
       stat_experience: "Years Experience",
       stat_apps: "Enterprise Data Workflows Supported",
       stat_reporting: "Less Manual Reporting",
@@ -132,7 +133,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_projects: "Projekte ansehen",
       hero_btn_contact: "Kontakt",
       hero_btn_resume: "Lebenslauf",
-
+      hero_btn_resume_en: "Englischer CV",
+      hero_btn_resume_de: "Deutscher Lebenslauf",
       stat_experience: "Jahre Erfahrung",
       stat_apps: "Unterstützte Enterprise-Datenworkflows",
       stat_reporting: "Weniger manueller Reporting-Aufwand",
@@ -346,6 +348,22 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTranslations(lang);
     setActiveLanguageButton(lang);
     resetTypingAnimation();
+  }
+
+  const resumeToggle = document.getElementById("resume-toggle");
+  const resumeMenu = document.getElementById("resume-menu");
+
+  if (resumeToggle && resumeMenu) {
+    resumeToggle.addEventListener("click", (event) => {
+      event.stopPropagation();
+      resumeMenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!resumeToggle.contains(event.target) && !resumeMenu.contains(event.target)) {
+        resumeMenu.classList.remove("show");
+      }
+    });
   }
 
   if (langEnBtn) {
