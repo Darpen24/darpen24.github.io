@@ -6,6 +6,7 @@
   <title>Projekte | Darpen Bhandari</title>
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
   <header class="navbar">
     <div class="container nav-wrap">
@@ -29,59 +30,24 @@
   <main class="section">
     <div class="container">
       <p class="section-tag">// PROJECTS</p>
+
       <h1 data-i18n="projects_title">Alle Projekte</h1>
+
       <p class="section-text" data-i18n="projects_intro">
-        Eine ausgewählte Sammlung von Dashboards, Analyse-Workflows und Machine-Learning-Projekten aus den Bereichen Power BI, Streamlit, Forecasting und End-to-End-Datenlösungen.
+        Eine ausgewählte Sammlung von Data-Engineering-, Forecasting- und Analytics-Projekten mit Fokus auf ETL-Pipelines, Datenintegration, Reporting-ready Datasets und entscheidungsorientierte Dashboards.
       </p>
 
       <div class="project-grid project-grid-simple">
-        <article class="project-card">
-          <img src="./assets/Main-Dashboard.png" alt="Stroke Risk Analytics Dashboard" class="project-img" />
-          <div class="project-content">
-            <p class="project-label">Power BI • DAX • Power Query</p>
-            <h3 data-i18n="stroke_title">Stroke Risk Analytics Dashboard</h3>
-            <p data-i18n="stroke_desc">
-              Entwicklung eines interaktiven Healthcare-Dashboards auf Basis eines Datensatzes mit 5.110 Patientinnen und Patienten zur Analyse von Schlaganfall-Risikofaktoren durch KPI-Tracking, demografische Filter und risikoorientierte Visualisierung.
-            </p>
-            <div class="project-actions">
-              <a href="https://github.com/Darpen24/Stroke-Risk" target="_blank" class="project-btn">GitHub</a>
-            </div>
-          </div>
-        </article>
 
         <article class="project-card">
           <div class="project-content">
-            <p class="project-label">Python • Streamlit • Ollama</p>
-            <h3 data-i18n="cv_title">CV Optimizer</h3>
-            <p data-i18n="cv_desc">
-              Entwicklung eines Tools zur Optimierung von Lebensläufen, das einen CV mit einer Stellenbeschreibung vergleicht, Zusammenfassungen verbessert und fehlende Kompetenzen mithilfe eines lokalen LLM-Workflows mit Streamlit identifiziert.
-            </p>
-            <div class="project-actions">
-              <a href="https://github.com/Darpen24/CV-Optimizer" target="_blank" class="project-btn">GitHub</a>
-            </div>
-          </div>
-        </article>
+            <p class="project-label">Python • PySpark • ETL • Forecasting • Streamlit</p>
+            <h3 data-i18n="electricity_title">Smart Electricity and Energy Optimizer</h3>
 
-        <article class="project-card">
-          <div class="project-content">
-            <p class="project-label">Python • Pandas • Visualization</p>
-            <h3 data-i18n="wine_title">Wine Quality Analysis</h3>
-            <p data-i18n="wine_desc">
-              Durchführung einer explorativen Datenanalyse auf portugiesischen Weindatensätzen mit Bereinigung, Aufbereitung und Visualisierung, um den Zusammenhang zwischen chemischen Eigenschaften und Weinqualität zu untersuchen.
-            </p>
-            <div class="project-actions">
-              <a href="https://github.com/Darpen24/Wine_Quality_Analysis" target="_blank" class="project-btn">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-content">
-            <p class="project-label">PostgreSQL • XGBoost • LSTM</p>
-            <h3 data-i18n="electricity_title">Electricity Insights</h3>
             <p data-i18n="electricity_desc">
-              Entwicklung einer End-to-End-Analyseplattform für Strom- und erneuerbare Energiedaten mit Forecasting, Modellvergleich und Datenbankintegration zur Analyse des Energieverbrauchs.
+              Entwicklung einer End-to-End-Datenpipeline zur Aufnahme, Bereinigung und Integration von Strom- und Solardaten, um Zeitreihendaten für Forecasting, Kostenanalyse und Optimierung vorzubereiten.
             </p>
+
             <div class="project-actions">
               <a href="https://github.com/Darpen24/Electricity_insights" target="_blank" class="project-btn">GitHub</a>
             </div>
@@ -90,32 +56,86 @@
 
         <article class="project-card">
           <div class="project-content">
-            <p class="project-label">Environmental Analytics • Streamlit</p>
+            <p class="project-label">Python • SQL • Spark • Environmental Analytics</p>
             <h3 data-i18n="lake_title">Lake Monitoring and Quality Analysis</h3>
+
             <p data-i18n="lake_desc">
-              Entwurf eines prädiktiven Monitoring-Workflows für Seepegel, trophische Bedingungen und Wasserqualitätsindikatoren auf Basis von Umwelt- und Wetterdaten.
+              Aufbau wiederverwendbarer Analyse-Workflows zur Integration von Umwelt- und Wetterdaten für KPI-Generierung, Trendmonitoring und prädiktive Auswertung von Seepegeln und Wasserqualität.
             </p>
           </div>
         </article>
+
+        <article class="project-card">
+          <img src="./assets/Main-Dashboard.png" alt="Stroke Risk Analytics Dashboard" class="project-img" />
+
+          <div class="project-content">
+            <p class="project-label">Power BI • DAX • Power Query • KPI Design</p>
+            <h3 data-i18n="stroke_title">Stroke Risk Analytics Dashboard</h3>
+
+            <p data-i18n="stroke_desc">
+              Entwicklung eines interaktiven Power-BI-Dashboards auf Basis eines Healthcare-Datensatzes mit 5.110 Patientinnen und Patienten zur Analyse von Risikofaktoren, KPI-Tracking und demografischen Mustern.
+            </p>
+
+            <div class="project-actions">
+              <a href="https://github.com/Darpen24/Stroke-Risk" target="_blank" class="project-btn">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <p class="project-label">Python • Streamlit • Local LLM • Automation</p>
+            <h3 data-i18n="cv_title">CV Optimizer</h3>
+
+            <p data-i18n="cv_desc">
+              Entwicklung einer Streamlit-Anwendung, die Lebensläufe mit Stellenbeschreibungen abgleicht, lokale LLM-Verarbeitung nutzt und optimierte Zusammenfassungen sowie fehlende Kompetenzen vorschlägt.
+            </p>
+
+            <div class="project-actions">
+              <a href="https://github.com/Darpen24/CV-Optimizer" target="_blank" class="project-btn">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <p class="project-label">Python • Pandas • Data Cleaning • Visualization</p>
+            <h3 data-i18n="wine_title">Wine Quality Analysis</h3>
+
+            <p data-i18n="wine_desc">
+              Durchführung einer explorativen Datenanalyse auf portugiesischen Weindatensätzen mit Datenbereinigung, Aufbereitung und Visualisierung, um Qualitätsmuster anhand chemischer Eigenschaften zu untersuchen.
+            </p>
+
+            <div class="project-actions">
+              <a href="https://github.com/Darpen24/Wine_Quality_Analysis" target="_blank" class="project-btn">GitHub</a>
+            </div>
+          </div>
+        </article>
+
       </div>
 
       <div class="timeline-card project-detail-card">
         <h2 data-i18n="highlights_title">Projekt-Highlights</h2>
+
         <ul>
           <li data-i18n="highlight_1">
-            Stroke Risk Analytics Dashboard: Entwicklung eines interaktiven Power-BI-Dashboards mit KPI-Karten, Filtern und demografischer Analyse, um Risikomuster im Gesundheitsbereich verständlicher darzustellen.
+            Smart Electricity and Energy Optimizer: Aufbau einer modularen Python- und PySpark-Pipeline zur Integration von Strom- und Solardaten, Vorbereitung von Zeitreihendaten und Identifikation potenzieller Energieeinsparungen von 10 bis 12%.
           </li>
+
           <li data-i18n="highlight_2">
-            CV Optimizer: Entwicklung einer Streamlit-Anwendung, die Lebensläufe mit Stellenbeschreibungen abgleicht, lokale LLM-Verarbeitung nutzt und stärkere Zusammenfassungen sowie fehlende Skills vorschlägt.
+            Lake Monitoring and Quality Analysis: Kombination von Umwelt- und Wetterdaten mit Python, SQL und Spark zur Erstellung wiederverwendbarer Workflows für KPI-Generierung, Trendmonitoring und prädiktive Analyse.
           </li>
+
           <li data-i18n="highlight_3">
-            Wine Quality Analysis: Durchführung explorativer Analysen und Visualisierungen, um zu verstehen, wie die Weinchemie die von Expertinnen und Experten bewertete Qualität beeinflusst.
+            Stroke Risk Analytics Dashboard: Entwicklung eines Power-BI-Dashboards mit KPI-Karten, DAX-Logik, Filtern und demografischer Analyse zur besseren Interpretation von Gesundheitsrisiken.
           </li>
+
           <li data-i18n="highlight_4">
-            Electricity Insights: Entwicklung einer Energieanalyse-Lösung mit XGBoost- und LSTM-Modellen, Datenbankintegration und Modellvergleich zur Vorhersage des Stromverbrauchs und Analyse erneuerbarer Energien.
+            CV Optimizer: Entwicklung einer Streamlit-Anwendung mit lokalem LLM-Workflow zur Analyse von Lebensläufen, Jobanforderungen, Skill-Gaps und optimierten Profilzusammenfassungen.
           </li>
+
           <li data-i18n="highlight_5">
-            Lake Monitoring and Quality Analysis: Anwendung von Datenintegration, Umweltanalyse und prädiktiven Reporting-Konzepten zum Aufbau wiederverwendbarer Analyse-Workflows für die Überwachung der Wasserqualität.
+            Wine Quality Analysis: Durchführung von Datenbereinigung, explorativer Analyse und Visualisierung zur Untersuchung von Zusammenhängen zwischen chemischen Eigenschaften und Weinqualität.
           </li>
         </ul>
       </div>
