@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
       level_strong: "Stark",
       level_working: "Praxiskenntnisse",
       level_fluent: "Fließend",
-      level_intermediate: "Fließend",
+      level_proficient: "Fließend",
       level_native: "Muttersprache",
 
       value_title: "Was ich einbringe",
