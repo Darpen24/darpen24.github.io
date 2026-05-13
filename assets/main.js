@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
       nav_all_projects: "All Projects",
       nav_home: "Home",
 
-      hero_tagline: "Azure Data Engineer • ETL/ELT • BI Reporting Layer",
+      hero_tagline: "Azure Data Engineer • ETL/ELT • REST APIs • Power BI",
       hero_desc:
-        "Data Engineer with 5 years of experience building ETL and ELT pipelines, REST API integrations and Azure-based data workflows using Python, SQL, Azure Data Factory, Azure Data Lake, CI/CD and Power BI.",
+        "Azure Data Engineer building ETL/ELT pipelines, REST API integrations and reporting-ready data layers across finance and healthcare domains using Python, SQL, Azure Data Factory, Azure Data Lake, Azure DevOps and Power BI.",
       hero_btn_projects: "View Projects",
       hero_btn_contact: "Contact Me",
       hero_btn_resume: "Resume",
@@ -23,45 +23,45 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_view_resume_de: "View German CV",
       hero_btn_download_resume_de: "Download German CV",
       stat_experience: "Years Experience",
-      stat_apps: "Enterprise Data Workflows Supported",
+      stat_apps: "Financial Applications Supported",
       stat_reporting: "Less Weekly Reporting Effort",
 
       about_title: "Who I Am",
       about_text:
-        "I am a Data Engineer based in Germany with 5 years of experience across healthcare, financial services and applied data projects. I build ETL and ELT pipelines, integrate source systems through REST APIs and prepare structured data layers for analytics and reporting. My work focuses on Python, SQL, Azure Data Factory, Azure Data Lake, CI/CD and Power BI, with a strong interest in building reliable, maintainable and business-ready data workflows.",
+        "I am a Data Engineer based in Mannheim, Germany with around 5 years of experience building data pipelines, API-based integrations and analytics-ready datasets across finance, healthcare and applied data projects. My work focuses on connecting operational systems, cleaning and transforming raw data and designing reliable data layers that support reporting, KPI tracking and business decision-making. I mainly work with Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, REST APIs, Azure DevOps and Power BI. I enjoy working at the point where engineering, data quality and business reporting meet: turning scattered source data into structured, validated and reusable datasets that teams can trust. I am currently open to full-time Data Engineering, Azure Data Engineering, ETL/ELT and BI Engineering roles across Germany and Europe.",
 
       experience_title: "Professional Experience",
 
       exp1_1:
-        "Integrated Matrix42 and qTest data via REST APIs and SQL transformations, creating structured datasets for incident, service request and test analytics.",
+        "Built automated ETL workflows integrating Matrix42 ticketing data and qTest QA data through REST APIs, Python and SQL transformations.",
       exp1_2:
-        "Reduced weekly reporting effort by 20% by replacing manual Excel exports with cleaner and reusable data preparation workflows.",
+        "Created structured datasets for incident analytics, service request tracking, test reporting and SLA monitoring.",
       exp1_3:
-        "Migrated flat-file reporting workflows to Azure Data Lake using Azure Data Factory, implementing incremental loads and scheduled triggers.",
+        "Reduced weekly manual reporting effort by 20% by replacing repeated Excel exports with reusable data preparation workflows.",
       exp1_4:
-        "Enabled KPI tracking for SLA breaches, recurring incidents and service demand patterns by preparing reliable reporting-ready datasets.",
+        "Supported the migration of flat-file reporting workflows toward Azure Data Lake and Azure Data Factory-based incremental loading.",
       exp1_5:
-        "Supported Azure-based data workflow improvements with a focus on automation, data quality and maintainable pipeline outputs.",
+        "Prepared Power BI-ready KPI datasets to track SLA breaches, recurring incidents and service demand patterns.",
 
       exp2_1:
-        "Led data delivery for 22 financial applications across trade, portfolio, pricing and compliance domains for Jennison Associates.",
+        "Supported end-to-end data delivery for 22 financial applications across trade, portfolio, pricing, compliance and reporting domains.",
       exp2_2:
-        "Built ADF-based ETL pipelines with Azure Data Lake, Azure Storage, validation checks and CI/CD support to improve reporting reliability.",
+        "Built ADF-based ETL pipelines using Azure Data Lake, Azure Storage, SQL validation checks and Azure DevOps CI/CD workflows.",
       exp2_3:
-        "Maintained reliable production data workflows with zero SLA breaches while reducing manual data handling by 10%.",
+        "Automated Excel-based reporting for AUM, portfolio exposure and performance views into Power BI-ready datasets.",
       exp2_4:
-        "Automated Excel-based reporting for AUM, portfolio exposure and performance views into Power BI-ready datasets, saving around 10 hours weekly.",
+        "Saved around 10 hours of weekly reconciliation effort for investment analytics teams by improving reporting data preparation.",
       exp2_5:
-        "Organized pipeline outputs into raw, processed and curated Azure Data Lake layers to improve data accessibility for US portfolio teams.",
+        "Organized pipeline outputs into raw, processed and curated Azure Data Lake layers to improve data accessibility and reduce manual data handling.",
 
       featured_title: "Featured Project",
       view_more_projects: "View More Projects",
 
       energy_title: "Smart Electricity and Energy Optimizer",
       energy_featured_desc:
-        "End-to-end data pipeline built to ingest, clean and integrate electricity and solar consumption data, preparing time-series datasets for forecasting and cost optimization.",
+        "Built an end-to-end data pipeline to ingest, clean and integrate electricity and solar consumption data, preparing structured time-series datasets for forecasting, cost analysis and energy optimization.",
       energy_built:
-        "I built a modular Python and PySpark pipeline with reusable transformation workflows, parameterized source paths, aggregation windows and forecast horizons.",
+        "I built reusable Python and PySpark workflows with parameterized data paths, aggregation windows and reporting-ready outputs for energy usage analysis.",
       energy_impact:
         "The workflow identified potential energy savings of 10 to 12% across different building profiles and showed how engineered datasets can support forecasting and decision-ready reporting.",
 
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       contact_title: "Get in Touch",
       contact_text:
-        "Open to full-time Data Engineering, Analytics Engineering and Azure Data roles across Germany and Europe.",
+        "Open to full-time Data Engineering, Azure Data Engineering, ETL/ELT and BI Engineering roles across Germany and Europe. Available for interviews via Google Meet, Microsoft Teams or phone.",
 
       projects_title: "All Projects",
       projects_intro:
@@ -106,34 +106,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
       electricity_title: "Smart Electricity and Energy Optimizer",
       electricity_desc:
-        "Built an end-to-end data pipeline to ingest, clean and integrate electricity and solar consumption data, preparing time-series datasets for forecasting, cost analysis and optimization.",
+        "Built an end-to-end data pipeline to ingest, clean and integrate electricity and solar consumption data, preparing structured time-series datasets for forecasting, cost analysis and energy optimization.",
 
       lake_title: "Lake Monitoring and Quality Analysis",
       lake_desc:
-        "Built reusable analytics workflows to integrate environmental and meteorological datasets for KPI generation, trend monitoring and predictive analysis of lake levels and water quality.",
+        "Built reusable analytics workflows to integrate environmental and weather-related datasets for KPI generation, trend monitoring and predictive analysis of lake levels and water quality.",
 
       stroke_desc:
-        "Built an interactive Power BI dashboard on a healthcare dataset of 5,110 patients to analyze risk factors, KPI trends and demographic stroke patterns.",
+        "Built an interactive Power BI dashboard using a healthcare dataset of 5,110 patients to analyze stroke risk factors, demographic trends and health-related KPI patterns.",
 
       cv_title: "CV Optimizer",
       cv_desc:
-        "Built a Streamlit application that compares resumes with job descriptions, uses local LLM processing and suggests stronger summaries and missing skills.",
+        "Built a Streamlit-based CV optimizer that compares resumes with job descriptions, identifies missing skills and suggests stronger profile summaries using local LLM-supported workflows.",
 
       wine_title: "Wine Quality Analysis",
       wine_desc:
-        "Performed exploratory data analysis on Portuguese wine datasets using data cleaning, preparation and visualization to study quality patterns based on chemical properties.",
+        "Performed exploratory data analysis on Portuguese wine quality datasets using Python, Pandas and visualization techniques to understand how chemical properties relate to wine quality scores.",
 
       highlights_title: "Project Highlights",
       highlight_1:
-        "Smart Electricity and Energy Optimizer: Built a modular Python and PySpark pipeline to integrate electricity and solar data, prepare time-series datasets and identify potential energy savings of 10 to 12%.",
+        "Smart Electricity and Energy Optimizer: Built a reusable Python and PySpark pipeline to integrate electricity and solar data, prepare structured time-series datasets and support forecasting, cost analysis and energy optimization.",
       highlight_2:
-        "Lake Monitoring and Quality Analysis: Combined environmental and meteorological datasets with Python, SQL and Spark to create reusable workflows for KPI generation, trend monitoring and predictive analysis.",
+        "Lake Monitoring and Quality Analysis: Integrated environmental and weather-related datasets with Python, SQL and Spark to create reusable workflows for KPI generation, trend monitoring and predictive analysis.",
       highlight_3:
-        "Stroke Risk Analytics Dashboard: Built a Power BI dashboard with KPI cards, DAX logic, filters and demographic analysis to improve interpretation of healthcare risk indicators.",
+        "Stroke Risk Analytics Dashboard: Built a Power BI dashboard with KPI cards, filters, DAX logic and demographic analysis to make healthcare risk indicators easier to interpret.",
       highlight_4:
-        "CV Optimizer: Developed a Streamlit application with a local LLM workflow to analyze resumes, job requirements, skill gaps and optimized profile summaries.",
+        "CV Optimizer: Developed a Streamlit application with local LLM-supported workflows to analyze resumes, job descriptions, skill gaps and optimized profile summaries.",
       highlight_5:
-        "Wine Quality Analysis: Applied data cleaning, exploratory analysis and visualization to study relationships between chemical properties and wine quality."
+        "Wine Quality Analysis: Applied data cleaning, exploratory analysis, correlation checks and visualization to study relationships between chemical properties and wine quality scores."
     },
 
     de: {
@@ -146,9 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
       nav_all_projects: "Alle Projekte",
       nav_home: "Startseite",
 
-      hero_tagline: "Azure Data Engineer • ETL/ELT • BI-Reporting-Layer",
+      hero_tagline: "Azure Data Engineer • ETL/ELT • REST APIs • Power BI",
       hero_desc:
-        "Data Engineer mit 5 Jahren Erfahrung im Aufbau von ETL- und ELT-Pipelines, REST-API-Integrationen und Azure-basierten Datenworkflows mit Python, SQL, Azure Data Factory, Azure Data Lake, CI/CD und Power BI.",
+        "Azure Data Engineer mit Fokus auf ETL/ELT-Pipelines, REST-API-Integrationen und reportingfähige Datenschichten in Finance- und Healthcare-Umgebungen mit Python, SQL, Azure Data Factory, Azure Data Lake, Azure DevOps und Power BI.",
       hero_btn_projects: "Projekte ansehen",
       hero_btn_contact: "Kontakt",
       hero_btn_resume: "Lebenslauf",
@@ -159,45 +159,45 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_view_resume_de: "Deutschen Lebenslauf ansehen",
       hero_btn_download_resume_de: "Deutschen Lebenslauf herunterladen",
       stat_experience: "Jahre Erfahrung",
-      stat_apps: "Unterstützte Enterprise-Datenworkflows",
+      stat_apps: "Unterstützte Finanzanwendungen",
       stat_reporting: "Weniger wöchentlicher Reporting-Aufwand",
 
       about_title: "Wer ich bin",
       about_text:
-        "Ich bin Data Engineer in Deutschland mit 5 Jahren Erfahrung in den Bereichen Gesundheitswesen, Finanzdienstleistungen und angewandte Datenprojekte. Ich entwickle ETL- und ELT-Pipelines, integriere Quellsysteme über REST-APIs und bereite strukturierte Datenschichten für Analytics und Reporting vor. Mein Fokus liegt auf Python, SQL, Azure Data Factory, Azure Data Lake, CI/CD und Power BI sowie auf zuverlässigen, wartbaren und geschäftsnahen Datenworkflows.",
+        "Ich bin Data Engineer in Mannheim mit rund 5 Jahren Erfahrung im Aufbau von Datenpipelines, API-basierten Integrationen und analytics-fähigen Datensätzen in den Bereichen Finance, Healthcare und angewandte Datenprojekte. Mein Fokus liegt darauf, operative Systeme anzubinden, Rohdaten zu bereinigen und zu transformieren sowie zuverlässige Datenschichten für Reporting, KPI-Tracking und datenbasierte Entscheidungen aufzubauen. Ich arbeite hauptsächlich mit Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, REST APIs, Azure DevOps und Power BI. Besonders interessiert mich die Schnittstelle zwischen Data Engineering, Datenqualität und Business Reporting: verstreute Quelldaten in strukturierte, validierte und wiederverwendbare Datensätze zu verwandeln, denen Teams vertrauen können. Ich bin aktuell offen für Vollzeitrollen im Bereich Data Engineering, Azure Data Engineering, ETL/ELT und BI Engineering in Deutschland und Europa.",
 
       experience_title: "Berufserfahrung",
 
       exp1_1:
-        "Integration von Matrix42- und qTest-Daten über REST-APIs und SQL-Transformationen zur Erstellung strukturierter Datensätze für Incident-, Service-Request- und Testanalysen.",
+        "Aufbau automatisierter ETL-Workflows zur Integration von Matrix42-Ticketdaten und qTest-QA-Daten über REST APIs, Python und SQL-Transformationen.",
       exp1_2:
-        "Reduzierung des wöchentlichen Reporting-Aufwands um 20% durch Ersatz manueller Excel-Exporte durch saubere und wiederverwendbare Datenaufbereitungs-Workflows.",
+        "Erstellung strukturierter Datensätze für Incident-Analysen, Service-Request-Tracking, Test-Reporting und SLA-Monitoring.",
       exp1_3:
-        "Migration von Flat-File-Reporting-Workflows nach Azure Data Lake mit Azure Data Factory, inklusive inkrementeller Loads und geplanter Trigger.",
+        "Reduzierung des wöchentlichen manuellen Reporting-Aufwands um 20% durch Ersatz wiederholter Excel-Exporte durch wiederverwendbare Datenaufbereitungs-Workflows.",
       exp1_4:
-        "Ermöglichung von KPI-Tracking für SLA-Verstöße, wiederkehrende Incidents und Service-Demand-Muster durch zuverlässige reportingfähige Datensätze.",
+        "Unterstützung der Migration von Flat-File-Reporting-Workflows in Richtung Azure Data Lake und Azure-Data-Factory-basiertes inkrementelles Laden.",
       exp1_5:
-        "Unterstützung Azure-basierter Datenworkflow-Verbesserungen mit Fokus auf Automatisierung, Datenqualität und wartbare Pipeline-Outputs.",
+        "Vorbereitung Power-BI-fähiger KPI-Datensätze zur Analyse von SLA-Verstößen, wiederkehrenden Incidents und Service-Demand-Mustern.",
 
       exp2_1:
-        "Leitung der Datenbereitstellung für 22 Finanzanwendungen in den Bereichen Trade, Portfolio, Pricing und Compliance für Jennison Associates.",
+        "Unterstützung der End-to-End-Datenbereitstellung für 22 Finanzanwendungen in den Bereichen Trade, Portfolio, Pricing, Compliance und Reporting.",
       exp2_2:
-        "Aufbau ADF-basierter ETL-Pipelines mit Azure Data Lake, Azure Storage, Validierungsprüfungen und CI/CD-Support zur Verbesserung der Reporting-Zuverlässigkeit.",
+        "Aufbau ADF-basierter ETL-Pipelines mit Azure Data Lake, Azure Storage, SQL-Validierungsprüfungen und Azure-DevOps-CI/CD-Workflows.",
       exp2_3:
-        "Sicherstellung zuverlässiger Produktionsdaten-Workflows mit null SLA-Verstößen und Reduzierung manueller Datenverarbeitung um 10%.",
+        "Automatisierung Excel-basierter Reports für AUM, Portfolio Exposure und Performance Views in Power-BI-fähige Datensätze.",
       exp2_4:
-        "Automatisierung Excel-basierter Reports für AUM, Portfolio Exposure und Performance Views in Power-BI-fähige Datensätze mit rund 10 Stunden Zeitersparnis pro Woche.",
+        "Einsparung von rund 10 Stunden wöchentlichem Reconciliation-Aufwand für Investment-Analytics-Teams durch verbesserte Reporting-Datenaufbereitung.",
       exp2_5:
-        "Organisation von Pipeline-Outputs in Raw-, Processed- und Curated-Layers im Azure Data Lake zur Verbesserung der Datenverfügbarkeit für US-Portfolio-Teams.",
+        "Organisation von Pipeline-Outputs in Raw-, Processed- und Curated-Layers im Azure Data Lake zur Verbesserung der Datenverfügbarkeit und Reduzierung manueller Datenverarbeitung.",
 
       featured_title: "Ausgewähltes Projekt",
       view_more_projects: "Mehr Projekte ansehen",
 
       energy_title: "Smart Electricity and Energy Optimizer",
       energy_featured_desc:
-        "End-to-End-Datenpipeline zur Aufnahme, Bereinigung und Integration von Strom- und Solardaten, um Zeitreihendaten für Forecasting und Kostenoptimierung vorzubereiten.",
+        "End-to-End-Datenpipeline zur Aufnahme, Bereinigung und Integration von Strom- und Solardaten, um strukturierte Zeitreihendaten für Forecasting, Kostenanalyse und Energieoptimierung vorzubereiten.",
       energy_built:
-        "Ich habe eine modulare Python- und PySpark-Pipeline mit wiederverwendbaren Transformations-Workflows, parametrisierten Quellpfaden, Aggregationsfenstern und Forecast-Horizonten aufgebaut.",
+        "Ich habe wiederverwendbare Python- und PySpark-Workflows mit parametrisierten Datenpfaden, Aggregationsfenstern und reportingfähigen Outputs für Energieverbrauchsanalysen aufgebaut.",
       energy_impact:
         "Der Workflow identifizierte potenzielle Energieeinsparungen von 10 bis 12% über verschiedene Gebäudprofile hinweg und zeigte, wie aufbereitete Datensätze Forecasting und entscheidungsreifes Reporting unterstützen können.",
 
@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       contact_title: "Kontakt",
       contact_text:
-        "Offen für Vollzeitrollen in Data Engineering, Analytics Engineering und Azure Data in Deutschland und Europa.",
+        "Offen für Vollzeitrollen in Data Engineering, Azure Data Engineering, ETL/ELT und BI Engineering in Deutschland und Europa. Verfügbar für Interviews über Google Meet, Microsoft Teams oder Telefon.",
 
       projects_title: "Alle Projekte",
       projects_intro:
@@ -242,50 +242,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
       electricity_title: "Smart Electricity and Energy Optimizer",
       electricity_desc:
-        "Entwicklung einer End-to-End-Datenpipeline zur Aufnahme, Bereinigung und Integration von Strom- und Solardaten, um Zeitreihendaten für Forecasting, Kostenanalyse und Optimierung vorzubereiten.",
+        "Entwicklung einer End-to-End-Datenpipeline zur Aufnahme, Bereinigung und Integration von Strom- und Solardaten, um strukturierte Zeitreihendaten für Forecasting, Kostenanalyse und Energieoptimierung vorzubereiten.",
 
       lake_title: "Lake Monitoring and Quality Analysis",
       lake_desc:
         "Aufbau wiederverwendbarer Analyse-Workflows zur Integration von Umwelt- und Wetterdaten für KPI-Generierung, Trendmonitoring und prädiktive Auswertung von Seepegeln und Wasserqualität.",
 
       stroke_desc:
-        "Entwicklung eines interaktiven Power-BI-Dashboards auf Basis eines Healthcare-Datensatzes mit 5.110 Patientinnen und Patienten zur Analyse von Risikofaktoren, KPI-Tracking und demografischen Mustern.",
+        "Entwicklung eines interaktiven Power-BI-Dashboards auf Basis eines Healthcare-Datensatzes mit 5.110 Patientinnen und Patienten zur Analyse von Schlaganfall-Risikofaktoren, demografischen Trends und KPI-Mustern.",
 
       cv_title: "CV Optimizer",
       cv_desc:
-        "Entwicklung einer Streamlit-Anwendung, die Lebensläufe mit Stellenbeschreibungen abgleicht, lokale LLM-Verarbeitung nutzt und optimierte Zusammenfassungen sowie fehlende Kompetenzen vorschlägt.",
+        "Entwicklung eines Streamlit-basierten CV-Optimizers, der Lebensläufe mit Stellenbeschreibungen abgleicht, fehlende Kompetenzen erkennt und stärkere Profilzusammenfassungen mit lokalen LLM-gestützten Workflows vorschlägt.",
 
       wine_title: "Wine Quality Analysis",
       wine_desc:
-        "Durchführung einer explorativen Datenanalyse auf portugiesischen Weindatensätzen mit Datenbereinigung, Aufbereitung und Visualisierung, um Qualitätsmuster anhand chemischer Eigenschaften zu untersuchen.",
+        "Durchführung einer explorativen Datenanalyse auf portugiesischen Weindatensätzen mit Python, Pandas und Visualisierungstechniken, um Zusammenhänge zwischen chemischen Eigenschaften und Qualitätsbewertungen zu verstehen.",
 
       highlights_title: "Projekt-Highlights",
       highlight_1:
-        "Smart Electricity and Energy Optimizer: Aufbau einer modularen Python- und PySpark-Pipeline zur Integration von Strom- und Solardaten, Vorbereitung von Zeitreihendaten und Identifikation potenzieller Energieeinsparungen von 10 bis 12%.",
+        "Smart Electricity and Energy Optimizer: Aufbau einer wiederverwendbaren Python- und PySpark-Pipeline zur Integration von Strom- und Solardaten, Vorbereitung strukturierter Zeitreihendaten und Unterstützung von Forecasting, Kostenanalyse und Energieoptimierung.",
       highlight_2:
-        "Lake Monitoring and Quality Analysis: Kombination von Umwelt- und Wetterdaten mit Python, SQL und Spark zur Erstellung wiederverwendbarer Workflows für KPI-Generierung, Trendmonitoring und prädiktive Analyse.",
+        "Lake Monitoring and Quality Analysis: Integration von Umwelt- und Wetterdaten mit Python, SQL und Spark zur Erstellung wiederverwendbarer Workflows für KPI-Generierung, Trendmonitoring und prädiktive Analyse.",
       highlight_3:
-        "Stroke Risk Analytics Dashboard: Entwicklung eines Power-BI-Dashboards mit KPI-Karten, DAX-Logik, Filtern und demografischer Analyse zur besseren Interpretation von Gesundheitsrisiken.",
+        "Stroke Risk Analytics Dashboard: Entwicklung eines Power-BI-Dashboards mit KPI-Karten, Filtern, DAX-Logik und demografischer Analyse zur besseren Interpretation von Gesundheitsrisiken.",
       highlight_4:
-        "CV Optimizer: Entwicklung einer Streamlit-Anwendung mit lokalem LLM-Workflow zur Analyse von Lebensläufen, Jobanforderungen, Skill-Gaps und optimierten Profilzusammenfassungen.",
+        "CV Optimizer: Entwicklung einer Streamlit-Anwendung mit lokalen LLM-gestützten Workflows zur Analyse von Lebensläufen, Stellenbeschreibungen, Skill-Gaps und optimierten Profilzusammenfassungen.",
       highlight_5:
-        "Wine Quality Analysis: Durchführung von Datenbereinigung, explorativer Analyse und Visualisierung zur Untersuchung von Zusammenhängen zwischen chemischen Eigenschaften und Weinqualität."
+        "Wine Quality Analysis: Anwendung von Datenbereinigung, explorativer Analyse, Korrelationsprüfungen und Visualisierung zur Untersuchung von Zusammenhängen zwischen chemischen Eigenschaften und Weinqualität."
     }
   };
 
   const typingRoles = {
     en: [
-      "Data Engineer",
       "Azure Data Engineer",
+      "ETL/ELT Pipeline Developer",
+      "REST API Data Integration Specialist",
       "Analytics Engineer",
-      "ETL Pipeline Developer",
       "Power BI Reporting Developer"
     ],
     de: [
-      "Data Engineer",
       "Azure Data Engineer",
+      "ETL/ELT-Pipeline-Entwickler",
+      "REST-API-Datenintegration",
       "Analytics Engineer",
-      "ETL-Pipeline-Entwickler",
       "Power-BI-Reporting-Entwickler"
     ]
   };
@@ -317,9 +317,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (isProjectsPage) {
       document.title =
-        lang === "de" ? "Projekte | Darpen Bhandari" : "Projects | Darpen Bhandari";
+        lang === "de"
+          ? "Projekte | Darpen Bhandari | Data Engineering Portfolio"
+          : "Projects | Darpen Bhandari | Data Engineering Portfolio";
     } else {
-      document.title = "Darpen Bhandari | Data Engineer Portfolio";
+      document.title =
+        lang === "de"
+          ? "Darpen Bhandari | Azure Data Engineer in Germany"
+          : "Darpen Bhandari | Azure Data Engineer in Germany";
     }
   }
 
