@@ -67,15 +67,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       stroke_title: "Stroke Risk Analytics Dashboard",
       stroke_featured_desc:
-        "Interactive Power BI dashboard built on a healthcare dataset of 5,110 patients to analyze stroke risk indicators through KPI tracking, demographic filtering and risk-focused visual analysis.",
+        "Built an interactive Power BI dashboard using a healthcare dataset of 5,110 patients to analyze stroke risk factors, demographic trends and health-related KPI patterns.",
 
       what_built_title: "What I built",
       stroke_built:
-        "I designed a dashboard with KPI cards, age analysis, BMI category views, smoking-status breakdowns and health-risk comparisons to make patient-level insights easier to understand.",
+        "I designed a Power BI dashboard with KPI cards, age-group analysis, BMI category views, smoking-status breakdowns and health-risk comparisons to make patient-level insights easier to understand.",
 
       why_matters_title: "Why it matters",
       stroke_impact:
-        "The dashboard helps highlight how stroke prevalence relates to age, hypertension, heart disease, BMI and glucose patterns, turning healthcare data into a more actionable reporting view.",
+        "The dashboard helps highlight how stroke risk patterns relate to age, hypertension, heart disease, BMI, glucose levels and smoking status, turning healthcare data into a clearer reporting view.",
 
       skills_title: "Skill Levels",
       level_advanced: "Advanced",
@@ -203,15 +203,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       stroke_title: "Stroke Risk Analytics Dashboard",
       stroke_featured_desc:
-        "Interaktives Power-BI-Dashboard auf Basis eines Gesundheitsdatensatzes mit 5.110 Patientinnen und Patienten zur Analyse von Schlaganfall-Risikofaktoren durch KPI-Tracking, demografische Filter und risikoorientierte Visualisierungen.",
+        "Interaktives Power-BI-Dashboard auf Basis eines Healthcare-Datensatzes mit 5.110 Patientinnen und Patienten zur Analyse von Schlaganfall-Risikofaktoren, demografischen Trends und gesundheitsbezogenen KPI-Mustern.",
 
       what_built_title: "Was ich entwickelt habe",
       stroke_built:
-        "Ich habe ein Dashboard mit KPI-Karten, Altersanalysen, BMI-Kategorien, Auswertungen zum Rauchstatus und Gesundheitsrisikovergleichen entwickelt, um patientenbezogene Erkenntnisse verständlicher darzustellen.",
+        "Ich habe ein Power-BI-Dashboard mit KPI-Karten, Altersgruppenanalyse, BMI-Kategorien, Auswertungen zum Rauchstatus und Gesundheitsrisikovergleichen entwickelt, um patientenbezogene Erkenntnisse verständlicher darzustellen.",
 
       why_matters_title: "Warum es wichtig ist",
       stroke_impact:
-        "Das Dashboard zeigt, wie Schlaganfallhäufigkeit mit Alter, Bluthochdruck, Herzerkrankungen, BMI und Glukosewerten zusammenhängt und macht Gesundheitsdaten besser nutzbar für Analysen und Reporting.",
+        "Das Dashboard zeigt, wie Schlaganfall-Risikomuster mit Alter, Bluthochdruck, Herzerkrankungen, BMI, Glukosewerten und Rauchstatus zusammenhängen und macht Healthcare-Daten besser für Reporting nutzbar.",
 
       skills_title: "Kenntnisstand",
       level_advanced: "Fortgeschritten",
