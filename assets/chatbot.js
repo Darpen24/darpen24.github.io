@@ -9,10 +9,10 @@
       subtitle: "Fast answers for recruiters, hiring teams and collaborators.",
       greeting:
         "Hi, I can help you quickly understand Darpen's data engineering background, projects, skills and availability.",
-      placeholder: "Ask about skills, projects, experience...",
+      placeholder: "Ask about Azure, Power BI, projects...",
       call: "Request a call",
       email: "Email Darpen",
-      linkedin: "LinkedIn",
+      linkedin: "Connect on LinkedIn",
       close: "Close chat",
       open: "Open chat",
       send: "Send message",
@@ -30,11 +30,29 @@
         projects:
           "Strong highlights include the Stroke Risk Analytics Dashboard in Power BI, the Smart Electricity and Energy Optimizer pipeline, the CV Optimizer, and environmental lake monitoring workflows.",
         skills:
-          "His core stack includes Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, REST APIs, Azure DevOps, Power BI, DAX, Power Query and data modeling.",
+          "His core stack includes Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, Azure DevOps, REST APIs, Power BI, DAX, Power Query and data modeling.",
         contact:
-          "The best next step is to request a call or send an email. I can prepare a prefilled message so it is quick to start the conversation.",
+          "The best next step is to request a call, send an email, or connect with Darpen on LinkedIn. The buttons below open each option directly.",
+        linkedin:
+          "LinkedIn cannot send Darpen a silent alert from this static site, but visitors can open his profile and send a connection request with context from the portfolio.",
+        resume:
+          "Darpen's resume is available from the hero section in both English and German. It highlights Azure Data Engineering, ETL/ELT, Power BI, finance and healthcare experience.",
+        powerbi:
+          "Darpen uses Power BI, DAX and Power Query to build KPI dashboards and reporting-ready views. The Stroke Risk Analytics Dashboard is the clearest Power BI portfolio example.",
+        azure:
+          "His Azure work includes Azure Data Factory, Azure Data Lake, Azure Storage, Azure SQL and Azure DevOps-supported ETL/ELT workflows.",
+        python:
+          "Python and SQL are core parts of his data engineering work: API integration, transformations, validation checks, automation and analytics-ready dataset preparation.",
+        healthcare:
+          "In healthcare, Darpen worked with Matrix42 and qTest data, incident analytics, SLA monitoring and the Stroke Risk Analytics Dashboard.",
+        finance:
+          "In finance, Darpen supported 22 financial applications across trade, portfolio, pricing, compliance and reporting domains, including AUM and portfolio exposure reporting.",
+        energy:
+          "The Smart Electricity and Energy Optimizer project shows end-to-end data pipeline work with electricity and solar data, forecasting preparation and energy optimization insights.",
+        languages:
+          "Darpen speaks fluent English, intermediate German and native Hindi, and is based in Mannheim, Germany.",
         fallback:
-          "Good question. I can help with roles, experience, projects, skills or contact details. For anything specific, email Darpen and he can reply directly."
+          "I found the closest portfolio topics around Data Engineering, Azure, Python, SQL, Power BI, finance, healthcare and projects. For a very specific question, LinkedIn or email is the best direct route."
       },
       mailSubjects: {
         call: "Call request from darpenbhandari.com",
@@ -53,10 +71,10 @@
       subtitle: "Schnelle Antworten fuer Recruiting, Hiring Teams und Projekte.",
       greeting:
         "Hallo, ich helfe Ihnen, Darpens Data-Engineering-Erfahrung, Projekte, Kenntnisse und Verfuegbarkeit schnell einzuordnen.",
-      placeholder: "Fragen zu Kenntnissen, Projekten, Erfahrung...",
+      placeholder: "Fragen zu Azure, Power BI, Projekten...",
       call: "Call anfragen",
       email: "E-Mail senden",
-      linkedin: "LinkedIn",
+      linkedin: "Auf LinkedIn vernetzen",
       close: "Chat schliessen",
       open: "Chat oeffnen",
       send: "Nachricht senden",
@@ -74,11 +92,29 @@
         projects:
           "Besonders relevant sind das Stroke Risk Analytics Dashboard in Power BI, die Smart Electricity and Energy Optimizer Pipeline, der CV Optimizer und Workflows fuer Lake Monitoring.",
         skills:
-          "Sein Kernstack umfasst Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, REST APIs, Azure DevOps, Power BI, DAX, Power Query und Datenmodellierung.",
+          "Sein Kernstack umfasst Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, Azure DevOps, REST APIs, Power BI, DAX, Power Query und Datenmodellierung.",
         contact:
-          "Der beste naechste Schritt ist eine Call-Anfrage oder eine E-Mail. Ich kann direkt eine vorbereitete Nachricht oeffnen.",
+          "Der beste naechste Schritt ist eine Call-Anfrage, eine E-Mail oder eine LinkedIn-Anfrage. Die Buttons unten oeffnen die passende Option direkt.",
+        linkedin:
+          "LinkedIn kann von dieser statischen Website keinen stillen Alert an Darpen senden. Besucher koennen aber sein Profil oeffnen und eine Kontaktanfrage mit Portfolio-Kontext schicken.",
+        resume:
+          "Darpens Lebenslauf ist im Hero-Bereich auf Englisch und Deutsch verfuegbar. Er zeigt Azure Data Engineering, ETL/ELT, Power BI sowie Finance- und Healthcare-Erfahrung.",
+        powerbi:
+          "Darpen nutzt Power BI, DAX und Power Query fuer KPI-Dashboards und reportingfaehige Ansichten. Das Stroke Risk Analytics Dashboard ist das klarste Power-BI-Beispiel im Portfolio.",
+        azure:
+          "Seine Azure-Erfahrung umfasst Azure Data Factory, Azure Data Lake, Azure Storage, Azure SQL und Azure-DevOps-gestuetzte ETL/ELT-Workflows.",
+        python:
+          "Python und SQL sind Kernbestandteile seiner Data-Engineering-Arbeit: API-Integration, Transformationen, Validierungschecks, Automatisierung und reportingfaehige Datensaetze.",
+        healthcare:
+          "Im Healthcare-Bereich arbeitete Darpen mit Matrix42- und qTest-Daten, Incident Analytics, SLA-Monitoring und dem Stroke Risk Analytics Dashboard.",
+        finance:
+          "Im Finance-Bereich unterstuetzte Darpen 22 Finanzanwendungen in Trade, Portfolio, Pricing, Compliance und Reporting, inklusive AUM- und Portfolio-Exposure-Reporting.",
+        energy:
+          "Das Smart Electricity and Energy Optimizer Projekt zeigt End-to-End-Pipeline-Arbeit mit Strom- und Solardaten, Forecasting-Vorbereitung und Energieoptimierung.",
+        languages:
+          "Darpen spricht fliessend Englisch, Deutsch auf Mittelstufe und Hindi als Muttersprache. Er lebt in Mannheim, Deutschland.",
         fallback:
-          "Gute Frage. Ich kann bei Rollen, Erfahrung, Projekten, Kenntnissen oder Kontakt helfen. Fuer sehr spezifische Themen schreiben Sie Darpen am besten direkt per E-Mail."
+          "Ich habe die naheliegenden Portfolio-Themen rund um Data Engineering, Azure, Python, SQL, Power BI, Finance, Healthcare und Projekte geprueft. Fuer sehr spezifische Fragen sind LinkedIn oder E-Mail der beste direkte Weg."
       },
       mailSubjects: {
         call: "Call-Anfrage von darpenbhandari.com",
@@ -115,28 +151,25 @@
 
   function detectIntent(message) {
     const text = message.toLowerCase();
+    const matchers = [
+      { intent: "contact", pattern: /call|meet|interview|phone|email|mail|kontakt|termin|anruf|gespraech|gesprach/ },
+      { intent: "linkedin", pattern: /linkedin|connect|connection|vernetzen|kontaktanfrage/ },
+      { intent: "resume", pattern: /resume|cv|curriculum|lebenslauf|bewerbung/ },
+      { intent: "availability", pattern: /role|open|available|availability|job|position|hire|hiring|recruit|rolle|verfuegbar|verfugbar|stelle/ },
+      { intent: "experience", pattern: /experience|work|years|career|professional|erfahrung|beruf|werdegang/ },
+      { intent: "powerbi", pattern: /power bi|powerbi|dax|power query|dashboard|kpi|reporting|bericht/ },
+      { intent: "azure", pattern: /azure|adf|data factory|data lake|devops|storage|cloud/ },
+      { intent: "python", pattern: /python|sql|api|rest|etl|elt|pipeline|automation|automatisierung/ },
+      { intent: "healthcare", pattern: /healthcare|health|hospital|heidelberg|stroke|sla|matrix42|qtest|incident|gesundheit|krankenhaus/ },
+      { intent: "finance", pattern: /finance|financial|trade|portfolio|pricing|compliance|aum|investment|jennison|hexaware|finanz/ },
+      { intent: "energy", pattern: /energy|electricity|solar|forecast|optimizer|strom|energie|forecasting/ },
+      { intent: "projects", pattern: /project|portfolio|optimizer|lake|wine|projekt|projekte/ },
+      { intent: "languages", pattern: /language|german|english|hindi|mannheim|germany|deutsch|sprache|sprachen|standort/ },
+      { intent: "skills", pattern: /skill|stack|tech|tools|kenntnis|faehigkeit|fahigkeit|kompetenz/ }
+    ];
 
-    if (/call|meet|interview|phone|kontakt|termin|anruf|gespraech/.test(text)) {
-      return "contact";
-    }
-
-    if (/role|open|available|availability|job|position|rolle|verfuegbar|verfugbar/.test(text)) {
-      return "availability";
-    }
-
-    if (/experience|work|years|finance|healthcare|erfahrung|beruf/.test(text)) {
-      return "experience";
-    }
-
-    if (/project|portfolio|dashboard|optimizer|power bi|projekt/.test(text)) {
-      return "projects";
-    }
-
-    if (/skill|stack|tech|tools|python|sql|azure|kenntnis|faehigkeit|fahigkeit/.test(text)) {
-      return "skills";
-    }
-
-    return "fallback";
+    const match = matchers.find((item) => item.pattern.test(text));
+    return match ? match.intent : "fallback";
   }
 
   function createMessage(text, type) {
@@ -144,6 +177,26 @@
     message.className = `chatbot-message ${type}`;
     message.textContent = text;
     return message;
+  }
+
+  function createSuggestions(chips, onSelect) {
+    const suggestions = document.createElement("div");
+    suggestions.className = "chatbot-suggestions";
+
+    chips.forEach((chip) => {
+      const button = document.createElement("button");
+      button.className = "chatbot-chip";
+      button.type = "button";
+      button.textContent = chip.label;
+      button.addEventListener("click", () => onSelect(chip.intent, chip.label));
+      suggestions.appendChild(button);
+    });
+
+    return suggestions;
+  }
+
+  function clearSuggestions(messages) {
+    messages.querySelectorAll(".chatbot-suggestions").forEach((node) => node.remove());
   }
 
   function renderChatbot() {
@@ -160,7 +213,7 @@
           <button class="chatbot-close" type="button"></button>
         </header>
         <div class="chatbot-messages" aria-live="polite"></div>
-        <div class="chatbot-actions"></div>
+        <div class="chatbot-actions" aria-hidden="true"></div>
         <div class="chatbot-contact-row"></div>
         <form class="chatbot-form">
           <input class="chatbot-input" type="text" autocomplete="off" />
@@ -176,12 +229,55 @@
     const toggle = root.querySelector(".chatbot-toggle");
     const close = root.querySelector(".chatbot-close");
     const messages = root.querySelector(".chatbot-messages");
-    const actions = root.querySelector(".chatbot-actions");
     const contactRow = root.querySelector(".chatbot-contact-row");
     const form = root.querySelector(".chatbot-form");
     const input = root.querySelector(".chatbot-input");
     let language = getLanguage();
     let hasGreeted = false;
+
+    function scrollMessages() {
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    function showSuggestions(shouldScroll) {
+      clearSuggestions(messages);
+      messages.appendChild(createSuggestions(copy[language].chips, replyToIntent));
+
+      if (shouldScroll) {
+        scrollMessages();
+      }
+    }
+
+    function addBotMessage(text, showNextSuggestions, focusAnswer) {
+      const message = createMessage(text, "bot");
+      messages.appendChild(message);
+
+      if (showNextSuggestions) {
+        showSuggestions(!focusAnswer);
+      } else {
+        scrollMessages();
+      }
+
+      if (focusAnswer) {
+        messages.scrollTop = 0;
+      }
+    }
+
+    function addUserMessage(text) {
+      clearSuggestions(messages);
+      messages.innerHTML = "";
+      messages.appendChild(createMessage(text, "user"));
+      scrollMessages();
+    }
+
+    function answerIntent(intent) {
+      setTimeout(() => addBotMessage(copy[language].answers[intent], true, true), 180);
+    }
+
+    function replyToIntent(intent, label) {
+      addUserMessage(label);
+      answerIntent(intent);
+    }
 
     function setCopy() {
       language = getLanguage();
@@ -195,35 +291,15 @@
       close.innerHTML = icons.close;
       root.querySelector(".chatbot-send").setAttribute("aria-label", current.send);
 
-      actions.innerHTML = "";
-      current.chips.forEach((chip) => {
-        const button = document.createElement("button");
-        button.className = "chatbot-chip";
-        button.type = "button";
-        button.textContent = chip.label;
-        button.addEventListener("click", () => replyToIntent(chip.intent, chip.label));
-        actions.appendChild(button);
-      });
-
       contactRow.innerHTML = `
         <a class="chatbot-link" href="${mailto("call", language)}">${current.call}</a>
         <a class="chatbot-link" href="${mailto("email", language)}">${current.email}</a>
+        <a class="chatbot-link" href="${LINKEDIN_URL}" target="_blank" rel="noopener">${current.linkedin}</a>
       `;
-    }
 
-    function addBotMessage(text) {
-      messages.appendChild(createMessage(text, "bot"));
-      messages.scrollTop = messages.scrollHeight;
-    }
-
-    function addUserMessage(text) {
-      messages.appendChild(createMessage(text, "user"));
-      messages.scrollTop = messages.scrollHeight;
-    }
-
-    function replyToIntent(intent, label) {
-      addUserMessage(label);
-      setTimeout(() => addBotMessage(copy[language].answers[intent]), 160);
+      if (messages.querySelector(".chatbot-suggestions")) {
+        showSuggestions(true);
+      }
     }
 
     function openChat() {
@@ -231,7 +307,7 @@
       toggle.setAttribute("aria-expanded", "true");
 
       if (!hasGreeted) {
-        addBotMessage(copy[language].greeting);
+        addBotMessage(copy[language].greeting, true);
         hasGreeted = true;
       }
 
@@ -262,9 +338,7 @@
 
       addUserMessage(value);
       input.value = "";
-
-      const intent = detectIntent(value);
-      setTimeout(() => addBotMessage(copy[language].answers[intent]), 180);
+      answerIntent(detectIntent(value));
     });
 
     document.addEventListener("click", (event) => {
@@ -274,7 +348,7 @@
       setTimeout(() => {
         setCopy();
         if (messages.children.length) {
-          addBotMessage(copy[language].greeting);
+          addBotMessage(copy[language].greeting, true);
         }
       }, 0);
     });

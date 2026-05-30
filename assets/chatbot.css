@@ -126,10 +126,16 @@
 }
 
 .chatbot-actions {
+  display: none;
+}
+
+.chatbot-suggestions {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
-  padding: 0 18px 14px;
+  margin-top: 2px;
+  animation: chatbotFadeIn 0.18s ease;
 }
 
 .chatbot-chip,
@@ -160,7 +166,7 @@
 
 .chatbot-contact-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
   padding: 0 18px 14px;
 }
@@ -209,6 +215,18 @@
 .chatbot-send svg {
   width: 20px;
   height: 20px;
+}
+
+@keyframes chatbotFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 520px) {
