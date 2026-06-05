@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
       nav_all_projects: "All Projects",
       nav_home: "Home",
 
-      hero_tagline: "Azure Data Engineer • ETL/ELT • REST APIs • Power BI",
+      hero_tagline: "Azure Data Engineer • Medallion Lakehouses • dbt • Power BI",
       hero_desc:
-        "Azure Data Engineer building ETL/ELT pipelines, REST API integrations and reporting-ready data layers across finance and healthcare domains using Python, SQL, Azure Data Factory, Azure Data Lake, Azure DevOps and Power BI.",
+        "Azure Data Engineer with 5 years of experience building Azure-native data platforms across finance and healthcare, including medallion lakehouses, dbt models, CI/CD quality gates and leadership of a six-engineer team.",
       hero_btn_projects: "View Projects",
       hero_btn_contact: "Contact Me",
       hero_btn_resume: "Resume",
@@ -24,46 +24,46 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_download_resume_de: "Download German CV",
       stat_experience: "Years Experience",
       stat_apps: "Financial Applications Supported",
-      stat_reporting: "Less Weekly Reporting Effort",
+      stat_reporting: "SLA Compliance Across Portfolio Apps",
 
       about_title: "Who I Am",
       about_text:
-        "I am a Data Engineer based in Mannheim, Germany with around 5 years of experience building data pipelines, API-based integrations and analytics-ready datasets across finance, healthcare and applied data projects. My work focuses on connecting operational systems, cleaning and transforming raw data and designing reliable data layers that support reporting, KPI tracking and business decision-making. I mainly work with Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, REST APIs, Azure DevOps and Power BI. I enjoy working at the point where engineering, data quality and business reporting meet: turning scattered source data into structured, validated and reusable datasets that teams can trust. I am currently open to full-time Data Engineering, Azure Data Engineering, ETL/ELT and BI Engineering roles across Germany and Europe.",
+        "I am a Data Engineer based in Mannheim with 5 years of experience building Azure-native data platforms across finance and healthcare. I design ADF pipelines, medallion lakehouses, dbt transformation layers and automated data-quality controls that turn operational data into trusted reporting products. My experience includes leading a six-engineer team, maintaining 100% SLA compliance across 22 financial applications and automating more than 10 hours of weekly reconciliation work. I hold an M.Sc. in Applied Data Science and Analytics and am immediately available for Data Engineering roles.",
 
       experience_title: "Professional Experience",
 
       exp1_1:
-        "Built automated ETL workflows integrating Matrix42 ticketing data and qTest QA data through REST APIs, Python and SQL transformations.",
+        "Reduced manual reporting effort by 20% by building Python-based REST API ingestion pipelines between qTest and Matrix42.",
       exp1_2:
-        "Created structured datasets for incident analytics, service request tracking, test reporting and SLA monitoring.",
+        "Designed end-to-end ADF pipelines with parameterized triggers, incremental loads and ADLS integration for scheduled SLA monitoring.",
       exp1_3:
-        "Reduced weekly manual reporting effort by 20% by replacing repeated Excel exports with reusable data preparation workflows.",
+        "Improved Power BI reliability through dbt staging, intermediate and mart models with automated schema, relationship and null-value tests.",
       exp1_4:
-        "Supported the migration of flat-file reporting workflows toward Azure Data Lake and Azure Data Factory-based incremental loading.",
+        "Introduced GitHub Actions CI/CD gates running dbt tests, SQL checks and pipeline configuration validation before deployment.",
       exp1_5:
-        "Prepared Power BI-ready KPI datasets to track SLA breaches, recurring incidents and service demand patterns.",
+        "Partnered with IT service management teams to define reporting requirements, SLA definitions and recurring KPI analysis.",
 
       exp2_1:
-        "Supported end-to-end data delivery for 22 financial applications across trade, portfolio, pricing, compliance and reporting domains.",
+        "Led a team of six data engineers delivering pipeline and reporting solutions across 22 US financial portfolio applications.",
       exp2_2:
-        "Built ADF-based ETL pipelines using Azure Data Lake, Azure Storage, SQL validation checks and Azure DevOps CI/CD workflows.",
+        "Maintained 100% SLA compliance by architecting ADF pipelines with incremental loads, failure alerting and automated retries.",
       exp2_3:
-        "Automated Excel-based reporting for AUM, portfolio exposure and performance views into Power BI-ready datasets.",
+        "Saved almost 10 hours of weekly reconciliation work by replacing manual Excel-based AUM and performance reports with automated Python and SQL pipelines.",
       exp2_4:
-        "Saved around 10 hours of weekly reconciliation effort for investment analytics teams by improving reporting data preparation.",
+        "Designed a Parquet-based ADLS medallion architecture with Bronze, Silver and Gold layers for reusable portfolio data products.",
       exp2_5:
-        "Organized pipeline outputs into raw, processed and curated Azure Data Lake layers to improve data accessibility and reduce manual data handling.",
+        "Modelled curated outputs as star-schema facts and dimensions with automated null, duplicate and reconciliation-gap checks.",
 
       featured_title: "Featured Project",
       view_more_projects: "View More Projects",
 
-      energy_title: "Smart Electricity and Energy Optimizer",
+      energy_title: "Smart Energy Forecasting Pipeline",
       energy_featured_desc:
-        "Built an end-to-end data pipeline to ingest, clean and integrate electricity and solar consumption data, preparing structured time-series datasets for forecasting, cost analysis and energy optimization.",
+        "Designed a medallion lakehouse for electricity, solar, weather and cost data that identified 12% potential energy savings across building profiles.",
       energy_built:
-        "I built reusable Python and PySpark workflows with parameterized data paths, aggregation windows and reporting-ready outputs for energy usage analysis.",
+        "I built Bronze, Silver and Gold layers with dbt models, automated quality tests and parameterized aggregation windows for forecasting and Power BI.",
       energy_impact:
-        "The workflow identified potential energy savings of 10 to 12% across different building profiles and showed how engineered datasets can support forecasting and decision-ready reporting.",
+        "The pipeline identified 12% potential energy savings and created trusted downstream datasets for building-level forecasting and analysis.",
 
       stroke_title: "Stroke Risk Analytics Dashboard",
       stroke_featured_desc:
@@ -85,28 +85,39 @@ document.addEventListener("DOMContentLoaded", () => {
       level_intermediate: "Intermediate",
       level_native: "Native",
 
+      credentials_title: "Education, Certifications & Availability",
+      education_title: "M.Sc. Applied Data Science and Analytics",
+      education_text:
+        "SRH Hochschule Heidelberg, completed September 2025. Master's thesis focused on a Smart Energy Forecasting Pipeline.",
+      certificates_title: "Certifications",
+      certificates_text:
+        "Microsoft Azure Fundamentals (AZ-900), Databricks for Data Engineering and NVIDIA Deep Learning Fundamentals.",
+      availability_title: "Based in Mannheim, Immediately Available",
+      availability_text:
+        "English C1, German B1 and a valid German residence permit. Open to Data Engineering roles across Germany and Europe.",
+
       value_title: "What I Bring",
       strength1_title: "Data Pipeline Ownership",
       strength1_text:
-        "I build ETL and ELT workflows from source integration to reporting-ready datasets, with attention to automation, validation and maintainability.",
+        "I design reliable pipelines from ingestion through curated marts, with incremental loading, monitoring, automated retries and production-focused validation.",
       strength2_title: "Azure Data Engineering",
       strength2_text:
-        "I work with Azure Data Factory, Azure Data Lake, Azure Storage and CI/CD-supported workflows to create reliable cloud-based data pipelines.",
+        "I build Azure-native medallion lakehouses with ADF, ADLS, Databricks, Parquet and dbt transformation layers.",
       strength3_title: "Business-Focused Reporting",
       strength3_text:
-        "I prepare structured datasets and KPI layers that help teams monitor service demand, SLA trends, portfolio views and operational performance.",
+        "I bring team-lead experience, cross-functional delivery and a record of measurable outcomes including 100% SLA compliance and major reporting automation.",
 
       contact_title: "Get in Touch",
       contact_text:
-        "Open to full-time Data Engineering, Azure Data Engineering, ETL/ELT and BI Engineering roles across Germany and Europe. Available for interviews via Google Meet, Microsoft Teams or phone.",
+        "Immediately available for full-time Data Engineering and Azure Data Engineering roles across Germany and Europe. Valid German residence permit; available for interviews via Google Meet, Microsoft Teams or phone.",
 
       projects_title: "All Projects",
       projects_intro:
         "A selected collection of Data Engineering, forecasting and analytics projects focused on ETL pipelines, data integration, reporting-ready datasets and decision-oriented dashboards.",
 
-      electricity_title: "Smart Electricity and Energy Optimizer",
+      electricity_title: "Smart Energy Forecasting Pipeline",
       electricity_desc:
-        "Built an end-to-end data pipeline to ingest, clean and integrate electricity and solar consumption data, preparing structured time-series datasets for forecasting, cost analysis and energy optimization.",
+        "Designed a Bronze, Silver and Gold lakehouse for electricity, solar, weather and cost data, identifying 12% potential energy savings across building profiles.",
 
       lake_title: "Lake Monitoring and Quality Analysis",
       lake_desc:
@@ -125,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       highlights_title: "Project Highlights",
       highlight_1:
-        "Smart Electricity and Energy Optimizer: Built a reusable Python and PySpark pipeline to integrate electricity and solar data, prepare structured time-series datasets and support forecasting, cost analysis and energy optimization.",
+        "Smart Energy Forecasting Pipeline: Designed a medallion lakehouse with dbt models and automated quality tests, identifying 12% potential energy savings across building profiles.",
       highlight_2:
         "Lake Monitoring and Quality Analysis: Integrated environmental and weather-related datasets with Python, SQL and Spark to create reusable workflows for KPI generation, trend monitoring and predictive analysis.",
       highlight_3:
@@ -146,9 +157,9 @@ document.addEventListener("DOMContentLoaded", () => {
       nav_all_projects: "Alle Projekte",
       nav_home: "Startseite",
 
-      hero_tagline: "Azure Data Engineer • ETL/ELT • REST APIs • Power BI",
+      hero_tagline: "Azure Data Engineer • Medallion Lakehouses • dbt • Power BI",
       hero_desc:
-        "Azure Data Engineer mit Fokus auf ETL/ELT-Pipelines, REST-API-Integrationen und reportingfähige Datenschichten in Finance- und Healthcare-Umgebungen mit Python, SQL, Azure Data Factory, Azure Data Lake, Azure DevOps und Power BI.",
+        "Azure Data Engineer mit 5 Jahren Erfahrung im Aufbau Azure-nativer Datenplattformen in Finance und Healthcare, inklusive Medallion Lakehouses, dbt-Modellen, CI/CD Quality Gates und Leitung eines sechsköpfigen Engineer-Teams.",
       hero_btn_projects: "Projekte ansehen",
       hero_btn_contact: "Kontakt",
       hero_btn_resume: "Lebenslauf",
@@ -160,46 +171,46 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_btn_download_resume_de: "Deutschen Lebenslauf herunterladen",
       stat_experience: "Jahre Erfahrung",
       stat_apps: "Unterstützte Finanzanwendungen",
-      stat_reporting: "Weniger wöchentlicher Reporting-Aufwand",
+      stat_reporting: "SLA Compliance über Portfolio-Anwendungen",
 
       about_title: "Wer ich bin",
       about_text:
-        "Ich bin Data Engineer in Mannheim mit rund 5 Jahren Erfahrung im Aufbau von Datenpipelines, API-basierten Integrationen und analytics-fähigen Datensätzen in den Bereichen Finance, Healthcare und angewandte Datenprojekte. Mein Fokus liegt darauf, operative Systeme anzubinden, Rohdaten zu bereinigen und zu transformieren sowie zuverlässige Datenschichten für Reporting, KPI-Tracking und datenbasierte Entscheidungen aufzubauen. Ich arbeite hauptsächlich mit Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, REST APIs, Azure DevOps und Power BI. Besonders interessiert mich die Schnittstelle zwischen Data Engineering, Datenqualität und Business Reporting: verstreute Quelldaten in strukturierte, validierte und wiederverwendbare Datensätze zu verwandeln, denen Teams vertrauen können. Ich bin aktuell offen für Vollzeitrollen im Bereich Data Engineering, Azure Data Engineering, ETL/ELT und BI Engineering in Deutschland und Europa.",
+        "Ich bin Data Engineer in Mannheim mit 5 Jahren Erfahrung im Aufbau Azure-nativer Datenplattformen in Finance und Healthcare. Ich entwickle ADF-Pipelines, Medallion Lakehouses, dbt-Transformationsschichten und automatisierte Datenqualitätskontrollen. Meine Erfahrung umfasst die Leitung eines sechsköpfigen Engineer-Teams, 100% SLA Compliance über 22 Finanzanwendungen und die Automatisierung von mehr als 10 Stunden wöchentlicher Reconciliation-Arbeit. Ich habe einen M.Sc. in Applied Data Science and Analytics und bin sofort verfügbar.",
 
       experience_title: "Berufserfahrung",
 
       exp1_1:
-        "Aufbau automatisierter ETL-Workflows zur Integration von Matrix42-Ticketdaten und qTest-QA-Daten über REST APIs, Python und SQL-Transformationen.",
+        "Reduzierung des manuellen Reporting-Aufwands um 20% durch Python-basierte REST-API-Ingestion-Pipelines zwischen qTest und Matrix42.",
       exp1_2:
-        "Erstellung strukturierter Datensätze für Incident-Analysen, Service-Request-Tracking, Test-Reporting und SLA-Monitoring.",
+        "Entwicklung von End-to-End-ADF-Pipelines mit parametrisierten Triggern, inkrementellen Loads und ADLS-Integration für geplantes SLA-Monitoring.",
       exp1_3:
-        "Reduzierung des wöchentlichen manuellen Reporting-Aufwands um 20% durch Ersatz wiederholter Excel-Exporte durch wiederverwendbare Datenaufbereitungs-Workflows.",
+        "Verbesserung der Power-BI-Datenzuverlässigkeit durch dbt Staging-, Intermediate- und Mart-Modelle mit automatisierten Tests.",
       exp1_4:
-        "Unterstützung der Migration von Flat-File-Reporting-Workflows in Richtung Azure Data Lake und Azure-Data-Factory-basiertes inkrementelles Laden.",
+        "Einführung von GitHub-Actions-CI/CD-Gates für dbt-Tests, SQL-Checks und Pipeline-Konfigurationsprüfungen vor dem Deployment.",
       exp1_5:
-        "Vorbereitung Power-BI-fähiger KPI-Datensätze zur Analyse von SLA-Verstößen, wiederkehrenden Incidents und Service-Demand-Mustern.",
+        "Zusammenarbeit mit IT-Service-Management-Teams zur Definition von Reporting-Anforderungen, SLAs und wiederkehrenden KPI-Auswertungen.",
 
       exp2_1:
-        "Unterstützung der End-to-End-Datenbereitstellung für 22 Finanzanwendungen in den Bereichen Trade, Portfolio, Pricing, Compliance und Reporting.",
+        "Leitung eines sechsköpfigen Data-Engineer-Teams für Pipeline- und Reporting-Lösungen über 22 US-Finanzportfolio-Anwendungen.",
       exp2_2:
-        "Aufbau ADF-basierter ETL-Pipelines mit Azure Data Lake, Azure Storage, SQL-Validierungsprüfungen und Azure-DevOps-CI/CD-Workflows.",
+        "Einhaltung von 100% SLA Compliance durch ADF-Pipelines mit inkrementellen Loads, Fehlerbenachrichtigungen und automatisierten Wiederholungen.",
       exp2_3:
-        "Automatisierung Excel-basierter Reports für AUM, Portfolio Exposure und Performance Views in Power-BI-fähige Datensätze.",
+        "Einsparung von fast 10 Stunden wöchentlicher Reconciliation-Arbeit durch automatisierte Python- und SQL-Pipelines für AUM- und Performance-Reporting.",
       exp2_4:
-        "Einsparung von rund 10 Stunden wöchentlichem Reconciliation-Aufwand für Investment-Analytics-Teams durch verbesserte Reporting-Datenaufbereitung.",
+        "Aufbau einer Parquet-basierten ADLS-Medallion-Architektur mit Bronze-, Silver- und Gold-Layern.",
       exp2_5:
-        "Organisation von Pipeline-Outputs in Raw-, Processed- und Curated-Layers im Azure Data Lake zur Verbesserung der Datenverfügbarkeit und Reduzierung manueller Datenverarbeitung.",
+        "Modellierung kuratierter Daten als Star-Schema-Facts und -Dimensions mit automatisierten Nullwert-, Duplikat- und Reconciliation-Gap-Prüfungen.",
 
       featured_title: "Ausgewähltes Projekt",
       view_more_projects: "Mehr Projekte ansehen",
 
-      energy_title: "Smart Electricity and Energy Optimizer",
+      energy_title: "Smart Energy Forecasting Pipeline",
       energy_featured_desc:
-        "End-to-End-Datenpipeline zur Aufnahme, Bereinigung und Integration von Strom- und Solardaten, um strukturierte Zeitreihendaten für Forecasting, Kostenanalyse und Energieoptimierung vorzubereiten.",
+        "Aufbau eines Medallion Lakehouse für Strom-, Solar-, Wetter- und Kostendaten mit 12% identifiziertem Energieeinsparpotenzial.",
       energy_built:
-        "Ich habe wiederverwendbare Python- und PySpark-Workflows mit parametrisierten Datenpfaden, Aggregationsfenstern und reportingfähigen Outputs für Energieverbrauchsanalysen aufgebaut.",
+        "Ich entwickelte Bronze-, Silver- und Gold-Layer mit dbt-Modellen, automatisierten Qualitätstests und parametrisierten Aggregationsfenstern für Forecasting und Power BI.",
       energy_impact:
-        "Der Workflow identifizierte potenzielle Energieeinsparungen von 10 bis 12% über verschiedene Gebäudprofile hinweg und zeigte, wie aufbereitete Datensätze Forecasting und entscheidungsreifes Reporting unterstützen können.",
+        "Die Pipeline identifizierte 12% potenzielle Energieeinsparung und lieferte zuverlässige Datensätze für Forecasting und Gebäudeanalysen.",
 
       stroke_title: "Stroke Risk Analytics Dashboard",
       stroke_featured_desc:
@@ -221,28 +232,39 @@ document.addEventListener("DOMContentLoaded", () => {
       level_intermediate: "Mittelstufe",
       level_native: "Muttersprache",
 
+      credentials_title: "Ausbildung, Zertifikate & Verfügbarkeit",
+      education_title: "M.Sc. Applied Data Science and Analytics",
+      education_text:
+        "SRH Hochschule Heidelberg, Abschluss September 2025. Die Masterarbeit behandelte eine Smart Energy Forecasting Pipeline.",
+      certificates_title: "Zertifikate",
+      certificates_text:
+        "Microsoft Azure Fundamentals (AZ-900), Databricks for Data Engineering und NVIDIA Deep Learning Fundamentals.",
+      availability_title: "In Mannheim, sofort verfügbar",
+      availability_text:
+        "Englisch C1, Deutsch B1 und gültiger deutscher Aufenthaltstitel. Offen für Data-Engineering-Rollen in Deutschland und Europa.",
+
       value_title: "Was ich einbringe",
       strength1_title: "Verantwortung für Datenpipelines",
       strength1_text:
-        "Ich entwickle ETL- und ELT-Workflows von der Quellsystemintegration bis zu reportingfähigen Datensätzen mit Fokus auf Automatisierung, Validierung und Wartbarkeit.",
+        "Ich entwickle zuverlässige Pipelines von der Ingestion bis zu kuratierten Marts mit inkrementellen Loads, Monitoring, automatisierten Wiederholungen und produktionsnaher Validierung.",
       strength2_title: "Azure Data Engineering",
       strength2_text:
-        "Ich arbeite mit Azure Data Factory, Azure Data Lake, Azure Storage und CI/CD-gestützten Workflows, um zuverlässige cloudbasierte Datenpipelines aufzubauen.",
+        "Ich baue Azure-native Medallion Lakehouses mit ADF, ADLS, Databricks, Parquet und dbt-Transformationsschichten.",
       strength3_title: "Geschäftsorientiertes Reporting",
       strength3_text:
-        "Ich bereite strukturierte Datensätze und KPI-Layer vor, mit denen Teams Service Demand, SLA-Trends, Portfolio Views und operative Performance überwachen können.",
+        "Ich bringe Teamleitung, cross-funktionale Zusammenarbeit und messbare Ergebnisse wie 100% SLA Compliance und umfassende Reporting-Automatisierung ein.",
 
       contact_title: "Kontakt",
       contact_text:
-        "Offen für Vollzeitrollen in Data Engineering, Azure Data Engineering, ETL/ELT und BI Engineering in Deutschland und Europa. Verfügbar für Interviews über Google Meet, Microsoft Teams oder Telefon.",
+        "Sofort verfügbar für Vollzeitrollen in Data Engineering und Azure Data Engineering in Deutschland und Europa. Gültiger deutscher Aufenthaltstitel; verfügbar für Interviews über Google Meet, Microsoft Teams oder Telefon.",
 
       projects_title: "Alle Projekte",
       projects_intro:
         "Eine ausgewählte Sammlung von Data-Engineering-, Forecasting- und Analytics-Projekten mit Fokus auf ETL-Pipelines, Datenintegration, reportingfähige Datensätze und entscheidungsorientierte Dashboards.",
 
-      electricity_title: "Smart Electricity and Energy Optimizer",
+      electricity_title: "Smart Energy Forecasting Pipeline",
       electricity_desc:
-        "Entwicklung einer End-to-End-Datenpipeline zur Aufnahme, Bereinigung und Integration von Strom- und Solardaten, um strukturierte Zeitreihendaten für Forecasting, Kostenanalyse und Energieoptimierung vorzubereiten.",
+        "Aufbau eines Bronze-, Silver- und Gold-Lakehouse für Strom-, Solar-, Wetter- und Kostendaten mit 12% identifiziertem Energieeinsparpotenzial.",
 
       lake_title: "Lake Monitoring and Quality Analysis",
       lake_desc:
@@ -261,7 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       highlights_title: "Projekt-Highlights",
       highlight_1:
-        "Smart Electricity and Energy Optimizer: Aufbau einer wiederverwendbaren Python- und PySpark-Pipeline zur Integration von Strom- und Solardaten, Vorbereitung strukturierter Zeitreihendaten und Unterstützung von Forecasting, Kostenanalyse und Energieoptimierung.",
+        "Smart Energy Forecasting Pipeline: Aufbau eines Medallion Lakehouse mit dbt-Modellen und automatisierten Qualitätstests; identifiziertes Energieeinsparpotenzial von 12%.",
       highlight_2:
         "Lake Monitoring and Quality Analysis: Integration von Umwelt- und Wetterdaten mit Python, SQL und Spark zur Erstellung wiederverwendbarer Workflows für KPI-Generierung, Trendmonitoring und prädiktive Analyse.",
       highlight_3:
@@ -276,17 +298,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const typingRoles = {
     en: [
       "Azure Data Engineer",
-      "ETL/ELT Pipeline Developer",
-      "REST API Data Integration Specialist",
-      "Analytics Engineer",
-      "Power BI Reporting Developer"
+      "Medallion Lakehouse Engineer",
+      "dbt & Data Quality Engineer",
+      "Data Engineering Team Lead",
+      "Power BI Analytics Engineer"
     ],
     de: [
       "Azure Data Engineer",
-      "ETL/ELT-Pipeline-Entwickler",
-      "REST-API-Datenintegration",
-      "Analytics Engineer",
-      "Power-BI-Reporting-Entwickler"
+      "Medallion-Lakehouse-Engineer",
+      "dbt- und Datenqualitäts-Engineer",
+      "Data-Engineering-Teamlead",
+      "Power-BI-Analytics-Engineer"
     ]
   };
 

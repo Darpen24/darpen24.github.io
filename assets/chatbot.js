@@ -24,33 +24,33 @@
       ],
       answers: {
         availability:
-          "Darpen is open to full-time Data Engineering, Azure Data Engineering, ETL/ELT and BI Engineering roles across Germany and Europe. Interviews can happen by Google Meet, Microsoft Teams or phone.",
+          "Darpen is immediately available for full-time Data Engineering and Azure Data Engineering roles across Germany and Europe. He holds a valid German residence permit.",
         experience:
-          "Darpen has around 5 years of experience building ETL/ELT pipelines, REST API integrations, SQL transformations and reporting-ready datasets across finance and healthcare environments.",
+          "Darpen has 5 years of experience building Azure-native data platforms across finance and healthcare. He led a six-engineer team, maintained 100% SLA compliance across 22 financial applications and automated more than 10 hours of weekly reconciliation work.",
         projects:
-          "Strong highlights include the Stroke Risk Analytics Dashboard in Power BI, the Smart Electricity and Energy Optimizer pipeline, the CV Optimizer, and environmental lake monitoring workflows.",
+          "Strong highlights include the Smart Energy Forecasting Pipeline, which identified 12% potential energy savings using a medallion lakehouse and dbt models, and a Stroke Risk Analytics Dashboard built from 5,110 healthcare records.",
         skills:
-          "His core stack includes Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, Azure DevOps, REST APIs, Power BI, DAX, Power Query and data modeling.",
+          "His core stack includes Python, SQL, Azure Data Factory, ADLS, Databricks, dbt, Parquet, Delta Lake, GitHub Actions, Power BI and star-schema data modelling.",
         contact:
           "The best next step is to request a call, send an email, or connect with Darpen on LinkedIn. The buttons below open each option directly.",
         linkedin:
           "LinkedIn cannot send Darpen a silent alert from this static site, but visitors can open his profile and send a connection request with context from the portfolio.",
         resume:
-          "Darpen's resume is available from the hero section in both English and German. It highlights Azure Data Engineering, ETL/ELT, Power BI, finance and healthcare experience.",
+          "Darpen's updated resume is available from the hero section in English and German. It highlights Azure-native data platforms, team leadership, medallion architecture, dbt, CI/CD and quantified delivery outcomes.",
         powerbi:
           "Darpen uses Power BI, DAX and Power Query to build KPI dashboards and reporting-ready views. The Stroke Risk Analytics Dashboard is the clearest Power BI portfolio example.",
         azure:
-          "His Azure work includes Azure Data Factory, Azure Data Lake, Azure Storage, Azure SQL and Azure DevOps-supported ETL/ELT workflows.",
+          "His Azure work includes ADF pipelines with incremental loads, parameterized triggers, alerting and retries; ADLS medallion lakehouses; Azure SQL; Databricks; and CI/CD-supported delivery.",
         python:
           "Python and SQL are core parts of his data engineering work: API integration, transformations, validation checks, automation and analytics-ready dataset preparation.",
         healthcare:
-          "In healthcare, Darpen worked with Matrix42 and qTest data, incident analytics, SLA monitoring and the Stroke Risk Analytics Dashboard.",
+          "In healthcare, Darpen reduced manual reporting by 20% using qTest and Matrix42 REST API ingestion, built ADF workflows for SLA monitoring and improved Power BI reliability with dbt tests.",
         finance:
-          "In finance, Darpen supported 22 financial applications across trade, portfolio, pricing, compliance and reporting domains, including AUM and portfolio exposure reporting.",
+          "In finance, Darpen led a six-engineer team across 22 portfolio applications, maintained 100% SLA compliance and automated AUM and performance reporting to save almost 10 hours weekly.",
         energy:
-          "The Smart Electricity and Energy Optimizer project shows end-to-end data pipeline work with electricity and solar data, forecasting preparation and energy optimization insights.",
+          "The Smart Energy Forecasting Pipeline ingests electricity, solar, weather and cost data into Bronze, Silver and Gold layers, uses dbt models and tests, and identified 12% potential energy savings.",
         languages:
-          "Darpen speaks fluent English, intermediate German and native Hindi, and is based in Mannheim, Germany.",
+          "Darpen speaks English at C1 and German at B1, is based in Mannheim, and holds an M.Sc. in Applied Data Science and Analytics.",
         fallback:
           "I found the closest portfolio topics around Data Engineering, Azure, Python, SQL, Power BI, finance, healthcare and projects. For a very specific question, LinkedIn or email is the best direct route."
       },
@@ -86,33 +86,33 @@
       ],
       answers: {
         availability:
-          "Darpen ist offen fuer Vollzeitrollen in Data Engineering, Azure Data Engineering, ETL/ELT und BI Engineering in Deutschland und Europa. Interviews sind per Google Meet, Microsoft Teams oder Telefon moeglich.",
+          "Darpen ist sofort verfuegbar fuer Vollzeitrollen in Data Engineering und Azure Data Engineering in Deutschland und Europa. Er besitzt einen gueltigen deutschen Aufenthaltstitel.",
         experience:
-          "Darpen hat rund 5 Jahre Erfahrung mit ETL/ELT-Pipelines, REST-API-Integrationen, SQL-Transformationen und reportingfaehigen Datensaetzen in Finance- und Healthcare-Umgebungen.",
+          "Darpen hat 5 Jahre Erfahrung mit Azure-nativen Datenplattformen in Finance und Healthcare. Er leitete ein sechsköpfiges Team, hielt 100% SLA Compliance ueber 22 Finanzanwendungen und automatisierte mehr als 10 Stunden woechentliche Reconciliation-Arbeit.",
         projects:
-          "Besonders relevant sind das Stroke Risk Analytics Dashboard in Power BI, die Smart Electricity and Energy Optimizer Pipeline, der CV Optimizer und Workflows fuer Lake Monitoring.",
+          "Besonders relevant sind die Smart Energy Forecasting Pipeline mit 12% identifiziertem Energieeinsparpotenzial und das Stroke Risk Analytics Dashboard auf Basis von 5.110 Healthcare-Datensaetzen.",
         skills:
-          "Sein Kernstack umfasst Python, SQL, Azure Data Factory, Azure Data Lake, Azure SQL, Azure DevOps, REST APIs, Power BI, DAX, Power Query und Datenmodellierung.",
+          "Sein Kernstack umfasst Python, SQL, Azure Data Factory, ADLS, Databricks, dbt, Parquet, Delta Lake, GitHub Actions, Power BI und Star-Schema-Datenmodellierung.",
         contact:
           "Der beste naechste Schritt ist eine Call-Anfrage, eine E-Mail oder eine LinkedIn-Anfrage. Die Buttons unten oeffnen die passende Option direkt.",
         linkedin:
           "LinkedIn kann von dieser statischen Website keinen stillen Alert an Darpen senden. Besucher koennen aber sein Profil oeffnen und eine Kontaktanfrage mit Portfolio-Kontext schicken.",
         resume:
-          "Darpens Lebenslauf ist im Hero-Bereich auf Englisch und Deutsch verfuegbar. Er zeigt Azure Data Engineering, ETL/ELT, Power BI sowie Finance- und Healthcare-Erfahrung.",
+          "Darpens aktualisierter Lebenslauf ist im Hero-Bereich auf Englisch und Deutsch verfuegbar. Er zeigt Azure-native Datenplattformen, Teamleitung, Medallion Architecture, dbt, CI/CD und messbare Ergebnisse.",
         powerbi:
           "Darpen nutzt Power BI, DAX und Power Query fuer KPI-Dashboards und reportingfaehige Ansichten. Das Stroke Risk Analytics Dashboard ist das klarste Power-BI-Beispiel im Portfolio.",
         azure:
-          "Seine Azure-Erfahrung umfasst Azure Data Factory, Azure Data Lake, Azure Storage, Azure SQL und Azure-DevOps-gestuetzte ETL/ELT-Workflows.",
+          "Seine Azure-Erfahrung umfasst ADF-Pipelines mit inkrementellen Loads, parametrisierten Triggern, Alerting und automatisierten Wiederholungen sowie ADLS Medallion Lakehouses, Azure SQL und Databricks.",
         python:
           "Python und SQL sind Kernbestandteile seiner Data-Engineering-Arbeit: API-Integration, Transformationen, Validierungschecks, Automatisierung und reportingfaehige Datensaetze.",
         healthcare:
-          "Im Healthcare-Bereich arbeitete Darpen mit Matrix42- und qTest-Daten, Incident Analytics, SLA-Monitoring und dem Stroke Risk Analytics Dashboard.",
+          "Im Healthcare-Bereich reduzierte Darpen manuellen Reporting-Aufwand um 20%, baute ADF-Workflows fuer SLA-Monitoring und verbesserte Power-BI-Daten mit dbt-Tests.",
         finance:
-          "Im Finance-Bereich unterstuetzte Darpen 22 Finanzanwendungen in Trade, Portfolio, Pricing, Compliance und Reporting, inklusive AUM- und Portfolio-Exposure-Reporting.",
+          "Im Finance-Bereich leitete Darpen ein sechsköpfiges Team ueber 22 Portfolio-Anwendungen, hielt 100% SLA Compliance und sparte fast 10 Stunden Reconciliation-Arbeit pro Woche.",
         energy:
-          "Das Smart Electricity and Energy Optimizer Projekt zeigt End-to-End-Pipeline-Arbeit mit Strom- und Solardaten, Forecasting-Vorbereitung und Energieoptimierung.",
+          "Die Smart Energy Forecasting Pipeline verarbeitet Strom-, Solar-, Wetter- und Kostendaten in Bronze-, Silver- und Gold-Layern und identifizierte 12% Energieeinsparpotenzial.",
         languages:
-          "Darpen spricht fliessend Englisch, Deutsch auf Mittelstufe und Hindi als Muttersprache. Er lebt in Mannheim, Deutschland.",
+          "Darpen spricht Englisch auf C1- und Deutsch auf B1-Niveau, lebt in Mannheim und hat einen M.Sc. in Applied Data Science and Analytics.",
         fallback:
           "Ich habe die naheliegenden Portfolio-Themen rund um Data Engineering, Azure, Python, SQL, Power BI, Finance, Healthcare und Projekte geprueft. Fuer sehr spezifische Fragen sind LinkedIn oder E-Mail der beste direkte Weg."
       },
