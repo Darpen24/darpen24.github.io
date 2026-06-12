@@ -23,7 +23,7 @@
   <meta name="twitter:title" content="Darpen Bhandari | Azure Data Engineer" />
   <meta name="twitter:description" content="Data Engineering portfolio focused on Azure, ETL/ELT, REST APIs, SQL, Python and Power BI." />
 
-  <link rel="stylesheet" href="./assets/style.css?v=20260513" />
+  <link rel="stylesheet" href="./assets/style.css?v=20260613" />
   <link rel="stylesheet" href="./assets/chatbot.css?v=20260530-2" />
 
   <script type="application/ld+json">
@@ -265,36 +265,42 @@
         </div>
 
         <div class="featured-project-card">
-          <div class="featured-project-image">
-            <img 
-              src="./assets/Main-Dashboard.png" 
-              alt="Stroke Risk Analytics Dashboard in Power BI" 
-              class="featured-img" 
+          <div class="featured-project-image featured-image-stack">
+            <img
+              src="./assets/db-train-delay/dashboard-overview.png"
+              alt="DB Train Delay and Route Reliability dashboard overview"
+              class="featured-img"
+            />
+
+            <img
+              src="./assets/db-train-delay/route-reliability-table.png"
+              alt="DB Train Delay route reliability table and delay drivers"
+              class="featured-img"
             />
           </div>
 
           <div class="featured-project-content">
-            <p class="project-label">Power BI • DAX • Power Query • Healthcare Analytics</p>
-            <h3 data-i18n="stroke_title">Stroke Risk Analytics Dashboard</h3>
+            <p class="project-label">Python • PySpark • dbt • Streamlit • AWS-ready Lakehouse</p>
+            <h3 data-i18n="db_title">DB Train Delay and Route Reliability Pipeline</h3>
 
-            <p data-i18n="stroke_featured_desc">
-              Built an interactive Power BI dashboard using a healthcare dataset of 5,110 patients to analyze stroke risk factors, demographic trends and health-related KPI patterns.
+            <p data-i18n="db_featured_desc">
+              Built an end-to-end data engineering project that ingests German rail departure data, models route-level reliability metrics and visualizes delay patterns across short, long, regional and ICE routes.
             </p>
 
             <div class="project-detail-list">
               <div class="project-detail-card">
-                <h3 data-i18n="what_built_title">What I built</h3>
+                <h3 data-i18n="db_findings_title">Important findings</h3>
 
-                <p data-i18n="stroke_built">
-                  I designed a Power BI dashboard with KPI cards, age-group analysis, BMI category views, smoking-status breakdowns and health-risk comparisons to make patient-level insights easier to understand.
+                <p data-i18n="db_findings">
+                  The dashboard shows 10.8 minutes average delay, 66.7% delay frequency and 16.7% cancellation rate across the sample routes, with Mannheim-Heidelberg ranking most reliable and Mannheim-Frankfurt most disrupted.
                 </p>
               </div>
 
               <div class="project-detail-card">
-                <h3 data-i18n="why_matters_title">Why it matters</h3>
+                <h3 data-i18n="db_skills_title">Skills demonstrated</h3>
 
-                <p data-i18n="stroke_impact">
-                  The dashboard helps highlight how stroke risk patterns relate to age, hypertension, heart disease, BMI, glucose levels and smoking status, turning healthcare data into a clearer reporting view.
+                <p data-i18n="db_skills">
+                  Python ingestion, PySpark transformations, dbt staging/intermediate/mart models, route reliability scoring, data quality tests, CI/CD checks, AWS S3/Glue/Athena design and Streamlit dashboarding.
                 </p>
               </div>
             </div>
@@ -304,7 +310,7 @@
                 View More Projects
               </a>
 
-              <a href="https://github.com/Darpen24/Stroke-Risk" target="_blank" class="project-btn">
+              <a href="https://github.com/Darpen24/DB-Train-Delay" target="_blank" class="project-btn">
                 GitHub
               </a>
             </div>
@@ -566,7 +572,7 @@
     </div>
   </footer>
 
-  <script src="./assets/main.js?v=20260606"></script>
-  <script src="./assets/chatbot.js?v=20260606"></script>
+  <script src="./assets/main.js?v=20260613"></script>
+  <script src="./assets/chatbot.js?v=20260613"></script>
 </body>
 </html>

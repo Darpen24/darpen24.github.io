@@ -28,9 +28,9 @@
         experience:
           "Darpen has 5 years of experience building Azure-native data platforms across finance and healthcare. He led a six-engineer team, maintained 100% SLA compliance across 22 financial applications and automated more than 10 hours of weekly reconciliation work.",
         projects:
-          "Strong highlights include the Smart Energy Forecasting Pipeline, which identified 12% potential energy savings using a medallion lakehouse and dbt models, and a Stroke Risk Analytics Dashboard built from 5,110 healthcare records.",
+          "The featured project is the DB Train Delay and Route Reliability Pipeline: a Python, PySpark and dbt project that models route reliability metrics and serves a Streamlit dashboard. Other highlights include the Smart Energy Forecasting Pipeline and Stroke Risk Analytics Dashboard.",
         skills:
-          "His core stack includes Python, SQL, Azure Data Factory, ADLS, Databricks, dbt, Parquet, Delta Lake, GitHub Actions, Power BI and star-schema data modelling.",
+          "His core stack includes Python, SQL, PySpark, dbt, Azure Data Factory, ADLS, Databricks, Parquet, Delta Lake, GitHub Actions, Power BI, Streamlit and star-schema data modelling.",
         contact:
           "The best next step is to request a call, send an email, or connect with Darpen on LinkedIn. The buttons below open each option directly.",
         linkedin:
@@ -49,6 +49,8 @@
           "In finance, Darpen led a six-engineer team across 22 portfolio applications, maintained 100% SLA compliance and automated AUM and performance reporting to save almost 10 hours weekly.",
         energy:
           "The Smart Energy Forecasting Pipeline ingests electricity, solar, weather and cost data into Bronze, Silver and Gold layers, uses dbt models and tests, and identified 12% potential energy savings.",
+        rail:
+          "The DB Train Delay project compares German rail route reliability using average delay, delay frequency, cancellation rate, platform changes, delay per 100 km and reliability scores across short, long, regional and ICE routes.",
         languages:
           "Darpen speaks English at C1 and German at B1, is based in Mannheim, and holds an M.Sc. in Applied Data Science and Analytics.",
         fallback:
@@ -90,9 +92,9 @@
         experience:
           "Darpen hat 5 Jahre Erfahrung mit Azure-nativen Datenplattformen in Finance und Healthcare. Er leitete ein sechsköpfiges Team, hielt 100% SLA Compliance ueber 22 Finanzanwendungen und automatisierte mehr als 10 Stunden woechentliche Reconciliation-Arbeit.",
         projects:
-          "Besonders relevant sind die Smart Energy Forecasting Pipeline mit 12% identifiziertem Energieeinsparpotenzial und das Stroke Risk Analytics Dashboard auf Basis von 5.110 Healthcare-Datensaetzen.",
+          "Das Featured Project ist die DB Train Delay and Route Reliability Pipeline: ein Python-, PySpark- und dbt-Projekt mit Routen-Zuverlaessigkeitsmetriken und Streamlit-Dashboard. Weitere Highlights sind die Smart Energy Forecasting Pipeline und das Stroke Risk Analytics Dashboard.",
         skills:
-          "Sein Kernstack umfasst Python, SQL, Azure Data Factory, ADLS, Databricks, dbt, Parquet, Delta Lake, GitHub Actions, Power BI und Star-Schema-Datenmodellierung.",
+          "Sein Kernstack umfasst Python, SQL, PySpark, dbt, Azure Data Factory, ADLS, Databricks, Parquet, Delta Lake, GitHub Actions, Power BI, Streamlit und Star-Schema-Datenmodellierung.",
         contact:
           "Der beste naechste Schritt ist eine Call-Anfrage, eine E-Mail oder eine LinkedIn-Anfrage. Die Buttons unten oeffnen die passende Option direkt.",
         linkedin:
@@ -111,6 +113,8 @@
           "Im Finance-Bereich leitete Darpen ein sechsköpfiges Team ueber 22 Portfolio-Anwendungen, hielt 100% SLA Compliance und sparte fast 10 Stunden Reconciliation-Arbeit pro Woche.",
         energy:
           "Die Smart Energy Forecasting Pipeline verarbeitet Strom-, Solar-, Wetter- und Kostendaten in Bronze-, Silver- und Gold-Layern und identifizierte 12% Energieeinsparpotenzial.",
+        rail:
+          "Das DB Train Delay Projekt vergleicht die Zuverlaessigkeit deutscher Bahnstrecken mit Average Delay, Delay Frequency, Cancellation Rate, Platform Changes, Delay per 100 km und Reliability Scores.",
         languages:
           "Darpen spricht Englisch auf C1- und Deutsch auf B1-Niveau, lebt in Mannheim und hat einen M.Sc. in Applied Data Science and Analytics.",
         fallback:
@@ -163,6 +167,7 @@
       { intent: "healthcare", pattern: /healthcare|health|hospital|heidelberg|stroke|sla|matrix42|qtest|incident|gesundheit|krankenhaus/ },
       { intent: "finance", pattern: /finance|financial|trade|portfolio|pricing|compliance|aum|investment|jennison|hexaware|finanz/ },
       { intent: "energy", pattern: /energy|electricity|solar|forecast|optimizer|strom|energie|forecasting/ },
+      { intent: "rail", pattern: /train|rail|db|delay|route|reliability|bahn|zug|verspaetung|verspatung|zuverlaessigkeit|zuverlassigkeit/ },
       { intent: "projects", pattern: /project|portfolio|optimizer|lake|wine|projekt|projekte/ },
       { intent: "languages", pattern: /language|german|english|hindi|mannheim|germany|deutsch|sprache|sprachen|standort/ },
       { intent: "skills", pattern: /skill|stack|tech|tools|kenntnis|faehigkeit|fahigkeit|kompetenz/ }

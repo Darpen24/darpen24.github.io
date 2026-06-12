@@ -57,6 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
       featured_title: "Featured Project",
       view_more_projects: "View More Projects",
 
+      db_title: "DB Train Delay and Route Reliability Pipeline",
+      db_featured_desc:
+        "Built an end-to-end data engineering project that ingests German rail departure data, models route-level reliability metrics and visualizes delay patterns across short, long, regional and ICE routes.",
+      db_desc:
+        "Built an end-to-end rail reliability pipeline that ingests train departure data, creates bronze/silver/gold outputs, models route metrics with dbt and visualizes delay patterns in Streamlit.",
+      db_findings_title: "Important findings",
+      db_findings:
+        "The dashboard shows 10.8 minutes average delay, 66.7% delay frequency and 16.7% cancellation rate across the sample routes, with Mannheim-Heidelberg ranking most reliable and Mannheim-Frankfurt most disrupted.",
+      db_skills_title: "Skills demonstrated",
+      db_skills:
+        "Python ingestion, PySpark transformations, dbt staging/intermediate/mart models, route reliability scoring, data quality tests, CI/CD checks, AWS S3/Glue/Athena design and Streamlit dashboarding.",
+
       energy_title: "Smart Energy Forecasting Pipeline",
       energy_featured_desc:
         "Designed a medallion lakehouse for electricity, solar, weather and cost data that identified 12% potential energy savings across building profiles.",
@@ -135,6 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Performed exploratory data analysis on Portuguese wine quality datasets using Python, Pandas and visualization techniques to understand how chemical properties relate to wine quality scores.",
 
       highlights_title: "Project Highlights",
+      highlight_db:
+        "DB Train Delay and Route Reliability Pipeline: Built a Python, PySpark and dbt pipeline that produces route reliability metrics for German rail routes and serves a Streamlit dashboard with delay, cancellation and disruption insights.",
       highlight_1:
         "Smart Energy Forecasting Pipeline: Designed a medallion lakehouse with dbt models and automated quality tests, identifying 12% potential energy savings across building profiles.",
       highlight_2:
@@ -203,6 +217,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
       featured_title: "Ausgewähltes Projekt",
       view_more_projects: "Mehr Projekte ansehen",
+
+      db_title: "DB Train Delay and Route Reliability Pipeline",
+      db_featured_desc:
+        "End-to-End-Data-Engineering-Projekt zur Aufnahme deutscher Bahn-Abfahrtsdaten, Modellierung von Routen-Zuverlässigkeit und Visualisierung von Verspätungsmustern für kurze, lange, regionale und ICE-Routen.",
+      db_desc:
+        "End-to-End-Pipeline für Bahn-Zuverlässigkeit mit Ingestion von Abfahrtsdaten, Bronze/Silver/Gold-Outputs, dbt-Routenmetriken und Streamlit-Dashboard.",
+      db_findings_title: "Wichtige Erkenntnisse",
+      db_findings:
+        "Das Dashboard zeigt 10,8 Minuten durchschnittliche Verspätung, 66,7% Delay Frequency und 16,7% Cancellation Rate in den Beispielrouten; Mannheim-Heidelberg ist am zuverlässigsten, Mannheim-Frankfurt am stärksten gestört.",
+      db_skills_title: "Gezeigte Skills",
+      db_skills:
+        "Python-Ingestion, PySpark-Transformationen, dbt Staging/Intermediate/Mart-Modelle, Reliability Scoring, Datenqualitätstests, CI/CD Checks, AWS S3/Glue/Athena-Design und Streamlit-Dashboarding.",
 
       energy_title: "Smart Energy Forecasting Pipeline",
       energy_featured_desc:
@@ -282,6 +308,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Durchführung einer explorativen Datenanalyse auf portugiesischen Weindatensätzen mit Python, Pandas und Visualisierungstechniken, um Zusammenhänge zwischen chemischen Eigenschaften und Qualitätsbewertungen zu verstehen.",
 
       highlights_title: "Projekt-Highlights",
+      highlight_db:
+        "DB Train Delay and Route Reliability Pipeline: Aufbau einer Python-, PySpark- und dbt-Pipeline für Routen-Zuverlässigkeitsmetriken deutscher Bahnstrecken mit Streamlit-Dashboard für Verspätungs-, Ausfall- und Disruption-Insights.",
       highlight_1:
         "Smart Energy Forecasting Pipeline: Aufbau eines Medallion Lakehouse mit dbt-Modellen und automatisierten Qualitätstests; identifiziertes Energieeinsparpotenzial von 12%.",
       highlight_2:
