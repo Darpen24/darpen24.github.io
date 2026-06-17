@@ -78,6 +78,35 @@ img {
   list-style: none;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.lang-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  color: var(--cyan);
+}
+
 .nav-links a {
   color: var(--muted);
   font-size: 0.94rem;
@@ -89,14 +118,14 @@ img {
 }
 
 .hero {
-  padding: 92px 0 72px;
+  padding: 28px 0 64px;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
   gap: 48px;
-  align-items: center;
+  align-items: start;
 }
 
 .terminal-line,
@@ -111,6 +140,56 @@ img {
 
 .terminal-line {
   margin-bottom: 16px;
+}
+
+.role-rotator {
+  position: relative;
+  height: 30px;
+  margin: 0 0 12px;
+  overflow: hidden;
+  color: var(--cyan);
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.role-rotator span {
+  position: absolute;
+  inset: 0 auto auto 0;
+  opacity: 0;
+  transform: translateY(14px);
+  animation: rotateRole 12s infinite;
+}
+
+.role-rotator span:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.role-rotator span:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.role-rotator span:nth-child(4) {
+  animation-delay: 9s;
+}
+
+@keyframes rotateRole {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  8%,
+  22% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  30%,
+  100% {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
 }
 
 .hero h1 {
@@ -180,6 +259,7 @@ img {
 
 .profile-card {
   padding: 16px;
+  margin-top: 0;
 }
 
 .profile-img {
@@ -469,6 +549,12 @@ img {
     flex-direction: column;
   }
 
+  .nav-right {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .section-head {
     align-items: flex-start;
     flex-direction: column;
@@ -477,7 +563,7 @@ img {
 
 @media (max-width: 620px) {
   .hero {
-    padding: 62px 0 52px;
+    padding: 30px 0 52px;
   }
 
   .section {

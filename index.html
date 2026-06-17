@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,8 +12,8 @@
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://darpenbhandari.com/" />
-  <link rel="stylesheet" href="./assets/style.css?v=20260617-2" />
-  <link rel="stylesheet" href="./assets/chatbot.css?v=20260617-2" />
+  <link rel="stylesheet" href="./assets/style.css?v=20260617-3" />
+  <link rel="stylesheet" href="./assets/chatbot.css?v=20260617-3" />
 </head>
 
 <body>
@@ -21,12 +21,17 @@
     <div class="container nav-wrap">
       <a href="index.html" class="logo">Darpen Bhandari</a>
       <nav class="nav-right">
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button id="lang-de" class="lang-btn active" type="button">DE</button>
+          <span>|</span>
+          <button id="lang-en" class="lang-btn" type="button">EN</button>
+        </div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -36,18 +41,23 @@
     <section id="about" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="terminal-line">Data Engineering &bull; Analytics Engineering &bull; BI Reporting</p>
+          <div class="role-rotator" aria-label="Role focus">
+            <span>Data Engineering</span>
+            <span>Analytics Engineering</span>
+            <span>BI Reporting</span>
+            <span>Azure &amp; dbt Pipelines</span>
+          </div>
           <h1>Darpen Bhandari</h1>
-          <p class="role-line">Data Engineer and Analytics Engineer with strong BI reporting experience</p>
-          <p class="hero-desc">
+          <p class="role-line" data-i18n="hero_role">Data Engineer and Analytics Engineer with strong BI reporting experience</p>
+          <p class="hero-desc" data-i18n="hero_desc">
             Data Engineer and Analytics Engineer with 5 years of experience building reliable data pipelines, reporting layers and BI dashboards across healthcare IT and financial services. I work with Python, SQL, Azure, dbt, Databricks, PySpark, Power BI and DAX to turn operational data into clean datasets, KPIs and business-ready insights.
           </p>
 
           <div class="hero-buttons">
-            <a href="./assets/Darpen-DE-CV.pdf?v=20260617-2" class="btn btn-primary" target="_blank" rel="noopener">View Data Engineering CV</a>
-            <a href="./assets/Darpen-DA-CV.pdf?v=20260617-2" class="btn btn-secondary" target="_blank" rel="noopener">View BI / Data Analyst CV</a>
+            <a href="./assets/Darpen-DE-CV.pdf?v=20260617-3" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="cv_de">View Data Engineering CV</a>
+            <a href="./assets/Darpen-DA-CV.pdf?v=20260617-3" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="cv_da">View BI / Data Analyst CV</a>
           </div>
-          <p class="cv-note">German version available on request.</p>
+          <p class="cv-note" data-i18n="cv_note">German version available on request.</p>
         </div>
 
         <aside class="hero-side">
@@ -56,8 +66,8 @@
           </div>
           <div class="status-card">
             <p class="section-tag">// STATUS</p>
-            <h2>Germany &amp; EU roles</h2>
-            <p>Mannheim, Germany. Open to Data Engineering, Analytics Engineering and BI reporting roles.</p>
+            <h2 data-i18n="status_title">Germany &amp; EU roles</h2>
+            <p data-i18n="status_text">Mannheim, Germany. Open to Data Engineering, Analytics Engineering and BI reporting roles.</p>
           </div>
         </aside>
       </div>
@@ -66,19 +76,19 @@
     <section class="section alt-bg">
       <div class="container">
         <p class="section-tag">// WHAT I BUILD</p>
-        <h2>What I Build</h2>
+        <h2 data-i18n="build_title">What I Build</h2>
         <div class="strength-grid">
           <article class="strength-card">
-            <h3>Data Pipelines</h3>
-            <p>REST API ingestion, ETL/ELT workflows, Azure data layers and reliable reporting datasets.</p>
+            <h3 data-i18n="build_pipeline_title">Data Pipelines</h3>
+            <p data-i18n="build_pipeline_text">REST API ingestion, ETL/ELT workflows, Azure data layers and reliable reporting datasets.</p>
           </article>
           <article class="strength-card">
-            <h3>Analytics Engineering</h3>
-            <p>dbt models, reporting marts, data quality checks, KPI logic and validated business-ready datasets.</p>
+            <h3 data-i18n="build_analytics_title">Analytics Engineering</h3>
+            <p data-i18n="build_analytics_text">dbt models, reporting marts, data quality checks, KPI logic and validated business-ready datasets.</p>
           </article>
           <article class="strength-card">
-            <h3>BI Dashboards</h3>
-            <p>Power BI, DAX, Power Query, SQL analysis and stakeholder-facing KPI dashboards.</p>
+            <h3 data-i18n="build_bi_title">BI Dashboards</h3>
+            <p data-i18n="build_bi_text">Power BI, DAX, Power Query, SQL analysis and stakeholder-facing KPI dashboards.</p>
           </article>
         </div>
       </div>
@@ -87,30 +97,31 @@
     <section id="experience" class="section">
       <div class="container">
         <p class="section-tag">// EXPERIENCE</p>
-        <h2>Experience</h2>
+        <h2 data-i18n="experience_title">Experience</h2>
         <div class="experience-grid">
           <article class="timeline-card">
-            <p class="project-label">Healthcare IT Analytics</p>
-            <h3>Data and System Analytics Associate</h3>
+            <p class="project-label" data-i18n="exp_health_label">Healthcare IT Analytics</p>
+            <h3 data-i18n="exp_health_title">Data and System Analytics Associate</h3>
             <p class="subtext">Universit&auml;tsklinikum Heidelberg | 12/2025 - 05/2026</p>
             <ul>
-              <li>Built Python REST API ingestion pipelines between qTest and Matrix42 for incident, service request and test execution data.</li>
-              <li>Designed ADF pipelines with parameterized triggers and incremental loads into ADLS for scheduled SLA breach monitoring.</li>
-              <li>Created dbt staging and mart models with SQL checks, schema tests and GitHub Actions quality gates before release.</li>
-              <li>Mapped source data into Power BI-ready reporting datasets and improved weekly reporting reliability for healthcare IT teams.</li>
+              <li data-i18n="exp_health_1">Built Python REST API ingestion pipelines between qTest and Matrix42 for incident, service request and test execution data.</li>
+              <li data-i18n="exp_health_2">Designed ADF pipelines with parameterized triggers and incremental loads into ADLS for scheduled SLA breach monitoring.</li>
+              <li data-i18n="exp_health_3">Created dbt staging and mart models with SQL checks, schema tests and GitHub Actions quality gates before release.</li>
+              <li data-i18n="exp_health_4">Mapped qTest and Matrix42 source data into Power BI-ready reporting datasets, improving weekly reporting and SLA monitoring reliability.</li>
+              <li data-i18n="exp_health_5">Defined KPI logic, validated source data and reduced manual reporting effort by combining SQL, Python, dbt and Power BI reporting layers.</li>
             </ul>
           </article>
 
           <article class="timeline-card">
-            <p class="project-label">Financial Services Reporting</p>
-            <h3>Senior Software Engineer</h3>
+            <p class="project-label" data-i18n="exp_fin_label">Financial Services Reporting</p>
+            <h3 data-i18n="exp_fin_title">Senior Software Engineer</h3>
             <p class="subtext">Hexaware Technologies Pvt Ltd. | 03/2019 - 10/2023</p>
             <ul>
-              <li>Led delivery across 22 US financial portfolio applications covering AUM, performance, reconciliation and SLA reporting.</li>
-              <li>Built Azure pipeline and reporting workflows with ADF incremental loads, failure alerting, retries and DevOps monitoring.</li>
-              <li>Replaced Excel-based reporting with SQL, Python, Power Query and structured reporting layers feeding Power BI outputs.</li>
-              <li>Worked with ADLS medallion patterns, Parquet datasets, Databricks/PySpark concepts, dbt modelling and CI/CD release checks.</li>
-              <li>Maintained 100% SLA compliance and reduced recurring reconciliation/reporting effort through automation.</li>
+              <li data-i18n="exp_fin_1">Led delivery across 22 US financial portfolio applications covering AUM, performance tracking, reconciliation analysis and SLA reporting.</li>
+              <li data-i18n="exp_fin_2">Built Azure pipeline and reporting workflows with ADF incremental loads, failure alerting, retries and DevOps monitoring.</li>
+              <li data-i18n="exp_fin_3">Automated Excel-based reporting refreshes using SQL, Python, Power Query and structured reporting layers feeding Power BI outputs.</li>
+              <li data-i18n="exp_fin_4">Worked with ADLS medallion patterns, Parquet datasets, Databricks/PySpark concepts, dbt modelling and CI/CD release checks.</li>
+              <li data-i18n="exp_fin_5">Maintained 100% SLA compliance and reduced month-end reconciliation/reporting effort through ETL/ELT automation.</li>
             </ul>
           </article>
         </div>
@@ -122,23 +133,23 @@
         <div class="section-head">
           <div>
             <p class="section-tag">// PROJECTS</p>
-            <h2>Featured Projects</h2>
+            <h2 data-i18n="featured_title">Featured Projects</h2>
           </div>
-          <a href="projects.html" class="text-link">View All Projects</a>
+          <a href="projects.html" class="text-link" data-i18n="view_all_projects">View All Projects</a>
         </div>
 
         <div class="role-fit-banner">
-          <p><strong>Looking for Data Engineering roles?</strong> Start with DB Train Delay, Smart Energy and Electricity Insights.</p>
-          <p><strong>Looking for BI / Data Analyst roles?</strong> Start with Stroke Risk, Electricity Dashboard and Wine Quality Analysis.</p>
+          <p data-i18n="role_fit_de"><strong>Looking for Data Engineering roles?</strong> Start with DB Train Delay, Smart Energy and Electricity Insights.</p>
+          <p data-i18n="role_fit_bi"><strong>Looking for BI / Data Analyst roles?</strong> Start with Stroke Risk, Electricity Dashboard and Wine Quality Analysis.</p>
         </div>
 
         <div class="project-grid">
           <article class="project-card">
             <img src="./assets/db-train-delay/dashboard-overview.png" alt="DB Train Delay dashboard" class="project-img project-img-contained" />
             <div class="project-content">
-              <p class="project-label">Data Engineering / Analytics Engineering</p>
+              <p class="project-label" data-i18n="project_de_label">Data Engineering / Analytics Engineering</p>
               <h3>DB Train Delay and Route Reliability Pipeline</h3>
-              <p>Built German rail route reliability metrics with API ingestion, bronze/silver/gold layers, dbt models and a Streamlit dashboard.</p>
+              <p data-i18n="project_db_text">Built German rail route reliability metrics with API ingestion, bronze/silver/gold layers, dbt models and a Streamlit dashboard.</p>
               <div class="tag-list">
                 <span>Data Engineering</span><span>Python</span><span>PySpark</span><span>dbt</span><span>Streamlit</span>
               </div>
@@ -150,9 +161,9 @@
 
           <article class="project-card">
             <div class="project-content">
-              <p class="project-label">Data Engineering / Analytics Engineering</p>
+              <p class="project-label" data-i18n="project_de_label">Data Engineering / Analytics Engineering</p>
               <h3>Smart Energy Forecasting Pipeline</h3>
-              <p>Built forecasting-ready datasets for electricity, solar, weather and cost data to support energy optimization decisions.</p>
+              <p data-i18n="project_energy_text">Built forecasting-ready datasets for electricity, solar, weather and cost data to support energy optimization decisions.</p>
               <div class="tag-list">
                 <span>Energy</span><span>Python</span><span>SQL</span><span>dbt</span><span>ADLS</span>
               </div>
@@ -165,9 +176,9 @@
           <article class="project-card">
             <img src="./assets/Main-Dashboard.png" alt="Stroke Risk Analytics Dashboard" class="project-img" />
             <div class="project-content">
-              <p class="project-label">BI Analyst / Healthcare Data Analyst</p>
+              <p class="project-label" data-i18n="project_health_label">BI Analyst / Healthcare Data Analyst</p>
               <h3>Stroke Risk Analytics Dashboard</h3>
-              <p>Built Power BI views for 5,110 patient records across age, BMI, glucose, hypertension and smoking status.</p>
+              <p data-i18n="project_stroke_text">Built Power BI views for 5,110 patient records across age, BMI, glucose, hypertension and smoking status.</p>
               <div class="tag-list">
                 <span>BI Analytics</span><span>Healthcare</span><span>Power BI</span><span>DAX</span>
               </div>
@@ -179,9 +190,9 @@
 
           <article class="project-card">
             <div class="project-content">
-              <p class="project-label">Data Analyst / BI Analyst</p>
+              <p class="project-label" data-i18n="project_bi_label">Data Analyst / BI Analyst</p>
               <h3>Electricity and Renewable Energy Insights Dashboard</h3>
-              <p>Created dashboard views for actual vs predicted load, renewable contribution, forecast error and model performance.</p>
+              <p data-i18n="project_electricity_text">Created dashboard views for actual vs predicted load, renewable contribution, forecast error and model performance.</p>
               <div class="tag-list">
                 <span>BI Analytics</span><span>Energy</span><span>Python</span><span>PostgreSQL</span><span>Streamlit</span>
               </div>
@@ -197,46 +208,53 @@
     <section id="skills" class="section">
       <div class="container">
         <p class="section-tag">// CORE SKILLS</p>
-        <h2>Core Skills</h2>
+        <h2 data-i18n="skills_title">Core Skills</h2>
         <div class="skill-list-grid">
           <article class="skill-group">
             <h3>Data Engineering</h3>
             <ul>
-              <li>Python, SQL, REST APIs</li>
-              <li>Azure Data Factory, Azure Data Lake, Azure SQL</li>
-              <li>ETL/ELT, incremental loads, medallion architecture</li>
-              <li>Databricks, PySpark, Delta Lake, Parquet</li>
-              <li>Snowflake, Kafka, Airflow, Docker</li>
+              <li data-i18n="skill_de_1">Python, SQL, REST APIs</li>
+              <li data-i18n="skill_de_2">Azure Data Factory, Azure Data Lake, Azure SQL</li>
+              <li data-i18n="skill_de_3">ETL/ELT, incremental loads, medallion architecture</li>
+              <li data-i18n="skill_de_4">Databricks, PySpark, Delta Lake, Parquet</li>
+              <li data-i18n="skill_de_5">Snowflake, Kafka, Airflow, Docker</li>
             </ul>
           </article>
           <article class="skill-group">
             <h3>Analytics Engineering</h3>
             <ul>
-              <li>dbt staging and mart models</li>
-              <li>Star schema, facts and dimensions</li>
-              <li>Reporting marts and KPI logic</li>
-              <li>Data quality checks and validation</li>
-              <li>GitHub Actions CI/CD quality gates</li>
+              <li data-i18n="skill_ae_1">dbt staging and mart models</li>
+              <li data-i18n="skill_ae_2">Star schema, facts and dimensions</li>
+              <li data-i18n="skill_ae_3">Reporting marts and KPI logic</li>
+              <li data-i18n="skill_ae_4">Data quality checks and validation</li>
+              <li data-i18n="skill_ae_5">GitHub Actions CI/CD quality gates</li>
             </ul>
           </article>
           <article class="skill-group">
             <h3>BI &amp; Analytics</h3>
             <ul>
-              <li>Power BI, DAX, Power Query</li>
-              <li>Tableau, Excel, KPI dashboards</li>
-              <li>AUM reporting, SLA reporting</li>
-              <li>Reconciliation analysis</li>
-              <li>Ad hoc analysis and stakeholder reporting</li>
+              <li data-i18n="skill_bi_1">Power BI, DAX, Power Query</li>
+              <li data-i18n="skill_bi_2">Tableau, Excel, KPI dashboards</li>
+              <li data-i18n="skill_bi_3">AUM reporting, SLA reporting</li>
+              <li data-i18n="skill_bi_4">Reconciliation analysis</li>
+              <li data-i18n="skill_bi_5">Ad hoc analysis and stakeholder reporting</li>
             </ul>
           </article>
           <article class="skill-group">
             <h3>Domains</h3>
             <ul>
-              <li>Healthcare IT analytics</li>
-              <li>Finance and portfolio reporting</li>
-              <li>SLA monitoring and breach analysis</li>
-              <li>Energy forecasting datasets</li>
-              <li>Route reliability KPIs</li>
+              <li data-i18n="domain_1">Healthcare IT analytics</li>
+              <li data-i18n="domain_2">Finance and portfolio reporting</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3 data-i18n="soft_title">Soft Skills</h3>
+            <ul>
+              <li data-i18n="soft_1">Stakeholder communication</li>
+              <li data-i18n="soft_2">Business requirement analysis</li>
+              <li data-i18n="soft_3">Problem solving</li>
+              <li data-i18n="soft_4">Ownership and delivery focus</li>
+              <li data-i18n="soft_5">Team leadership and coordination</li>
             </ul>
           </article>
         </div>
@@ -246,7 +264,7 @@
     <section id="contact" class="section">
       <div class="container contact-box">
         <p class="section-tag">// CONTACT</p>
-        <h2>Contact</h2>
+        <h2 data-i18n="contact_title">Contact</h2>
         <div class="contact-links">
           <a href="mailto:darpen.bhandari@gmail.com" class="btn btn-primary">Email</a>
           <a href="https://www.linkedin.com/in/darpen-bhandari/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
@@ -263,7 +281,7 @@
     </div>
   </footer>
 
-  <script src="./assets/main.js?v=20260617-2"></script>
-  <script src="./assets/chatbot.js?v=20260617-2"></script>
+  <script src="./assets/main.js?v=20260617-3"></script>
+  <script src="./assets/chatbot.js?v=20260617-3"></script>
 </body>
 </html>

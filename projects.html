@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,8 +12,8 @@
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://darpenbhandari.com/projects.html" />
-  <link rel="stylesheet" href="./assets/style.css?v=20260617-2" />
-  <link rel="stylesheet" href="./assets/chatbot.css?v=20260617-2" />
+  <link rel="stylesheet" href="./assets/style.css?v=20260617-3" />
+  <link rel="stylesheet" href="./assets/chatbot.css?v=20260617-3" />
 </head>
 
 <body>
@@ -21,12 +21,17 @@
     <div class="container nav-wrap">
       <a href="index.html" class="logo">Darpen Bhandari</a>
       <nav class="nav-right">
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button id="lang-de" class="lang-btn active" type="button">DE</button>
+          <span>|</span>
+          <button id="lang-en" class="lang-btn" type="button">EN</button>
+        </div>
         <ul class="nav-links">
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+          <li><a href="index.html#experience" data-i18n="nav_experience">Experience</a></li>
+          <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="index.html#skills" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -35,21 +40,21 @@
   <main class="section">
     <div class="container">
       <p class="section-tag">// PROJECTS</p>
-      <h1>Projects by Role Fit</h1>
-      <p class="section-text">
+      <h1 data-i18n="projects_page_title">Projects by Role Fit</h1>
+      <p class="section-text" data-i18n="projects_intro">
         A focused set of projects for Data Engineering, Analytics Engineering, BI reporting and automation roles. Use the filters to quickly match the evidence to the role you are hiring for.
       </p>
 
       <div class="role-fit-banner">
-        <p><strong>Looking for Data Engineering roles?</strong> Start with DB Train Delay, Smart Energy and Electricity Insights.</p>
-        <p><strong>Looking for BI / Data Analyst roles?</strong> Start with Stroke Risk, Electricity Dashboard and Wine Quality Analysis.</p>
+        <p data-i18n="role_fit_de"><strong>Looking for Data Engineering roles?</strong> Start with DB Train Delay, Smart Energy and Electricity Insights.</p>
+        <p data-i18n="role_fit_bi"><strong>Looking for BI / Data Analyst roles?</strong> Start with Stroke Risk, Electricity Dashboard and Wine Quality Analysis.</p>
       </div>
 
       <div class="filter-bar" aria-label="Project filters">
-        <button class="filter-btn active" type="button" data-project-filter="all">All</button>
-        <button class="filter-btn" type="button" data-project-filter="data-engineering">Data Engineering</button>
-        <button class="filter-btn" type="button" data-project-filter="bi-analytics">BI &amp; Analytics</button>
-        <button class="filter-btn" type="button" data-project-filter="ai-automation">AI / Automation</button>
+        <button class="filter-btn active" type="button" data-project-filter="all" data-i18n="filter_all">All</button>
+        <button class="filter-btn" type="button" data-project-filter="data-engineering" data-i18n="filter_de">Data Engineering</button>
+        <button class="filter-btn" type="button" data-project-filter="bi-analytics" data-i18n="filter_bi">BI &amp; Analytics</button>
+        <button class="filter-btn" type="button" data-project-filter="ai-automation" data-i18n="filter_ai">AI / Automation</button>
       </div>
 
       <section class="project-section" data-project-section>
@@ -226,7 +231,7 @@
     </div>
   </footer>
 
-  <script src="./assets/main.js?v=20260617-2"></script>
-  <script src="./assets/chatbot.js?v=20260617-2"></script>
+  <script src="./assets/main.js?v=20260617-3"></script>
+  <script src="./assets/chatbot.js?v=20260617-3"></script>
 </body>
 </html>
