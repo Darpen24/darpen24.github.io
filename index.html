@@ -6,14 +6,14 @@
 
   <title>Darpen Bhandari | Data Engineering, Analytics Engineering & BI Reporting</title>
 
-  <meta name="description" content="Darpen Bhandari is a Data Engineer and Analytics Engineer with strong BI reporting experience across healthcare IT and financial services, working with Python, SQL, Azure, dbt, Power BI and DAX." />
-  <meta name="keywords" content="Darpen Bhandari, Data Engineer Germany, Analytics Engineer Germany, BI Analyst, Power BI, DAX, dbt, Azure Data Factory, SQL, Python, Healthcare IT Analytics, Finance Reporting" />
+  <meta name="description" content="Darpen Bhandari is a Data Engineer and Analytics Engineer with strong BI reporting experience across healthcare IT and financial services, working with Python, SQL, Azure, Databricks, PySpark, dbt, Power BI and DAX." />
+  <meta name="keywords" content="Darpen Bhandari, Data Engineer Germany, Analytics Engineer Germany, BI Analyst, Power BI, DAX, dbt, Databricks, PySpark, Snowflake, Kafka, Airflow, Azure Data Factory, SQL, Python, Healthcare IT Analytics, Finance Reporting" />
   <meta name="author" content="Darpen Bhandari" />
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://darpenbhandari.com/" />
-  <link rel="stylesheet" href="./assets/style.css?v=20260617" />
-  <link rel="stylesheet" href="./assets/chatbot.css?v=20260617" />
+  <link rel="stylesheet" href="./assets/style.css?v=20260617-2" />
+  <link rel="stylesheet" href="./assets/chatbot.css?v=20260617-2" />
 </head>
 
 <body>
@@ -26,7 +26,6 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#chatbot">Chatbot</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -38,15 +37,15 @@
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="terminal-line">Data Engineering &bull; Analytics Engineering &bull; BI Reporting</p>
-          <h1>Darpen<br><span>Bhandari</span></h1>
+          <h1>Darpen Bhandari</h1>
           <p class="role-line">Data Engineer and Analytics Engineer with strong BI reporting experience</p>
           <p class="hero-desc">
-            Data Engineer and Analytics Engineer with 5 years of experience building reliable data pipelines, reporting layers and BI dashboards across healthcare IT and financial services. I work with Python, SQL, Azure, dbt, Power BI and DAX to turn operational data into clean datasets, KPIs and business-ready insights.
+            Data Engineer and Analytics Engineer with 5 years of experience building reliable data pipelines, reporting layers and BI dashboards across healthcare IT and financial services. I work with Python, SQL, Azure, dbt, Databricks, PySpark, Power BI and DAX to turn operational data into clean datasets, KPIs and business-ready insights.
           </p>
 
           <div class="hero-buttons">
-            <a href="./assets/Darpen-DE-CV.pdf?v=20260617" class="btn btn-primary" download="Darpen_Bhandari_Data_Engineering_CV.pdf">Download Data Engineering CV</a>
-            <a href="./assets/Darpen-DA-CV.pdf?v=20260617" class="btn btn-secondary" download="Darpen_Bhandari_BI_Data_Analyst_CV.pdf">Download BI / Data Analyst CV</a>
+            <a href="./assets/Darpen-DE-CV.pdf?v=20260617-2" class="btn btn-primary" target="_blank" rel="noopener">View Data Engineering CV</a>
+            <a href="./assets/Darpen-DA-CV.pdf?v=20260617-2" class="btn btn-secondary" target="_blank" rel="noopener">View BI / Data Analyst CV</a>
           </div>
           <p class="cv-note">German version available on request.</p>
         </div>
@@ -95,10 +94,10 @@
             <h3>Data and System Analytics Associate</h3>
             <p class="subtext">Universit&auml;tsklinikum Heidelberg | 12/2025 - 05/2026</p>
             <ul>
-              <li>Built qTest and Matrix42 REST API ingestion workflows for incident, service request and test execution data.</li>
-              <li>Prepared SLA monitoring, reporting datasets and Power BI-ready data layers for healthcare IT operations.</li>
-              <li>Improved reporting reliability with dbt staging, mart models, schema checks and data quality validation.</li>
-              <li>Reduced manual reporting effort by 20% through reusable Python, SQL and ADF pipeline logic.</li>
+              <li>Built Python REST API ingestion pipelines between qTest and Matrix42 for incident, service request and test execution data.</li>
+              <li>Designed ADF pipelines with parameterized triggers and incremental loads into ADLS for scheduled SLA breach monitoring.</li>
+              <li>Created dbt staging and mart models with SQL checks, schema tests and GitHub Actions quality gates before release.</li>
+              <li>Mapped source data into Power BI-ready reporting datasets and improved weekly reporting reliability for healthcare IT teams.</li>
             </ul>
           </article>
 
@@ -107,10 +106,11 @@
             <h3>Senior Software Engineer</h3>
             <p class="subtext">Hexaware Technologies Pvt Ltd. | 03/2019 - 10/2023</p>
             <ul>
-              <li>Supported finance reporting across 22 portfolio applications covering AUM, performance, exposure and reconciliation.</li>
-              <li>Replaced manual Excel reporting with SQL and Python pipelines feeding Power BI and reporting datasets.</li>
-              <li>Built Azure data workflows with incremental loads, alerting and SLA-focused operational monitoring.</li>
-              <li>Saved almost 10 hours of weekly reconciliation effort and maintained 100% SLA compliance.</li>
+              <li>Led delivery across 22 US financial portfolio applications covering AUM, performance, reconciliation and SLA reporting.</li>
+              <li>Built Azure pipeline and reporting workflows with ADF incremental loads, failure alerting, retries and DevOps monitoring.</li>
+              <li>Replaced Excel-based reporting with SQL, Python, Power Query and structured reporting layers feeding Power BI outputs.</li>
+              <li>Worked with ADLS medallion patterns, Parquet datasets, Databricks/PySpark concepts, dbt modelling and CI/CD release checks.</li>
+              <li>Maintained 100% SLA compliance and reduced recurring reconciliation/reporting effort through automation.</li>
             </ul>
           </article>
         </div>
@@ -198,32 +198,48 @@
       <div class="container">
         <p class="section-tag">// CORE SKILLS</p>
         <h2>Core Skills</h2>
-        <div class="skill-group-grid">
+        <div class="skill-list-grid">
           <article class="skill-group">
             <h3>Data Engineering</h3>
-            <p>Python, SQL, Azure Data Factory, Azure Data Lake, REST APIs, ETL/ELT, dbt</p>
+            <ul>
+              <li>Python, SQL, REST APIs</li>
+              <li>Azure Data Factory, Azure Data Lake, Azure SQL</li>
+              <li>ETL/ELT, incremental loads, medallion architecture</li>
+              <li>Databricks, PySpark, Delta Lake, Parquet</li>
+              <li>Snowflake, Kafka, Airflow, Docker</li>
+            </ul>
           </article>
           <article class="skill-group">
             <h3>Analytics Engineering</h3>
-            <p>Data Modelling, Reporting Marts, Data Quality, CI/CD, KPI Logic</p>
+            <ul>
+              <li>dbt staging and mart models</li>
+              <li>Star schema, facts and dimensions</li>
+              <li>Reporting marts and KPI logic</li>
+              <li>Data quality checks and validation</li>
+              <li>GitHub Actions CI/CD quality gates</li>
+            </ul>
           </article>
           <article class="skill-group">
             <h3>BI &amp; Analytics</h3>
-            <p>Power BI, DAX, Power Query, Tableau, Excel, KPI Dashboards</p>
+            <ul>
+              <li>Power BI, DAX, Power Query</li>
+              <li>Tableau, Excel, KPI dashboards</li>
+              <li>AUM reporting, SLA reporting</li>
+              <li>Reconciliation analysis</li>
+              <li>Ad hoc analysis and stakeholder reporting</li>
+            </ul>
           </article>
           <article class="skill-group">
             <h3>Domains</h3>
-            <p>Healthcare IT Analytics, Finance Reporting, SLA Monitoring, AUM Reporting</p>
+            <ul>
+              <li>Healthcare IT analytics</li>
+              <li>Finance and portfolio reporting</li>
+              <li>SLA monitoring and breach analysis</li>
+              <li>Energy forecasting datasets</li>
+              <li>Route reliability KPIs</li>
+            </ul>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section id="chatbot" class="section alt-bg">
-      <div class="container chatbot-section">
-        <p class="section-tag">// PORTFOLIO ASSISTANT</p>
-        <h2>Chatbot</h2>
-        <p class="section-text">Ask about my projects, skills or role fit.</p>
       </div>
     </section>
 
@@ -237,11 +253,6 @@
           <a href="https://github.com/Darpen24" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
           <a href="https://darpenbhandari.com/" class="btn btn-secondary">Portfolio</a>
         </div>
-        <div class="hero-buttons contact-cv-buttons">
-          <a href="./assets/Darpen-DE-CV.pdf?v=20260617" class="btn btn-primary" download="Darpen_Bhandari_Data_Engineering_CV.pdf">Download Data Engineering CV</a>
-          <a href="./assets/Darpen-DA-CV.pdf?v=20260617" class="btn btn-secondary" download="Darpen_Bhandari_BI_Data_Analyst_CV.pdf">Download BI / Data Analyst CV</a>
-        </div>
-        <p class="cv-note">German version available on request.</p>
       </div>
     </section>
   </main>
@@ -252,7 +263,7 @@
     </div>
   </footer>
 
-  <script src="./assets/main.js?v=20260617"></script>
-  <script src="./assets/chatbot.js?v=20260617"></script>
+  <script src="./assets/main.js?v=20260617-2"></script>
+  <script src="./assets/chatbot.js?v=20260617-2"></script>
 </body>
 </html>

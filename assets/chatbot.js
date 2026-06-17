@@ -1,32 +1,64 @@
 (function () {
-  const CONTACT_EMAIL = "darpen.bhandari@gmail.com";
-  const LINKEDIN_URL = "https://www.linkedin.com/in/darpen-bhandari/";
-  const DE_CV_URL = "./assets/Darpen-DE-CV.pdf?v=20260617";
-  const BI_CV_URL = "./assets/Darpen-DA-CV.pdf?v=20260617";
-
   const chips = [
     "Which projects show Data Engineering skills?",
     "Which projects show BI and Data Analyst skills?"
   ];
 
-  const answers = {
-    dataEngineering:
-      "Best evidence for Data Engineering: DB Train Delay, Smart Energy Forecasting and Electricity Insights. They show API ingestion, ETL/ELT, Bronze/Silver/Gold layers, dbt models, SQL/Python pipelines, data quality and reporting-ready datasets.",
-    biAnalytics:
-      "Best evidence for BI and Data Analyst roles: Stroke Risk Analytics, Electricity Dashboard and Wine Quality Analysis. They show Power BI, DAX, Power Query, KPI dashboards, SQL analysis, Streamlit charts, Excel-style reporting and clear business insights.",
-    healthcare:
-      "Healthcare fit: at Universitaetsklinikum Heidelberg, Darpen worked with qTest, Matrix42, SLA monitoring, reporting datasets, Power BI-ready data and data quality. The Stroke Risk Analytics Dashboard is the clearest healthcare BI project.",
-    finance:
-      "Finance fit: at Hexaware, Darpen supported portfolio applications across AUM reporting, performance tracking, reconciliation, SQL/Python pipelines, Excel automation, Power BI reporting and Azure data workflows.",
-    resume:
-      "There are two CV options: Data Engineering CV and BI / Data Analyst CV. German version is available on request.",
-    contact:
-      "Best next step: email Darpen, open LinkedIn to connect, or download the role-specific CV. This static site cannot send a silent LinkedIn alert, but the LinkedIn button opens his profile directly.",
-    skills:
-      "Core skills: Python, SQL, Azure Data Factory, Azure Data Lake, REST APIs, ETL/ELT, dbt, data modelling, data quality, KPI logic, Power BI, DAX, Power Query, Tableau and Excel.",
-    fallback:
-      "I can answer from Darpen's portfolio content around data engineering, analytics engineering, BI dashboards, healthcare IT analytics, finance reporting, CVs and contact options. Try asking about pipelines, Power BI, healthcare, finance or role fit."
-  };
+  const portfolioFacts = [
+    {
+      id: "experienceYears",
+      keywords: ["experience", "years", "year", "exp", "how long", "career"],
+      answer: "Darpen has 5 years of experience across data engineering, analytics engineering, BI reporting, healthcare IT analytics and financial services reporting."
+    },
+    {
+      id: "dataEngineering",
+      keywords: ["data engineering", "pipeline", "pipelines", "azure", "adf", "data factory", "adls", "data lake", "dbt", "etl", "elt", "api", "rest", "lakehouse", "medallion", "pyspark", "databricks", "delta", "parquet", "snowflake", "kafka", "airflow"],
+      answer: "For Data Engineering, start with DB Train Delay, Smart Energy Forecasting and Electricity Insights. They show API ingestion, ETL/ELT, Azure data layers, dbt models, PySpark/Databricks concepts, data quality checks and reporting-ready datasets."
+    },
+    {
+      id: "biAnalytics",
+      keywords: ["bi", "business intelligence", "analyst", "data analyst", "dashboard", "dashboards", "power bi", "powerbi", "dax", "power query", "kpi", "reporting", "tableau", "excel", "visualization"],
+      answer: "For BI and Data Analyst roles, start with Stroke Risk Analytics, Electricity Dashboard and Wine Quality Analysis. They show Power BI, DAX, Power Query, KPI dashboards, Streamlit charts, SQL analysis and stakeholder-facing reporting."
+    },
+    {
+      id: "healthcare",
+      keywords: ["healthcare", "hospital", "heidelberg", "universitatsklinikum", "universitaetsklinikum", "qtest", "matrix42", "sla", "incident", "service request", "test execution", "stroke", "patient"],
+      answer: "Healthcare evidence: at Universitaetsklinikum Heidelberg, Darpen built qTest and Matrix42 REST API ingestion, SLA monitoring datasets, dbt reporting marts and Power BI-ready data. Stroke Risk Analytics is the main healthcare BI project."
+    },
+    {
+      id: "finance",
+      keywords: ["finance", "financial", "hexaware", "aum", "portfolio", "reconciliation", "performance", "sla reporting", "month end", "excel automation"],
+      answer: "Finance evidence: at Hexaware, Darpen supported 22 financial portfolio applications across AUM reporting, performance tracking, reconciliation analysis, Excel automation, SQL/Python pipelines, Power BI reporting and Azure workflows."
+    },
+    {
+      id: "skills",
+      keywords: ["skill", "skills", "tech", "stack", "tools", "technology", "technologies"],
+      answer: "Core stack: Python, SQL, REST APIs, Azure Data Factory, Azure Data Lake, Azure SQL, Databricks, PySpark, Delta Lake, Parquet, dbt, Power BI, DAX, Power Query, Tableau, Excel, Docker, Snowflake, Kafka and Airflow."
+    },
+    {
+      id: "cv",
+      keywords: ["cv", "resume", "curriculum", "profile"],
+      answer: "Darpen has two CV views in the hero section: Data Engineering CV and BI / Data Analyst CV. German version is available on request."
+    },
+    {
+      id: "contact",
+      keywords: ["contact", "email", "linkedin", "github", "portfolio", "connect", "call", "interview"],
+      answer: "Use the Contact section for email, LinkedIn, GitHub and portfolio links. The chatbot only answers portfolio questions."
+    },
+    {
+      id: "dbTrain",
+      keywords: ["db train", "train", "rail", "delay", "route", "reliability", "bahn", "cancellation"],
+      answer: "DB Train Delay shows Data Engineering and Analytics Engineering: API ingestion, Bronze/Silver/Gold layers, PySpark transformations, dbt models, freshness checks and 11+ route reliability KPIs."
+    },
+    {
+      id: "energy",
+      keywords: ["energy", "electricity", "solar", "forecast", "forecasting", "renewable", "weather", "cost"],
+      answer: "Energy projects show both pipeline and analytics work: electricity, solar, weather and cost datasets, dbt transformations, forecast metrics and dashboard-ready views supporting 12% potential energy savings analysis."
+    }
+  ];
+
+  const fallback =
+    "I can answer from Darpen's portfolio content. Try asking about years of experience, data engineering, Power BI, dbt, healthcare, finance, projects, skills or CV.";
 
   const icons = {
     chat:
@@ -37,22 +69,37 @@
       '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m4 11.5 16-7-7 16-2-7-7-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'
   };
 
-  function mailto(subject, body) {
-    return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  function normalize(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^a-z0-9+#.\s/-]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
   }
 
-  function detectIntent(message) {
-    const text = message.toLowerCase();
+  function keywordScore(question, keywords) {
+    return keywords.reduce((score, keyword) => {
+      const term = normalize(keyword);
+      if (!term) return score;
+      if (question.includes(term)) return score + Math.max(2, term.split(" ").length + 1);
+      const compactQuestion = question.replace(/\s+/g, "");
+      const compactTerm = term.replace(/\s+/g, "");
+      return compactQuestion.includes(compactTerm) ? score + 1 : score;
+    }, 0);
+  }
 
-    if (/cv|resume|curriculum|download/.test(text)) return "resume";
-    if (/linkedin|connect|email|mail|call|interview|contact|reach/.test(text)) return "contact";
-    if (/healthcare|hospital|heidelberg|stroke|qtest|matrix42|sla|patient/.test(text)) return "healthcare";
-    if (/finance|financial|aum|reconciliation|portfolio|hexaware|performance|excel/.test(text)) return "finance";
-    if (/bi|power bi|powerbi|dashboard|dax|kpi|analyst|reporting|tableau|power query|excel/.test(text)) return "biAnalytics";
-    if (/data engineering|pipeline|azure|dbt|etl|elt|api|lakehouse|pyspark|data quality|adf|data lake/.test(text)) return "dataEngineering";
-    if (/skill|tool|stack|technology|domain/.test(text)) return "skills";
+  function answerQuestion(message) {
+    const question = normalize(message);
 
-    return "fallback";
+    if (/how many.*(year|experience|exp)|years.*experience|experience.*years|total.*experience/.test(question)) {
+      return portfolioFacts.find((fact) => fact.id === "experienceYears").answer;
+    }
+
+    const ranked = portfolioFacts
+      .map((fact) => ({ fact, score: keywordScore(question, fact.keywords) }))
+      .sort((a, b) => b.score - a.score);
+
+    return ranked[0].score > 0 ? ranked[0].fact.answer : fallback;
   }
 
   function createMessage(text, type) {
@@ -87,19 +134,13 @@
           <div>
             <p class="chatbot-kicker">// PORTFOLIO ASSISTANT</p>
             <h2 class="chatbot-title">Ask about Darpen</h2>
-            <p class="chatbot-subtitle">Ask about my projects, skills or role fit.</p>
+            <p class="chatbot-subtitle">Projects, skills and role fit only.</p>
           </div>
           <button class="chatbot-close" type="button" aria-label="Close chat">${icons.close}</button>
         </header>
         <div class="chatbot-messages" aria-live="polite"></div>
-        <div class="chatbot-contact-row">
-          <a class="chatbot-link" href="${mailto("Call request from darpenbhandari.com", "Hi Darpen, I visited your portfolio and would like to schedule a call.")}">Request a call</a>
-          <a class="chatbot-link" href="${LINKEDIN_URL}" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="chatbot-link" href="${DE_CV_URL}" download="Darpen_Bhandari_Data_Engineering_CV.pdf">Data Eng CV</a>
-          <a class="chatbot-link" href="${BI_CV_URL}" download="Darpen_Bhandari_BI_Data_Analyst_CV.pdf">BI / DA CV</a>
-        </div>
         <form class="chatbot-form">
-          <input class="chatbot-input" type="text" autocomplete="off" placeholder="Ask about projects, Power BI, dbt..." />
+          <input class="chatbot-input" type="text" autocomplete="off" placeholder="Ask about experience, dbt, Power BI..." />
           <button class="chatbot-send" type="submit" aria-label="Send message">${icons.send}</button>
         </form>
       </section>
@@ -121,22 +162,16 @@
     }
 
     function renderSuggestions() {
-      messages.appendChild(createSuggestions((label) => {
-        submitQuestion(label);
-      }));
+      messages.appendChild(createSuggestions((label) => submitQuestion(label)));
       scrollMessages();
-    }
-
-    function showAnswer(question) {
-      messages.innerHTML = "";
-      messages.appendChild(createMessage(question, "user"));
-      messages.appendChild(createMessage(answers[detectIntent(question)], "bot"));
-      renderSuggestions();
     }
 
     function submitQuestion(question) {
       if (!question) return;
-      showAnswer(question);
+      messages.innerHTML = "";
+      messages.appendChild(createMessage(question, "user"));
+      messages.appendChild(createMessage(answerQuestion(question), "bot"));
+      renderSuggestions();
       input.value = "";
       input.focus();
     }
@@ -147,7 +182,7 @@
 
       if (!hasGreeted) {
         messages.innerHTML = "";
-        messages.appendChild(createMessage("Hi, I am Darpen's portfolio assistant. I can route you to the strongest Data Engineering, Analytics Engineering and BI evidence on this site.", "bot"));
+        messages.appendChild(createMessage("Hi, I am Darpen's portfolio assistant. Ask me about his experience, projects, skills, healthcare, finance, dbt or Power BI.", "bot"));
         renderSuggestions();
         hasGreeted = true;
       }
@@ -162,11 +197,8 @@
     }
 
     toggle.addEventListener("click", () => {
-      if (panel.classList.contains("open")) {
-        closeChat();
-      } else {
-        openChat();
-      }
+      if (panel.classList.contains("open")) closeChat();
+      else openChat();
     });
 
     close.addEventListener("click", closeChat);

@@ -29,7 +29,7 @@ body {
     radial-gradient(circle at 84% 4%, rgba(139, 92, 246, 0.12), transparent 26rem),
     linear-gradient(180deg, var(--bg), var(--bg-2));
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
@@ -114,15 +114,12 @@ img {
 }
 
 .hero h1 {
-  max-width: 720px;
+  max-width: 760px;
   margin-bottom: 18px;
-  font-size: clamp(3rem, 8vw, 5.6rem);
-  font-weight: 900;
-  line-height: 0.95;
-}
-
-.hero h1 span {
-  color: var(--cyan);
+  font-size: clamp(2.8rem, 6vw, 4.7rem);
+  font-weight: 850;
+  line-height: 1.02;
+  letter-spacing: 0;
 }
 
 .role-line {
@@ -139,6 +136,7 @@ img {
 .timeline-card li,
 .project-card p,
 .skill-group p,
+.skill-group li,
 .status-card p,
 .cv-note {
   color: var(--muted);
@@ -271,7 +269,8 @@ img {
 
 .strength-grid,
 .experience-grid,
-.skill-group-grid {
+.skill-group-grid,
+.skill-list-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
@@ -284,6 +283,20 @@ img {
 
 .skill-group-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.skill-list-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-group ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 18px;
+}
+
+.skill-group li {
+  font-size: 0.96rem;
 }
 
 .timeline-card ul {
@@ -434,10 +447,6 @@ img {
   margin: 20px 0;
 }
 
-.contact-cv-buttons {
-  margin-top: 18px;
-}
-
 .footer {
   padding: 26px 0 34px;
   border-top: 1px solid var(--border);
@@ -450,7 +459,8 @@ img {
   .strength-grid,
   .experience-grid,
   .project-grid,
-  .skill-group-grid {
+  .skill-group-grid,
+  .skill-list-grid {
     grid-template-columns: 1fr;
   }
 
@@ -479,7 +489,6 @@ img {
   }
 
   .hero-buttons .btn,
-  .contact-cv-buttons .btn,
   .contact-links .btn,
   .filter-btn {
     width: 100%;
