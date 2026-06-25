@@ -118,7 +118,7 @@ img {
 }
 
 .hero {
-  padding: 26px 0 48px;
+  padding: 16px 0 44px;
 }
 
 .hero-grid {
@@ -222,8 +222,12 @@ img {
 
 .hero-desc {
   max-width: 760px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   font-size: 1.05rem;
+}
+
+.hero-status {
+  max-width: 520px;
 }
 
 .hero-side {
