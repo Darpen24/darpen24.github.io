@@ -118,7 +118,7 @@ img {
 }
 
 .hero {
-  padding: 28px 0 64px;
+  padding: 26px 0 48px;
 }
 
 .hero-grid {
@@ -216,8 +216,7 @@ img {
 .project-card p,
 .skill-group p,
 .skill-group li,
-.status-card p,
-.cv-note {
+.status-card p {
   color: var(--muted);
 }
 
@@ -274,7 +273,6 @@ img {
   font-size: 1.25rem;
 }
 
-.hero-buttons,
 .contact-links,
 .project-actions {
   display: flex;
@@ -320,13 +318,8 @@ img {
   color: var(--soft);
 }
 
-.cv-note {
-  margin-top: 10px;
-  font-size: 0.92rem;
-}
-
 .section {
-  padding: 76px 0;
+  padding: 54px 0;
 }
 
 .alt-bg {
@@ -354,7 +347,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .experience-grid {
@@ -527,6 +520,47 @@ img {
   margin: 20px 0;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--soft);
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font: inherit;
+  padding: 12px 13px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(56, 189, 248, 0.55);
+  outline: none;
+}
+
 .footer {
   padding: 26px 0 34px;
   border-top: 1px solid var(--border);
@@ -540,7 +574,8 @@ img {
   .experience-grid,
   .project-grid,
   .skill-group-grid,
-  .skill-list-grid {
+  .skill-list-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -563,19 +598,19 @@ img {
 
 @media (max-width: 620px) {
   .hero {
-    padding: 30px 0 52px;
+    padding: 28px 0 42px;
   }
 
   .section {
-    padding: 58px 0;
+    padding: 42px 0;
   }
 
   .nav-links {
     gap: 10px 14px;
   }
 
-  .hero-buttons .btn,
   .contact-links .btn,
+  .contact-form .btn,
   .filter-btn {
     width: 100%;
   }

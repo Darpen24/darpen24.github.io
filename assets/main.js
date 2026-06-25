@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_role: "Data Engineer and Analytics Engineer with strong BI reporting experience",
       hero_desc:
         "Data Engineer and Analytics Engineer with 5 years of experience building reliable data pipelines, reporting layers and BI dashboards across healthcare IT and financial services. I work with Python, SQL, Azure, dbt, Databricks, PySpark, Power BI and DAX to turn operational data into clean datasets, KPIs and business-ready insights.",
-      cv_de: "View Data Engineering CV",
-      cv_da: "View BI / Data Analyst CV",
-      cv_note: "German version available on request.",
       status_title: "Germany & EU roles",
       status_text: "Mannheim, Germany. Open to Data Engineering, Analytics Engineering and BI reporting roles.",
       build_title: "What I Build",
@@ -71,13 +68,21 @@ document.addEventListener("DOMContentLoaded", () => {
       soft_3: "Problem solving",
       soft_4: "Ownership and delivery focus",
       soft_5: "Team leadership and coordination",
+      language_title: "Languages",
+      language_1: "English: C1 professional working proficiency",
+      language_2: "German: B1, actively improving toward B2",
+      language_3: "Hindi and Nepali: native / fluent",
       contact_title: "Contact",
+      contact_intro: "Send a short message or use the direct profile links.",
+      form_name: "Name",
+      form_email: "Email",
+      form_message: "Message",
+      form_send: "Send Email",
       projects_page_title: "Projects by Role Fit",
       projects_intro: "A focused set of projects for Data Engineering, Analytics Engineering, BI reporting and automation roles. Use the filters to quickly match the evidence to the role you are hiring for.",
       filter_all: "All",
       filter_de: "Data Engineering",
-      filter_bi: "BI & Analytics",
-      filter_ai: "AI / Automation"
+      filter_bi: "BI & Analytics"
     },
     de: {
       nav_about: "Profil",
@@ -88,9 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_role: "Data Engineer und Analytics Engineer mit starker BI-Reporting-Erfahrung",
       hero_desc:
         "Data Engineer und Analytics Engineer mit 5 Jahren Erfahrung im Aufbau zuverlässiger Datenpipelines, Reporting-Layer und BI-Dashboards in Healthcare IT und Financial Services. Ich arbeite mit Python, SQL, Azure, dbt, Databricks, PySpark, Power BI und DAX, um operative Daten in saubere Datensätze, KPIs und businessfähige Insights zu verwandeln.",
-      cv_de: "Data Engineering CV ansehen",
-      cv_da: "BI / Data Analyst CV ansehen",
-      cv_note: "Deutsche Version auf Anfrage verfügbar.",
       status_title: "Rollen in Deutschland & EU",
       status_text: "Mannheim, Deutschland. Offen für Data Engineering, Analytics Engineering und BI-Reporting-Rollen.",
       build_title: "Was ich baue",
@@ -150,13 +152,21 @@ document.addEventListener("DOMContentLoaded", () => {
       soft_3: "Problem Solving",
       soft_4: "Ownership und Delivery-Fokus",
       soft_5: "Team Leadership und Koordination",
+      language_title: "Sprachen",
+      language_1: "Englisch: C1, professionelle Arbeitskompetenz",
+      language_2: "Deutsch: B1, aktiv auf dem Weg zu B2",
+      language_3: "Hindi und Nepali: Muttersprache / fließend",
       contact_title: "Kontakt",
+      contact_intro: "Schreibe eine kurze Nachricht oder nutze die direkten Profil-Links.",
+      form_name: "Name",
+      form_email: "E-Mail",
+      form_message: "Nachricht",
+      form_send: "E-Mail senden",
       projects_page_title: "Projekte nach Rollen-Fit",
       projects_intro: "Eine fokussierte Auswahl von Projekten für Data Engineering, Analytics Engineering, BI Reporting und Automation. Nutze die Filter, um die passenden Nachweise für die Rolle schnell zu finden.",
       filter_all: "Alle",
       filter_de: "Data Engineering",
-      filter_bi: "BI & Analytics",
-      filter_ai: "AI / Automation"
+      filter_bi: "BI & Analytics"
     }
   };
 
@@ -215,6 +225,22 @@ document.addEventListener("DOMContentLoaded", () => {
   Object.entries(langButtons).forEach(([lang, button]) => {
     if (button) button.addEventListener("click", () => setLanguage(lang));
   });
+
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById("contact-name").value.trim();
+      const email = document.getElementById("contact-email").value.trim();
+      const message = document.getElementById("contact-message").value.trim();
+      const subject = `Portfolio message from ${name || "website visitor"}`;
+      const body = [`Name: ${name}`, `Email: ${email}`, "", message].join("\n");
+
+      window.location.href = `mailto:darpen.bhandari@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  }
 
   updateSectionVisibility();
   setLanguage(localStorage.getItem("portfolioLanguageV2") || "de");
