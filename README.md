@@ -19,7 +19,6 @@ projects.html       Project index with client-side filters
 assets/style.css    Shared visual system and responsive styles
 assets/projects.css Projects-page-only styles
 assets/main.js      EN/DE, animation and interaction logic
-assets/*.pdf        German and English CV assets
 ~~~
 
 ## Local development
