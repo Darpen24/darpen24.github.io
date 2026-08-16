@@ -1,247 +1,67 @@
-document.addEventListener("DOMContentLoaded", () => {
+(() => {
   const translations = {
     en: {
-      nav_about: "About",
-      nav_experience: "Experience",
-      nav_projects: "Projects",
-      nav_skills: "Skills",
-      nav_contact: "Contact",
-      hero_role: "Data Engineer and Analytics Engineer with strong BI reporting experience",
-      hero_desc:
-        "Data Engineer and Analytics Engineer with 5 years of experience building reliable data pipelines, reporting layers and BI dashboards across healthcare IT and financial services. I work with Python, SQL, Azure, dbt, Databricks, PySpark, Power BI and DAX to turn operational data into clean datasets, KPIs and business-ready insights.",
-      status_title: "Germany & EU roles",
-      status_text: "Mannheim, Germany. Open to Data Engineering, Analytics Engineering and BI reporting roles.",
-      build_title: "What I Build",
-      build_pipeline_title: "Data Pipelines",
-      build_pipeline_text: "REST API ingestion, ETL/ELT workflows, Azure data layers and reliable reporting datasets.",
-      build_analytics_title: "Analytics Engineering",
-      build_analytics_text: "dbt models, reporting marts, data quality checks, KPI logic and validated business-ready datasets.",
-      build_bi_title: "BI Dashboards",
-      build_bi_text: "Power BI, DAX, Power Query, SQL analysis and stakeholder-facing KPI dashboards.",
-      experience_title: "Experience",
-      exp_health_label: "Healthcare IT Analytics",
-      exp_health_title: "Working Student - Data and System Analytics",
-      exp_health_1: "Built Python REST API ingestion pipelines between qTest and Matrix42 for incident, service request and test execution data.",
-      exp_health_2: "Designed ADF pipelines with parameterized triggers and incremental loads into ADLS for scheduled SLA breach monitoring.",
-      exp_health_3: "Created dbt staging and mart models with SQL checks, schema tests and GitHub Actions quality gates before release.",
-      exp_health_4: "Mapped qTest and Matrix42 source data into Power BI-ready reporting datasets, improving weekly reporting and SLA monitoring reliability.",
-      exp_health_5: "Defined KPI logic, validated source data and reduced manual reporting effort by combining SQL, Python, dbt and Power BI reporting layers.",
-      exp_fin_label: "Financial Services Reporting",
-      exp_fin_title: "Senior Software Engineer",
-      exp_fin_1: "Led delivery across 22 US financial portfolio applications covering AUM, performance tracking, reconciliation analysis and SLA reporting.",
-      exp_fin_2: "Built Azure pipeline and reporting workflows with ADF incremental loads, failure alerting, retries and DevOps monitoring.",
-      exp_fin_3: "Automated Excel-based reporting refreshes using SQL, Python, Power Query and structured reporting layers feeding Power BI outputs.",
-      exp_fin_4: "Worked with ADLS medallion patterns, Parquet datasets, Databricks/PySpark concepts, dbt modelling and CI/CD release checks.",
-      exp_fin_5: "Maintained 100% SLA compliance and reduced month-end reconciliation/reporting effort through ETL/ELT automation.",
-      featured_title: "Featured Projects",
-      view_all_projects: "View All Projects",
-      role_fit_de: "<strong>Looking for Data Engineering roles?</strong> Start with DB Train Delay, Smart Energy and Electricity Insights.",
-      role_fit_bi: "<strong>Looking for BI / Data Analyst roles?</strong> Start with Stroke Risk, Electricity Dashboard and Wine Quality Analysis.",
-      project_de_label: "Data Engineering / Analytics Engineering",
-      project_health_label: "BI Analyst / Healthcare Data Analyst",
-      project_bi_label: "Data Analyst / BI Analyst",
-      project_db_text: "Built German rail route reliability metrics with API ingestion, bronze/silver/gold layers, dbt models and a Streamlit dashboard.",
-      project_energy_text: "Built forecasting-ready datasets for electricity, solar, weather and cost data to support energy optimization decisions.",
-      project_stroke_text: "Built Power BI views for 5,110 patient records across age, BMI, glucose, hypertension and smoking status.",
-      project_electricity_text: "Created dashboard views for actual vs predicted load, renewable contribution, forecast error and model performance.",
-      skills_title: "Core Skills",
-      skill_de_1: "Python, SQL, REST APIs",
-      skill_de_2: "Azure Data Factory, Azure Data Lake, Azure SQL",
-      skill_de_3: "ETL/ELT, incremental loads, medallion architecture",
-      skill_de_4: "Databricks, PySpark, Delta Lake, Parquet",
-      skill_de_5: "Snowflake, Kafka, Airflow, Docker",
-      skill_ae_1: "dbt staging and mart models",
-      skill_ae_2: "Star schema, facts and dimensions",
-      skill_ae_3: "Reporting marts and KPI logic",
-      skill_ae_4: "Data quality checks and validation",
-      skill_ae_5: "GitHub Actions CI/CD quality gates",
-      skill_bi_1: "Power BI, DAX, Power Query",
-      skill_bi_2: "Tableau, Excel, KPI dashboards",
-      skill_bi_3: "AUM reporting, SLA reporting",
-      skill_bi_4: "Reconciliation analysis",
-      skill_bi_5: "Ad hoc analysis and stakeholder reporting",
-      domain_1: "Healthcare IT analytics",
-      domain_2: "Finance and portfolio reporting",
-      soft_title: "Soft Skills",
-      soft_1: "Stakeholder communication",
-      soft_2: "Business requirement analysis",
-      soft_3: "Problem solving",
-      soft_4: "Ownership and delivery focus",
-      soft_5: "Team leadership and coordination",
-      language_title: "Languages",
-      language_1: "English: C1 professional working proficiency",
-      language_2: "German: B1, actively improving toward B2",
-      language_3: "Hindi: native / fluent",
-      contact_title: "Contact",
-      contact_intro: "Send a short message or use the direct profile links.",
-      form_name: "Name",
-      form_email: "Email",
-      form_message: "Message",
-      form_send: "Send Email",
-      projects_page_title: "Projects by Role Fit",
-      projects_intro: "A focused set of projects for Data Engineering, Analytics Engineering, BI reporting and automation roles. Use the filters to quickly match the evidence to the role you are hiring for.",
-      filter_all: "All",
-      filter_de: "Data Engineering",
-      filter_bi: "BI & Analytics"
+      skip: "Skip to content", menu: "Open menu", nav_about: "About", nav_experience: "Experience", nav_projects: "Projects", nav_skills: "Skills", nav_contact: "Contact",
+      hero_eyebrow: "Mannheim, Germany · Open to opportunities", hero_title: "Data Engineer & Analytics Engineer", hero_lede: "Building production data systems for analytics and AI.", hero_description: "Around five years across financial services and healthcare—designing pipelines, models, quality workflows and analytics systems with Python, SQL, PySpark, Azure, Databricks, Delta Lake, Snowflake, dbt and Power BI.", cta_projects: "View Projects", cta_contact: "Contact ↓",
+      visual_label: "DATA SYSTEM / 01", visual_live: "LIVE DESIGN", visual_legend: "Reliable, observable flow", node_source: "API / SOURCE", node_ingest: "INGEST", node_serve: "ANALYTICS / AI", terminal_init: "profile initialized", terminal_1: "data_engineering", terminal_2: "analytics_engineering", terminal_3: "cloud_platforms", terminal_4: "ai_ready_systems", terminal_status: "STATUS: OPEN_TO_OPPORTUNITIES",
+      about_label: "ABOUT", about_title: "Systems thinking for data people can trust.", about_text: "I build dependable paths from operational data to decisions. My work spans financial services and healthcare: ingesting data, shaping models, validating quality and serving teams through analytics. I’m most effective where engineering reliability and reporting needs meet—turning fragmented source systems into traceable datasets, useful KPIs and repeatable workflows.", availability: "Available for Data Engineering & Analytics Engineering roles", location: "Mannheim, Germany", english: "English — C1", german: "German — B1, progressing toward B2", stage_source: "Source", stage_ingest: "Ingest", stage_transform: "Transform", stage_model: "Model", stage_serve: "Serve",
+      metric_years: "Years experience", metric_apps: "Enterprise applications", metric_team: "Engineers led", metric_reporting: "Manual reporting reduced",
+      experience_label: "EXPERIENCE", experience_title: "Reliable delivery across complex data environments.", exp_current: "MOST RECENT", exp_finance: "FINANCIAL SERVICES", exp_ukhd_role: "Student Assistant · Data & System Analytics", exp_ukhd_1: "Built REST and Kafka integrations between qTest Manager and Matrix42, loading operational data into Snowflake with Python and FastAPI.", exp_ukhd_2: "Created incremental dbt models with merge strategies, macros and freshness tests for recurring reporting and monitoring.", exp_ukhd_3: "Built Power BI/DAX reporting for SLA compliance, ticket volume and resolution time; established eight core KPI definitions.", exp_ukhd_4: "Reduced manual reporting by about 40% and data discrepancies by about 20% through reconciliation, structured logging and alerts.", exp_senior_role: "Senior Software Engineer · Data Analytics", exp_senior_1: "Delivered data engineering across 22 trading, portfolio and compliance applications, leading a team of six engineers.", exp_senior_2: "Built Azure Data Factory and Databricks pipelines with ADLS Gen2, Delta Lake and Snowflake.", exp_senior_3: "Migrated Bronze / Silver / Gold data products from Parquet to Delta Lake using PySpark.", exp_senior_4: "Standardised infrastructure and deployments with Terraform and Azure DevOps CI/CD; automated recurring reporting workflows.", exp_software_role: "Software Engineer · Data Analytics", exp_software_1: "Built Python, SQL and PySpark transformation workflows with incremental loading and failure handling.", exp_software_2: "Worked with Azure Data Factory, Kafka, ADLS Gen2, Snowflake and Azure SQL to support analytics datasets.", exp_software_3: "Implemented automated data quality checks and supplied Power BI and Tableau reporting outputs.",
+      projects_label: "SELECTED WORK", projects_title: "Engineering-first portfolio work.", projects_all: "All projects ↗", featured_case: "FEATURED CASE STUDY", featured_desc: "A local-first data platform for analysing IT incidents and service requests without using confidential employer data.", case_problem: "Problem", case_problem_text: "Make service operations answers reproducible across ticket volume, backlog, SLA performance and resolution time.", case_architecture: "Architecture", case_practices: "Engineering practices", case_practices_text: "Synthetic data, recoverable ELT, quality checks, dbt, CI and safe Terraform modules.", view_repo: "View repository", project_train: "API ingestion, layered processing and dbt models for German rail reliability metrics.", project_cv: "A local Streamlit tool that uses Ollama to tailor CV summaries and skills to a job description.", project_energy: "A forecasting and visualisation solution for electricity load, renewable data and model performance.",
+      skills_label: "TECHNICAL ECOSYSTEM", skills_title: "Tools for dependable data products.", skill_data: "Data engineering", skill_cloud: "Cloud & platform", skill_devops: "DevOps & delivery", skill_analytics: "Analytics",
+      contact_label: "CONTACT", contact_title: "Let’s build reliable data systems.", contact_text: "Have a Data Engineering or Analytics Engineering opportunity? I’d be glad to hear from you.", copy_email: "Copy email", copied_email: "Email copied", form_name: "Name", form_email: "Email", form_subject: "Subject", form_message: "Message", form_send: "Open email draft", form_note: "This opens your email app; no details are stored on this site.",
+      projects_page_label: "PROJECT INDEX", projects_page_title: "Selected data work, built with intent.", projects_page_intro: "A focused collection of public repositories across data engineering, analytics and AI / ML. Filter by the kind of work you want to explore.", filter_all: "All work", filter_data: "Data Engineering", filter_analytics: "Analytics", filter_ai: "AI / ML", details: "Repository ↗", project_service: "A local-first platform for IT service operations, with synthetic data and a reproducible analytics path.", project_stroke: "A Power BI and DAX dashboard exploring stroke risk factors across 5,110 healthcare records.", project_electricity: "Electricity demand, renewable contribution and forecasting performance in an interactive Streamlit dashboard."
     },
     de: {
-      nav_about: "Profil",
-      nav_experience: "Erfahrung",
-      nav_projects: "Projekte",
-      nav_skills: "Skills",
-      nav_contact: "Kontakt",
-      hero_role: "Data Engineer und Analytics Engineer mit starker BI-Reporting-Erfahrung",
-      hero_desc:
-        "Data Engineer und Analytics Engineer mit 5 Jahren Erfahrung im Aufbau zuverlässiger Datenpipelines, Reporting-Layer und BI-Dashboards in Healthcare IT und Financial Services. Ich arbeite mit Python, SQL, Azure, dbt, Databricks, PySpark, Power BI und DAX, um operative Daten in saubere Datensätze, KPIs und businessfähige Insights zu verwandeln.",
-      status_title: "Rollen in Deutschland & EU",
-      status_text: "Mannheim, Deutschland. Offen für Data Engineering, Analytics Engineering und BI-Reporting-Rollen.",
-      build_title: "Was ich baue",
-      build_pipeline_title: "Datenpipelines",
-      build_pipeline_text: "REST-API-Ingestion, ETL/ELT-Workflows, Azure-Datenlayer und zuverlässige Reporting-Datensätze.",
-      build_analytics_title: "Analytics Engineering",
-      build_analytics_text: "dbt-Modelle, Reporting-Marts, Datenqualitätsprüfungen, KPI-Logik und validierte businessfähige Datensätze.",
-      build_bi_title: "BI Dashboards",
-      build_bi_text: "Power BI, DAX, Power Query, SQL-Analysen und stakeholderorientierte KPI-Dashboards.",
-      experience_title: "Erfahrung",
-      exp_health_label: "Healthcare IT Analytics",
-      exp_health_title: "Working Student - Data and System Analytics",
-      exp_health_1: "Aufbau von Python-REST-API-Ingestion-Pipelines zwischen qTest und Matrix42 für Incident-, Service-Request- und Test-Execution-Daten.",
-      exp_health_2: "Entwicklung von ADF-Pipelines mit parametrisierten Triggern und inkrementellen Loads nach ADLS für geplantes SLA-Breach-Monitoring.",
-      exp_health_3: "Erstellung von dbt-Staging- und Mart-Modellen mit SQL-Checks, Schema-Tests und GitHub-Actions-Quality-Gates vor Releases.",
-      exp_health_4: "Mapping von qTest- und Matrix42-Quelldaten in Power-BI-fähige Reporting-Datensätze zur Verbesserung von Weekly Reporting und SLA-Monitoring.",
-      exp_health_5: "Definition von KPI-Logik, Validierung von Quelldaten und Reduktion manueller Reporting-Arbeit durch SQL, Python, dbt und Power-BI-Reporting-Layer.",
-      exp_fin_label: "Financial Services Reporting",
-      exp_fin_title: "Senior Software Engineer",
-      exp_fin_1: "Delivery über 22 US-Finanzportfolio-Anwendungen mit AUM, Performance Tracking, Reconciliation Analysis und SLA Reporting.",
-      exp_fin_2: "Aufbau von Azure-Pipeline- und Reporting-Workflows mit ADF Incremental Loads, Failure Alerting, Retries und DevOps Monitoring.",
-      exp_fin_3: "Automatisierung Excel-basierter Reporting-Refreshes mit SQL, Python, Power Query und strukturierten Reporting-Layern für Power-BI-Outputs.",
-      exp_fin_4: "Arbeit mit ADLS-Medallion-Patterns, Parquet-Datensätzen, Databricks/PySpark-Konzepten, dbt-Modellierung und CI/CD-Release-Checks.",
-      exp_fin_5: "Sicherstellung von 100% SLA Compliance und Reduktion von Month-End-Reconciliation- und Reporting-Aufwand durch ETL/ELT-Automatisierung.",
-      featured_title: "Ausgewählte Projekte",
-      view_all_projects: "Alle Projekte ansehen",
-      role_fit_de: "<strong>Data-Engineering-Rollen?</strong> Starte mit DB Train Delay, Smart Energy und Electricity Insights.",
-      role_fit_bi: "<strong>BI / Data-Analyst-Rollen?</strong> Starte mit Stroke Risk, Electricity Dashboard und Wine Quality Analysis.",
-      project_de_label: "Data Engineering / Analytics Engineering",
-      project_health_label: "BI Analyst / Healthcare Data Analyst",
-      project_bi_label: "Data Analyst / BI Analyst",
-      project_db_text: "Aufbau von Zuverlässigkeitsmetriken für deutsche Bahnstrecken mit API-Ingestion, Bronze/Silver/Gold-Layern, dbt-Modellen und Streamlit-Dashboard.",
-      project_energy_text: "Aufbau forecastingfähiger Datensätze für Strom-, Solar-, Wetter- und Kostendaten zur Unterstützung von Energieoptimierung.",
-      project_stroke_text: "Power-BI-Ansichten für 5.110 Patientendatensätze nach Alter, BMI, Glukose, Hypertonie und Rauchstatus.",
-      project_electricity_text: "Dashboard-Ansichten für Actual vs. Predicted Load, Renewable Contribution, Forecast Error und Modellperformance.",
-      skills_title: "Core Skills",
-      skill_de_1: "Python, SQL, REST APIs",
-      skill_de_2: "Azure Data Factory, Azure Data Lake, Azure SQL",
-      skill_de_3: "ETL/ELT, inkrementelle Loads, Medallion Architecture",
-      skill_de_4: "Databricks, PySpark, Delta Lake, Parquet",
-      skill_de_5: "Snowflake, Kafka, Airflow, Docker",
-      skill_ae_1: "dbt-Staging- und Mart-Modelle",
-      skill_ae_2: "Star Schema, Facts und Dimensions",
-      skill_ae_3: "Reporting-Marts und KPI-Logik",
-      skill_ae_4: "Datenqualitätsprüfungen und Validierung",
-      skill_ae_5: "GitHub-Actions-CI/CD-Quality-Gates",
-      skill_bi_1: "Power BI, DAX, Power Query",
-      skill_bi_2: "Tableau, Excel, KPI-Dashboards",
-      skill_bi_3: "AUM Reporting, SLA Reporting",
-      skill_bi_4: "Reconciliation Analysis",
-      skill_bi_5: "Ad-hoc-Analysen und Stakeholder Reporting",
-      domain_1: "Healthcare IT Analytics",
-      domain_2: "Finance und Portfolio Reporting",
-      soft_title: "Soft Skills",
-      soft_1: "Stakeholder-Kommunikation",
-      soft_2: "Business Requirement Analysis",
-      soft_3: "Problem Solving",
-      soft_4: "Ownership und Delivery-Fokus",
-      soft_5: "Team Leadership und Koordination",
-      language_title: "Sprachen",
-      language_1: "Englisch: C1, professionelle Arbeitskompetenz",
-      language_2: "Deutsch: B1, aktiv auf dem Weg zu B2",
-      language_3: "Hindi: Muttersprache / fließend",
-      contact_title: "Kontakt",
-      contact_intro: "Schreibe eine kurze Nachricht oder nutze die direkten Profil-Links.",
-      form_name: "Name",
-      form_email: "E-Mail",
-      form_message: "Nachricht",
-      form_send: "E-Mail senden",
-      projects_page_title: "Projekte nach Rollen-Fit",
-      projects_intro: "Eine fokussierte Auswahl von Projekten für Data Engineering, Analytics Engineering, BI Reporting und Automation. Nutze die Filter, um die passenden Nachweise für die Rolle schnell zu finden.",
-      filter_all: "Alle",
-      filter_de: "Data Engineering",
-      filter_bi: "BI & Analytics"
+      skip: "Zum Inhalt springen", menu: "Menü öffnen", nav_about: "Profil", nav_experience: "Erfahrung", nav_projects: "Projekte", nav_skills: "Skills", nav_contact: "Kontakt",
+      hero_eyebrow: "Mannheim, Deutschland · Offen für neue Möglichkeiten", hero_title: "Data Engineer & Analytics Engineer", hero_lede: "Ich baue produktive Datensysteme für Analytics und KI.", hero_description: "Rund fünf Jahre Erfahrung in Financial Services und Healthcare: Datenpipelines, Modelle, Qualitätsworkflows und Analysesysteme mit Python, SQL, PySpark, Azure, Databricks, Delta Lake, Snowflake, dbt und Power BI.", cta_projects: "Projekte ansehen", cta_contact: "Kontakt ↓",
+      visual_label: "DATENSYSTEM / 01", visual_live: "LIVE DESIGN", visual_legend: "Zuverlässiger, beobachtbarer Datenfluss", node_source: "API / QUELLE", node_ingest: "INGEST", node_serve: "ANALYTICS / KI", terminal_init: "profil initialisiert", terminal_1: "data_engineering", terminal_2: "analytics_engineering", terminal_3: "cloud_platforms", terminal_4: "ai_ready_systems", terminal_status: "STATUS: OPEN_TO_OPPORTUNITIES",
+      about_label: "PROFIL", about_title: "Systemdenken für Daten, denen Menschen vertrauen können.", about_text: "Ich baue verlässliche Wege von operativen Daten zu Entscheidungen. Meine Arbeit umfasst Financial Services und Healthcare: Daten erfassen, Modelle gestalten, Qualität validieren und Teams mit Analytics versorgen. Besonders wirksam bin ich dort, wo Engineering-Zuverlässigkeit auf Reporting-Anforderungen trifft—und fragmentierte Quellsysteme in nachvollziehbare Datensätze, nutzbare KPIs und wiederholbare Workflows überführt werden.", availability: "Offen für Rollen im Data Engineering & Analytics Engineering", location: "Mannheim, Deutschland", english: "Englisch — C1", german: "Deutsch — B1, auf dem Weg zu B2", stage_source: "Quelle", stage_ingest: "Ingest", stage_transform: "Transform", stage_model: "Modell", stage_serve: "Bereitstellen",
+      metric_years: "Jahre Erfahrung", metric_apps: "Enterprise-Anwendungen", metric_team: "Geleitete Engineers", metric_reporting: "Weniger manuelles Reporting",
+      experience_label: "ERFAHRUNG", experience_title: "Zuverlässige Umsetzung in komplexen Datenumgebungen.", exp_current: "AKTUELLSTE STATION", exp_finance: "FINANCIAL SERVICES", exp_ukhd_role: "Studentische Aushilfe · Data & System Analytics", exp_ukhd_1: "REST- und Kafka-Integrationen zwischen qTest Manager und Matrix42 gebaut und operative Daten mit Python und FastAPI in Snowflake geladen.", exp_ukhd_2: "Inkrementelle dbt-Modelle mit Merge-Strategien, Makros und Freshness-Tests für wiederkehrendes Reporting und Monitoring erstellt.", exp_ukhd_3: "Power-BI-/DAX-Reporting für SLA-Compliance, Ticketvolumen und Lösungszeit aufgebaut; acht zentrale KPI-Definitionen etabliert.", exp_ukhd_4: "Manuelles Reporting um rund 40 % und Datenabweichungen um rund 20 % durch Reconciliation, strukturiertes Logging und Alerts reduziert.", exp_senior_role: "Senior Software Engineer · Data Analytics", exp_senior_1: "Data Engineering für 22 Trading-, Portfolio- und Compliance-Anwendungen geliefert und ein Team aus sechs Engineers geleitet.", exp_senior_2: "Azure Data Factory- und Databricks-Pipelines mit ADLS Gen2, Delta Lake und Snowflake gebaut.", exp_senior_3: "Bronze-/Silver-/Gold-Datenprodukte mit PySpark von Parquet nach Delta Lake migriert.", exp_senior_4: "Infrastruktur und Deployments mit Terraform und Azure DevOps CI/CD standardisiert sowie wiederkehrende Reporting-Workflows automatisiert.", exp_software_role: "Software Engineer · Data Analytics", exp_software_1: "Python-, SQL- und PySpark-Transformationsworkflows mit inkrementellen Loads und Fehlerbehandlung gebaut.", exp_software_2: "Mit Azure Data Factory, Kafka, ADLS Gen2, Snowflake und Azure SQL für Analytics-Datensätze gearbeitet.", exp_software_3: "Automatisierte Datenqualitätsprüfungen implementiert und Reporting-Outputs für Power BI und Tableau bereitgestellt.",
+      projects_label: "AUSGEWÄHLTE ARBEIT", projects_title: "Ein Portfolio mit Engineering im Mittelpunkt.", projects_all: "Alle Projekte ↗", featured_case: "FEATURED CASE STUDY", featured_desc: "Eine lokale Datenplattform zur Analyse von IT-Incidents und Service Requests—ohne vertrauliche Arbeitgeberdaten.", case_problem: "Problem", case_problem_text: "Antworten zu Ticketvolumen, Backlog, SLA-Performance und Lösungszeit reproduzierbar machen.", case_architecture: "Architektur", case_practices: "Engineering-Praktiken", case_practices_text: "Synthetische Daten, wiederherstellbares ELT, Qualitätsprüfungen, dbt, CI und sichere Terraform-Module.", view_repo: "Repository ansehen", project_train: "API-Ingestion, geschichtete Verarbeitung und dbt-Modelle für Zuverlässigkeitsmetriken im deutschen Bahnverkehr.", project_cv: "Ein lokales Streamlit-Tool, das mit Ollama CV-Zusammenfassungen und Skills auf eine Stellenanzeige abstimmt.", project_energy: "Eine Forecasting- und Visualisierungslösung für Stromlast, erneuerbare Daten und Modellleistung.",
+      skills_label: "TECHNISCHES ÖKOSYSTEM", skills_title: "Werkzeuge für verlässliche Datenprodukte.", skill_data: "Data Engineering", skill_cloud: "Cloud & Plattform", skill_devops: "DevOps & Delivery", skill_analytics: "Analytics",
+      contact_label: "KONTAKT", contact_title: "Lassen Sie uns verlässliche Datensysteme bauen.", contact_text: "Sie haben eine Opportunity im Data Engineering oder Analytics Engineering? Ich freue mich auf Ihre Nachricht.", copy_email: "E-Mail kopieren", copied_email: "E-Mail kopiert", form_name: "Name", form_email: "E-Mail", form_subject: "Betreff", form_message: "Nachricht", form_send: "E-Mail-Entwurf öffnen", form_note: "Dies öffnet Ihre E-Mail-App; auf dieser Website werden keine Angaben gespeichert.",
+      projects_page_label: "PROJEKTINDEX", projects_page_title: "Ausgewählte Datenarbeit, bewusst entwickelt.", projects_page_intro: "Eine fokussierte Sammlung öffentlicher Repositories aus Data Engineering, Analytics und KI / ML. Filtern Sie nach der Arbeit, die Sie erkunden möchten.", filter_all: "Alle Projekte", filter_data: "Data Engineering", filter_analytics: "Analytics", filter_ai: "KI / ML", details: "Repository ↗", project_service: "Eine lokale Plattform für IT-Service-Operations mit synthetischen Daten und einem reproduzierbaren Analytics-Pfad.", project_stroke: "Ein Power-BI- und DAX-Dashboard zu Schlaganfallrisikofaktoren aus 5.110 Healthcare-Datensätzen.", project_electricity: "Strombedarf, Anteil erneuerbarer Energien und Forecasting-Performance in einem interaktiven Streamlit-Dashboard."
     }
   };
 
-  const filterButtons = document.querySelectorAll("[data-project-filter]");
-  const projectCards = document.querySelectorAll("[data-project-category]");
-  const projectSections = document.querySelectorAll("[data-project-section]");
-  const langButtons = {
-    de: document.getElementById("lang-de"),
-    en: document.getElementById("lang-en")
-  };
-
-  function setLanguage(lang) {
-    const dictionary = translations[lang] || translations.de;
-
-    document.documentElement.lang = lang;
-    localStorage.setItem("portfolioLanguageV2", lang);
-
-    document.querySelectorAll("[data-i18n]").forEach((element) => {
-      const key = element.dataset.i18n;
-      if (!dictionary[key]) return;
-      if (dictionary[key].includes("<")) element.innerHTML = dictionary[key];
-      else element.textContent = dictionary[key];
-    });
-
-    Object.entries(langButtons).forEach(([code, button]) => {
-      if (button) button.classList.toggle("active", code === lang);
-    });
-
-    window.dispatchEvent(new CustomEvent("portfolioLanguageChanged", { detail: { lang } }));
+  const root = document.documentElement;
+  const menu = document.querySelector(".menu-button");
+  const nav = document.querySelector(".site-nav");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function setLanguage(language) {
+    const dictionary = translations[language] || translations.en;
+    root.lang = language;
+    localStorage.setItem("portfolioLanguageV2", language);
+    document.querySelectorAll("[data-i18n]").forEach((element) => { const value = dictionary[element.dataset.i18n]; if (value) element.textContent = value; });
+    document.querySelectorAll("[data-language]").forEach((button) => button.classList.toggle("active", button.dataset.language === language));
   }
-
-  function updateSectionVisibility() {
-    projectSections.forEach((section) => {
-      const visibleCards = section.querySelectorAll("[data-project-category]:not(.is-hidden)");
-      section.classList.toggle("is-hidden", visibleCards.length === 0);
-    });
+  document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
+  setLanguage(localStorage.getItem("portfolioLanguageV2") || "en");
+  if (menu && nav) {
+    menu.addEventListener("click", () => { const open = nav.classList.toggle("open"); menu.setAttribute("aria-expanded", String(open)); });
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => { nav.classList.remove("open"); menu.setAttribute("aria-expanded", "false"); }));
   }
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const filter = button.dataset.projectFilter;
-
-      filterButtons.forEach((item) => item.classList.remove("active"));
-      button.classList.add("active");
-
-      projectCards.forEach((card) => {
-        const categories = card.dataset.projectCategory.split(" ");
-        const shouldShow = filter === "all" || categories.includes(filter);
-        card.classList.toggle("is-hidden", !shouldShow);
-      });
-
-      updateSectionVisibility();
-    });
-  });
-
-  Object.entries(langButtons).forEach(([lang, button]) => {
-    if (button) button.addEventListener("click", () => setLanguage(lang));
-  });
-
-  const contactForm = document.getElementById("contact-form");
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const name = document.getElementById("contact-name").value.trim();
-      const email = document.getElementById("contact-email").value.trim();
-      const message = document.getElementById("contact-message").value.trim();
-      const subject = `Portfolio message from ${name || "website visitor"}`;
-      const body = [`Name: ${name}`, `Email: ${email}`, "", message].join("\n");
-
-      window.location.href = `mailto:darpen.bhandari@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => entries.forEach((entry) => { if (!entry.isIntersecting) return; entry.target.style.setProperty("--delay", (entry.target.dataset.delay || 0) + "ms"); entry.target.classList.add("in-view"); observer.unobserve(entry.target); }), { threshold: .12 });
+    document.querySelectorAll(".reveal").forEach((item) => revealObserver.observe(item));
+    const counters = new IntersectionObserver((entries, observer) => entries.forEach((entry) => { if (!entry.isIntersecting) return; const element = entry.target; const target = Number(element.dataset.counter); const started = performance.now(); const update = (time) => { const progress = Math.min((time - started) / 850, 1); element.textContent = String(Math.round(target * (1 - Math.pow(1 - progress, 3)))); if (progress < 1) requestAnimationFrame(update); }; requestAnimationFrame(update); observer.unobserve(element); }), { threshold: .8 });
+    document.querySelectorAll("[data-counter]").forEach((counter) => { counter.textContent = "0"; counters.observe(counter); });
+  } else document.querySelectorAll(".reveal").forEach((item) => item.classList.add("in-view"));
+  const timeline = document.querySelector("[data-timeline]");
+  if (timeline && !reduceMotion) { const updateTimeline = () => { const bounds = timeline.getBoundingClientRect(); const progress = Math.min(100, Math.max(0, ((window.innerHeight * .72 - bounds.top) / bounds.height) * 100)); timeline.style.setProperty("--timeline-progress", progress + "%"); }; addEventListener("scroll", updateTimeline, { passive: true }); updateTimeline(); }
+  if (matchMedia("(pointer:fine)").matches && !reduceMotion) {
+    addEventListener("pointermove", (event) => { document.body.style.setProperty("--mouse-x", event.clientX + "px"); document.body.style.setProperty("--mouse-y", event.clientY + "px"); }, { passive: true });
+    document.querySelectorAll(".tilt-card").forEach((card) => { card.addEventListener("pointermove", (event) => { const rect = card.getBoundingClientRect(); const x = (event.clientX - rect.left) / rect.width - .5; const y = (event.clientY - rect.top) / rect.height - .5; card.style.transform = "perspective(900px) rotateX(" + (-y * 2) + "deg) rotateY(" + (x * 2) + "deg) translateY(-4px)"; }); card.addEventListener("pointerleave", () => { card.style.transform = ""; }); });
+    const network = document.querySelector("#network");
+    if (network) network.addEventListener("pointermove", (event) => { const rect = network.getBoundingClientRect(); network.style.transform = "translate(" + (((event.clientX - rect.left) / rect.width - .5) * 5) + "px, " + (((event.clientY - rect.top) / rect.height - .5) * 5) + "px)"; });
   }
-
-  updateSectionVisibility();
-  setLanguage(localStorage.getItem("portfolioLanguageV2") || "de");
-});
+  const links = [...document.querySelectorAll(".site-nav a")].filter((link) => link.getAttribute("href").startsWith("#"));
+  if (links.length && "IntersectionObserver" in window) { const sections = links.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean); const navObserver = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) links.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id)); }), { rootMargin: "-35% 0px -55% 0px" }); sections.forEach((section) => navObserver.observe(section)); }
+  const copy = document.querySelector("[data-copy-email]");
+  if (copy) copy.addEventListener("click", async () => { try { await navigator.clipboard.writeText("darpen.bhandari@gmail.com"); copy.textContent = translations[root.lang].copied_email; setTimeout(() => { copy.textContent = translations[root.lang].copy_email; }, 1800); } catch { window.location.href = "mailto:darpen.bhandari@gmail.com"; } });
+  const form = document.querySelector("#contact-form");
+  if (form) form.addEventListener("submit", (event) => { event.preventDefault(); if (!form.checkValidity()) return form.reportValidity(); const data = new FormData(form); const body = "Name: " + data.get("name") + "\nEmail: " + data.get("email") + "\n\n" + data.get("message"); location.href = "mailto:darpen.bhandari@gmail.com?subject=" + encodeURIComponent(data.get("subject")) + "&body=" + encodeURIComponent(body); });
+  document.querySelectorAll("[data-project-filter]").forEach((button) => button.addEventListener("click", () => { const filter = button.dataset.projectFilter; document.querySelectorAll("[data-project-filter]").forEach((item) => item.classList.toggle("active", item === button)); document.querySelectorAll("[data-project-category]").forEach((card) => { card.hidden = filter !== "all" && !card.dataset.projectCategory.includes(filter); }); }));
+})();

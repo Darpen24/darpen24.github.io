@@ -1,206 +1,36 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Projects | Darpen Bhandari | Data Engineering, BI & Analytics</title>
-
-  <meta name="description" content="Selected data engineering, analytics engineering, BI reporting and automation projects by Darpen Bhandari, including dbt pipelines, Power BI dashboards, PostgreSQL analytics and Streamlit tools." />
-  <meta name="keywords" content="Darpen Bhandari projects, Data Engineering projects, Analytics Engineering, BI Analyst projects, Power BI, DAX, dbt, Python, SQL, Azure, Streamlit, Germany" />
-  <meta name="author" content="Darpen Bhandari" />
-  <meta name="robots" content="index, follow" />
-
-  <link rel="canonical" href="https://darpenbhandari.com/projects.html" />
-  <link rel="stylesheet" href="./assets/style.css?v=20260626b" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects — Darpen Bhandari</title>
+  <meta name="description" content="Selected public data engineering, analytics and AI / ML projects by Darpen Bhandari.">
+  <link rel="canonical" href="https://darpenbhandari.com/projects.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css?v=2">
+  <link rel="stylesheet" href="assets/projects.css?v=2">
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="container nav-wrap">
-      <a href="index.html" class="logo">Darpen Bhandari</a>
-      <nav class="nav-right">
-        <div class="lang-toggle" aria-label="Language switcher">
-          <button id="lang-de" class="lang-btn active" type="button">DE</button>
-          <span>|</span>
-          <button id="lang-en" class="lang-btn" type="button">EN</button>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
-          <li><a href="index.html#experience" data-i18n="nav_experience">Experience</a></li>
-          <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
-          <li><a href="index.html#skills" data-i18n="nav_skills">Skills</a></li>
-          <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="section">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="navbar"><div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Darpen Bhandari home"><span class="brand-mark">DB</span><span>Darpen Bhandari</span></a>
+    <button class="menu-button" type="button" aria-controls="site-nav" aria-expanded="false"><span></span><span></span><span></span><span class="sr-only" data-i18n="menu">Open menu</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="index.html#about" data-i18n="nav_about">About</a><a href="index.html#experience" data-i18n="nav_experience">Experience</a><a class="active" href="projects.html" data-i18n="nav_projects">Projects</a><a href="index.html#skills" data-i18n="nav_skills">Skills</a><a href="index.html#contact" data-i18n="nav_contact">Contact</a><div class="language-toggle" aria-label="Language switcher"><button type="button" data-language="en">EN</button><span>/</span><button type="button" data-language="de">DE</button></div></nav>
+  </div></header>
+  <main id="main" class="section">
     <div class="container">
-      <p class="section-tag">// PROJECTS</p>
-      <h1 data-i18n="projects_page_title">Projects by Role Fit</h1>
-      <p class="section-text" data-i18n="projects_intro">
-        A focused set of projects for Data Engineering, Analytics Engineering, BI reporting and automation roles. Use the filters to quickly match the evidence to the role you are hiring for.
-      </p>
-
-      <div class="role-fit-banner">
-        <p data-i18n="role_fit_de"><strong>Looking for Data Engineering roles?</strong> Start with DB Train Delay, Smart Energy and Electricity Insights.</p>
-        <p data-i18n="role_fit_bi"><strong>Looking for BI / Data Analyst roles?</strong> Start with Stroke Risk, Electricity Dashboard and Wine Quality Analysis.</p>
+      <div class="section-intro reveal"><p class="eyebrow">/ <span data-i18n="projects_page_label">PROJECT INDEX</span></p><h1 class="projects-heading" data-i18n="projects_page_title">Selected data work, built with intent.</h1><p class="hero-description" data-i18n="projects_page_intro">A focused collection of public repositories across data engineering, analytics and AI / ML. Filter by the kind of work you want to explore.</p></div>
+      <div class="filter-bar reveal"><button class="filter-button active" type="button" data-project-filter="all" data-i18n="filter_all">All work</button><button class="filter-button" type="button" data-project-filter="data" data-i18n="filter_data">Data Engineering</button><button class="filter-button" type="button" data-project-filter="analytics" data-i18n="filter_analytics">Analytics</button><button class="filter-button" type="button" data-project-filter="ai" data-i18n="filter_ai">AI / ML</button></div>
+      <div class="project-grid projects-grid">
+        <article class="project-card tilt-card reveal" data-project-category="data analytics"><div><p class="project-type">DATA ENGINEERING / ANALYTICS</p><h3>Service Operations Data Platform</h3><p data-i18n="project_service">A local-first platform for IT service operations, with synthetic data and a reproducible analytics path.</p><p class="architecture">Python → PostgreSQL → dbt → Marts → Power BI</p><div class="chips"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>Docker</span><span>Terraform</span></div><a class="card-link" href="https://github.com/Darpen24/service-ops-data-platform" target="_blank" rel="noopener" data-i18n="details">Repository ↗</a></div></article>
+        <article class="project-card tilt-card reveal" data-delay="40" data-project-category="data analytics"><img src="assets/db-train-delay/route-reliability-table.png" alt="Route reliability analysis table" loading="lazy"><div><p class="project-type">DATA ENGINEERING</p><h3>DB Train Delay &amp; Route Reliability</h3><p data-i18n="project_train">API ingestion, layered processing and dbt models for German rail reliability metrics.</p><p class="architecture">API → Raw → Bronze → Silver → Gold → dbt</p><div class="chips"><span>Python</span><span>PySpark</span><span>dbt</span><span>Streamlit</span></div><a class="card-link" href="https://github.com/Darpen24/DB-Train-Delay" target="_blank" rel="noopener" data-i18n="details">Repository ↗</a></div></article>
+        <article class="project-card tilt-card reveal" data-delay="80" data-project-category="ai"><div><p class="project-type">AI / ML</p><h3>CV Optimizer</h3><p data-i18n="project_cv">A local Streamlit tool that uses Ollama to tailor CV summaries and skills to a job description.</p><div class="chips"><span>Python</span><span>Streamlit</span><span>Ollama</span><span>PyMuPDF</span></div><a class="card-link" href="https://github.com/Darpen24/CV-Optimizer" target="_blank" rel="noopener" data-i18n="details">Repository ↗</a></div></article>
+        <article class="project-card tilt-card reveal" data-delay="120" data-project-category="analytics ai"><div><p class="project-type">ANALYTICS / ML</p><h3>Electricity &amp; Renewable Energy Insights</h3><p data-i18n="project_electricity">Electricity demand, renewable contribution and forecasting performance in an interactive Streamlit dashboard.</p><div class="chips"><span>Python</span><span>PostgreSQL</span><span>Streamlit</span><span>XGBoost</span><span>LSTM</span></div><a class="card-link" href="https://github.com/Darpen24/Electricity_insights" target="_blank" rel="noopener" data-i18n="details">Repository ↗</a></div></article>
+        <article class="project-card tilt-card reveal" data-delay="160" data-project-category="analytics"><img src="assets/Main-Dashboard.png" alt="Stroke Risk Power BI dashboard" loading="lazy"><div><p class="project-type">ANALYTICS</p><h3>Stroke Risk Analytics Dashboard</h3><p data-i18n="project_stroke">A Power BI and DAX dashboard exploring stroke risk factors across 5,110 healthcare records.</p><div class="chips"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Data Modelling</span></div><a class="card-link" href="https://github.com/Darpen24/Stroke-Risk" target="_blank" rel="noopener" data-i18n="details">Repository ↗</a></div></article>
       </div>
-
-      <div class="filter-bar" aria-label="Project filters">
-        <button class="filter-btn active" type="button" data-project-filter="all" data-i18n="filter_all">All</button>
-        <button class="filter-btn" type="button" data-project-filter="data-engineering" data-i18n="filter_de">Data Engineering</button>
-        <button class="filter-btn" type="button" data-project-filter="bi-analytics" data-i18n="filter_bi">BI &amp; Analytics</button>
-      </div>
-
-      <section class="project-section" data-project-section>
-        <p class="section-tag">// DATA ENGINEERING &amp; ANALYTICS ENGINEERING PROJECTS</p>
-        <h2>Data Engineering &amp; Analytics Engineering Projects</h2>
-        <p class="section-text">Pipeline, modelling, quality and reporting-layer projects for operational and analytical datasets.</p>
-
-        <div class="project-grid">
-          <article class="project-card" data-project-category="data-engineering">
-            <img src="./assets/db-train-delay/dashboard-overview.png" alt="DB Train Delay dashboard overview" class="project-img project-img-contained" />
-            <div class="project-content">
-              <h3>DB Train Delay and Route Reliability Pipeline</h3>
-              <div class="project-meta">
-                <p><strong>Role fit:</strong> Data Engineering / Analytics Engineering</p>
-                <p><strong>Tools:</strong> Python, PySpark, dbt, Streamlit, API ingestion, data quality</p>
-                <p><strong>Business problem:</strong> German rail routes needed route-level reliability views for delays, cancellations and disruption signals.</p>
-                <p><strong>What I built:</strong> Built a German rail reliability pipeline using API ingestion, Bronze/Silver/Gold data layers, dbt models and route-level KPIs for delay, cancellation and route performance analysis.</p>
-                <p><strong>Outcome:</strong> Computed 11+ route reliability KPIs including average delay, cancellation rate and route category performance.</p>
-              </div>
-              <div class="tag-list">
-                <span>Data Engineering</span><span>Analytics Engineering</span><span>Python</span><span>PySpark</span><span>dbt</span><span>Streamlit</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Darpen24/DB-Train-Delay" target="_blank" rel="noopener" class="project-btn">GitHub</a>
-                <a href="https://github.com/Darpen24/DB-Train-Delay#readme" target="_blank" rel="noopener" class="project-btn">README</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-project-category="data-engineering">
-            <div class="project-content">
-              <h3>Smart Energy Forecasting Pipeline</h3>
-              <div class="project-meta">
-                <p><strong>Role fit:</strong> Data Engineering / Analytics Engineering</p>
-                <p><strong>Tools:</strong> Python, SQL, dbt, ADLS, forecasting metrics</p>
-                <p><strong>Business problem:</strong> Energy optimization needs trusted datasets across electricity, solar, weather and cost indicators.</p>
-                <p><strong>What I built:</strong> Built an energy data pipeline for electricity, solar, weather and cost data, producing forecasting-ready datasets and decision metrics for energy optimization.</p>
-                <p><strong>Outcome:</strong> Supported 12% potential energy savings analysis using forecast error and energy cost indicators.</p>
-              </div>
-              <div class="tag-list">
-                <span>Data Engineering</span><span>Energy</span><span>Python</span><span>SQL</span><span>dbt</span><span>Azure</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Darpen24/Electricity_insights" target="_blank" rel="noopener" class="project-btn">GitHub</a>
-                <a href="https://github.com/Darpen24/Electricity_insights#readme" target="_blank" rel="noopener" class="project-btn">README</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-project-category="data-engineering bi-analytics">
-            <div class="project-content">
-              <h3>Electricity Insights Pipeline</h3>
-              <div class="project-meta">
-                <p><strong>Role fit:</strong> Analytics Engineering / BI Analytics</p>
-                <p><strong>Tools:</strong> Python, PostgreSQL, Streamlit, ML metrics</p>
-                <p><strong>Business problem:</strong> Electricity demand and renewable contribution needed structured analytical outputs for comparison and forecasting review.</p>
-                <p><strong>What I built:</strong> Built a PostgreSQL-backed analytics pipeline with machine learning outputs, dashboard views and model evaluation metrics for electricity demand and renewable energy analysis.</p>
-                <p><strong>Outcome:</strong> Created reusable analytical views for demand trends, renewable contribution and forecasting accuracy.</p>
-              </div>
-              <div class="tag-list">
-                <span>Analytics Engineering</span><span>BI Analytics</span><span>Energy</span><span>Python</span><span>PostgreSQL</span><span>Streamlit</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Darpen24/Electricity_insights" target="_blank" rel="noopener" class="project-btn">GitHub</a>
-                <a href="https://github.com/Darpen24/Electricity_insights#readme" target="_blank" rel="noopener" class="project-btn">README</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="project-section" data-project-section>
-        <p class="section-tag">// BI &amp; DATA ANALYTICS PROJECTS</p>
-        <h2>BI &amp; Data Analytics Projects</h2>
-        <p class="section-text">Dashboard, KPI and exploratory analysis projects for business-facing reporting.</p>
-
-        <div class="project-grid">
-          <article class="project-card" data-project-category="bi-analytics">
-            <img src="./assets/Main-Dashboard.png" alt="Stroke Risk Analytics Power BI dashboard" class="project-img" />
-            <div class="project-content">
-              <h3>Stroke Risk Analytics Dashboard</h3>
-              <div class="project-meta">
-                <p><strong>Role fit:</strong> BI Analyst / Healthcare Data Analyst</p>
-                <p><strong>Tools:</strong> Power BI, DAX, Power Query</p>
-                <p><strong>Business problem:</strong> Healthcare risk factors needed a clear reporting view for pattern analysis across patient attributes.</p>
-                <p><strong>What I built:</strong> Built a Power BI healthcare dashboard using 5,110 patient records to analyze stroke risk patterns by age, BMI, glucose, hypertension, heart disease and smoking status.</p>
-                <p><strong>Outcome:</strong> Created clear KPI views and filters for healthcare risk pattern analysis.</p>
-              </div>
-              <div class="tag-list">
-                <span>BI Analytics</span><span>Healthcare</span><span>Power BI</span><span>DAX</span><span>Power Query</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Darpen24/Stroke-Risk" target="_blank" rel="noopener" class="project-btn">GitHub</a>
-                <a href="https://github.com/Darpen24/Stroke-Risk#readme" target="_blank" rel="noopener" class="project-btn">README</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-project-category="bi-analytics">
-            <div class="project-content">
-              <h3>Electricity and Renewable Energy Insights Dashboard</h3>
-              <div class="project-meta">
-                <p><strong>Role fit:</strong> Data Analyst / BI Analyst</p>
-                <p><strong>Tools:</strong> Python, Streamlit, PostgreSQL, charts</p>
-                <p><strong>Business problem:</strong> Energy analysis needed clear views of demand, renewables and forecasting quality.</p>
-                <p><strong>What I built:</strong> Created dashboard views for actual vs predicted electricity load, renewable contribution, forecast error and model performance.</p>
-                <p><strong>Outcome:</strong> Helped compare demand trends, renewable contribution and forecasting accuracy.</p>
-              </div>
-              <div class="tag-list">
-                <span>BI Analytics</span><span>Energy</span><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Streamlit</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Darpen24/Electricity_insights" target="_blank" rel="noopener" class="project-btn">GitHub</a>
-                <a href="https://github.com/Darpen24/Electricity_insights#readme" target="_blank" rel="noopener" class="project-btn">README</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-project-category="bi-analytics">
-            <div class="project-content">
-              <h3>Wine Quality Analysis</h3>
-              <div class="project-meta">
-                <p><strong>Role fit:</strong> Data Analyst / EDA</p>
-                <p><strong>Tools:</strong> Python, Pandas, visualization, Jupyter Notebook</p>
-                <p><strong>Business problem:</strong> Wine quality data needed cleaning and visual exploration to identify drivers of quality scores.</p>
-                <p><strong>What I built:</strong> Performed data cleaning, exploratory analysis and visualizations to identify how alcohol, acidity, sugar and wine type relate to wine quality scores.</p>
-                <p><strong>Outcome:</strong> Converted raw wine quality data into clear analytical insights and visual patterns.</p>
-              </div>
-              <div class="tag-list">
-                <span>BI Analytics</span><span>Python</span><span>Pandas</span><span>EDA</span><span>Visualization</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Darpen24/Wine_Quality_Analysis" target="_blank" rel="noopener" class="project-btn">GitHub</a>
-                <a href="https://github.com/Darpen24/Wine_Quality_Analysis#readme" target="_blank" rel="noopener" class="project-btn">README</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
     </div>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Darpen Bhandari</p>
-    </div>
-  </footer>
-
-  <script src="./assets/main.js?v=20260626b"></script>
+  <footer><div class="container"><span>© 2026 Darpen Bhandari</span><span class="footer-tag">DATA / SYSTEMS / ANALYTICS</span></div></footer>
+  <script src="assets/main.js?v=2"></script>
 </body>
 </html>
