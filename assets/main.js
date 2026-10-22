@@ -26,22 +26,36 @@
     }
   };
 
+  Object.keys(translations).forEach((language) => Object.assign(translations[language], window.portfolioCopy?.[language] || {}));
+  const storage = { get(key) { try { return localStorage.getItem(key); } catch { return null; } }, set(key, value) { try { localStorage.setItem(key, value); } catch { /* Keep the page usable when storage is blocked. */ } } };
   const root = document.documentElement;
   const menu = document.querySelector(".menu-button");
   const nav = document.querySelector(".site-nav");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   function setLanguage(language) {
     const dictionary = translations[language] || translations.en;
+    language = translations[language] ? language : "en";
     root.lang = language;
-    localStorage.setItem("portfolioLanguageV2", language);
+    storage.set("portfolioLanguageV2", language);
     document.querySelectorAll("[data-i18n]").forEach((element) => { const value = dictionary[element.dataset.i18n]; if (value) element.textContent = value; });
-    document.querySelectorAll("[data-language]").forEach((button) => button.classList.toggle("active", button.dataset.language === language));
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => { const value = dictionary[element.dataset.i18nAriaLabel]; if (value) element.setAttribute("aria-label", value); });
+    document.querySelectorAll("[data-language]").forEach((button) => { button.classList.toggle("active", button.dataset.language === language); button.setAttribute("aria-pressed", String(button.dataset.language === language)); });
+    document.dispatchEvent(new CustomEvent("portfolio:language", { detail: language }));
   }
   document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
-  setLanguage(localStorage.getItem("portfolioLanguageV2") || "en");
+  setLanguage(storage.get("portfolioLanguageV2") || "en");
   if (menu && nav) {
-    menu.addEventListener("click", () => { const open = nav.classList.toggle("open"); menu.setAttribute("aria-expanded", String(open)); });
-    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => { nav.classList.remove("open"); menu.setAttribute("aria-expanded", "false"); }));
+    const syncMenu = (open) => {
+      nav.classList.toggle("open", open);
+      menu.setAttribute("aria-expanded", String(open));
+      menu.setAttribute("aria-label", translations[root.lang][open ? "menu_close" : "menu"]);
+    };
+    menu.addEventListener("click", () => syncMenu(!nav.classList.contains("open")));
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => syncMenu(false)));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && nav.classList.contains("open")) { syncMenu(false); menu.focus(); }
+    });
+    document.addEventListener("portfolio:language", () => syncMenu(nav.classList.contains("open")));
   }
   if (!reduceMotion && "IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => entries.forEach((entry) => { if (!entry.isIntersecting) return; entry.target.style.setProperty("--delay", (entry.target.dataset.delay || 0) + "ms"); entry.target.classList.add("in-view"); observer.unobserve(entry.target); }), { threshold: .12 });
@@ -63,5 +77,4 @@
   if (copy) copy.addEventListener("click", async () => { try { await navigator.clipboard.writeText("darpen.bhandari@gmail.com"); copy.textContent = translations[root.lang].copied_email; setTimeout(() => { copy.textContent = translations[root.lang].copy_email; }, 1800); } catch { window.location.href = "mailto:darpen.bhandari@gmail.com"; } });
   const form = document.querySelector("#contact-form");
   if (form) form.addEventListener("submit", (event) => { event.preventDefault(); if (!form.checkValidity()) return form.reportValidity(); const data = new FormData(form); const body = "Name: " + data.get("name") + "\nEmail: " + data.get("email") + "\n\n" + data.get("message"); location.href = "mailto:darpen.bhandari@gmail.com?subject=" + encodeURIComponent(data.get("subject")) + "&body=" + encodeURIComponent(body); });
-  document.querySelectorAll("[data-project-filter]").forEach((button) => button.addEventListener("click", () => { const filter = button.dataset.projectFilter; document.querySelectorAll("[data-project-filter]").forEach((item) => item.classList.toggle("active", item === button)); document.querySelectorAll("[data-project-category]").forEach((card) => { card.hidden = filter !== "all" && !card.dataset.projectCategory.includes(filter); }); }));
 })();
